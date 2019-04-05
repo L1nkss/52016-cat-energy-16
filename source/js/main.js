@@ -1,5 +1,7 @@
 (function main() {
     const burgerToggle = document.querySelector(".navigation__toggle");
+    const compareBar = document.querySelector(".compare__bar");
+    const compareScale = document.querySelector(".compare__scale");
 
     function toggleMenu() {
         const burger = document.querySelector(".navigation__burger");
@@ -9,4 +11,6 @@
     }
 
     burgerToggle.addEventListener("click",toggleMenu);
+    compareScale.addEventListener("click", () => {
+    })
 })();
