@@ -1,0 +1,37 @@
+.product {
+
+
+    &__wrap {
+        display: flex;
+    }
+
+    &--padding {
+        padding: 0 20px 25px;
+    }
+
+    &__description-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__description {
+        display: flex;    
+    }
+
+    &__value {
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    &__order {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: $main-color;
+        color: #fff;
+        padding: 14px 0;
+        text-transform: uppercase;
+    }
+}

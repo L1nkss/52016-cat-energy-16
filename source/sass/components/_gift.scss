@@ -1,0 +1,11 @@
+.gift {
+    min-height: 400px;
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-size: cover;
+
+    &__text {
+        margin: 0;
+        text-align: center;
+        color: #fff;
+    }
+}
