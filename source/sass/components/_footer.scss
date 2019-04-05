@@ -1,0 +1,13 @@
+.footer {
+    background-color: $type-color;
+    text-align: center;
+
+    &--padding {
+        padding: 35px 20px 0;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 36px;
+    }
+}

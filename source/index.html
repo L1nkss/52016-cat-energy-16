@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,6 +15,9 @@
           <img class="subject__image" src="#" alt="Логотип академии">
         </a>
         <p class="subject__title">Cat Energy</p>
+        <div class="navigation__toggle">
+          <div class="navigation__burger"></div>
+        </div>
       </div>
       <ul class="menu">
         <li class="menu__item">
@@ -31,27 +34,28 @@
   </header>
 
   <main class="main-content">
-    <section class="title">
+    <section class="title title--padding">
       <h1 class="title__header">Функциональное питание для котов</h1>
       <p class="title__text">Занялся собой?Займись котом!</p>
-      <img class="title__image" src="#" alt="Логотип товара">
+      <img class="title__image" src="img/index-can-mobile@1x.png" alt="Логотип товара">
       <a class="title__button" href="#">Подобрать программу</a>
     </section>
-    <section class="catalog">
-      <div class="catalog__item type">
+    <section class="catalog catalog--padding">
+      <div class="catalog__item type type--padding">
         <h3 class="type__title">Похудение</h3>
         <p class="type__info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
           Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="type__link" href="#">Каталог Slim</a>
       </div>
-      <div class="catalog__item type">
+      <div class="catalog__item type type--padding">
         <h3 class="type__title">Набор массы</h3>
         <p class="type__info">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
           вашему коту нарастить необходимые мышцы!</p>
         <a class="type__link" href="#">Каталог Pro</a>
       </div>
     </section>
-    <section class="advantage">
+    <section class="advantage advantage--padding">
+      <h3 class="advantage__title">Как это работает</h3>
       <ul class="advantage__list">
         <li class="advantage__item">
           <p class="advantage__text">Функциональное питание содержит только полезные питательные вещества</p>
@@ -67,7 +71,7 @@
         </li>
       </ul>
     </section>
-    <section class="live-example">
+    <section class="live-example live-example--padding">
       <h2 class="live-example__title">Живой пример</h2>
       <p class="live-example__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
@@ -93,12 +97,12 @@
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="address__map">
-        <!-- Карта -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554453950001!5m2!1sru!2sru" height="360px" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--padding">
     <p class="footer__title">Cat Energy</p>
     <div class="footer__socials social">
       <a href="#" class="social__link">VK</a>
@@ -107,11 +111,14 @@
     </div>
     <div class="footer__academy academy">
       <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="academy__title">html academy</p>
+        <p class="academy__title">HTML Academy</p>
+      </a>
+      <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="academy__image" src="#" alt="Логотип академии">
       </a>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+.academy {
+    display: flex;
+
+    &__logo {
+        display: block;
+        text-decoration: none
+    }
+
+    &__title {
+        font-family: "Arial";
+    }
+}

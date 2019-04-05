@@ -1,0 +1,19 @@
+.address {
+
+    &__item {
+        padding: 30px 20px;
+        display: flex;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__map {
+        width: 100%;
+    }
+}

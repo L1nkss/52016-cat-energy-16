@@ -1,0 +1,35 @@
+/* Шрифты */
+@font-face {
+  font-family: "Oswald Med";
+  src:
+    url("../../fonts/oswaldmedium.woff") format("woff"),
+    url("../../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: 500;
+} 
+
+
+  @font-face {
+    font-family: "Oswald Reg";
+    src:
+      url("../../fonts/oswaldregular.woff") format("woff"),
+      url("../../fonts/oswaldregular.woff2") format("woff2");
+    font-weight: 400;
+  }
+
+/* Общие настройки */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    //min-width: 320px;
+    font-family: "Oswald Reg", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
