@@ -14,7 +14,7 @@
 
     &__subject {
         display: flex;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid $border-nav-color;
         width: 100%;
         justify-content: space-around;
     }
@@ -55,12 +55,13 @@
 
     &--hide {
         background-color: rgba(255,255,255,0);
+
         &:before {
-            transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
         }
-    
+
         &:after {
-            transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
         }
     }
 }

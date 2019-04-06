@@ -1,11 +1,26 @@
 .extra-products {
 
     &--padding {
-        padding: 0 20px;
+        padding: 35px 20px 0;
     }
 
     &__title {
         margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 35px;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 45px;
+          height: 4px;
+          background-color: $main-color;
+          display: inline-block;
+          right: -20px;
+          top: 50%;
+          position: absolute;
+        }
     }
 
     &__list {

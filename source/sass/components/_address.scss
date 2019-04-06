@@ -7,13 +7,21 @@
 
     &__title {
         margin: 0;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 20px;
     }
 
     &__text {
         margin: 0;
+        font-size: 14px;
+        font-family: "Arial";
+        line-height: 20px;
     }
 
     &__map {
-        width: 100%;
+      width: 100%;
+      min-height: 360px;
+      background-image: url("../../img/bg-map-mobile@1x.png");
     }
 }

@@ -8,7 +8,8 @@
     }
 
     &__title {
-        text-transform: uppercase;
+        font-size: 34px;
+        font-weight: 400;
     }
 
     &--padding {
@@ -37,7 +38,7 @@
         width: 60px;
         left: 0;
     }
-    
+
     &:not(:last-child) {
         margin-bottom: 20px;
     }

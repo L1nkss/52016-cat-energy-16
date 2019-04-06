@@ -1,8 +1,15 @@
 .all-products {
     text-align: center;
+    border-top: 1px solid $border-show-all;
+    border-bottom: 1px solid $border-show-all;
 
     &--padding {
         padding: 80px 20px 25px;
+    }
+
+    &__text {
+      font-size: 12px;
+      font-family: "Arial";
     }
 
     &__title {
@@ -36,7 +43,7 @@
     &__show {
         display: block;
         text-decoration: none;
-        background-color: $border-color;
+        background-color: $type-color;
         padding: 15px 0;
         color: #444;
         text-transform: uppercase;
