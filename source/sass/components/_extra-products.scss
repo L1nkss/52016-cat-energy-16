@@ -1,34 +1,30 @@
 .extra-products {
+  &--padding {
+    padding: 35px 20px 0;
+  }
 
-    &--padding {
-        padding: 35px 20px 0;
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 45px;
+      height: 4px;
+      background-color: $main-color;
+      display: inline-block;
+      right: -20px;
+      top: 50%;
+      position: absolute;
     }
+  }
 
-    &__title {
-        margin: 0;
-        font-size: 24px;
-        font-weight: 400;
-        margin-bottom: 35px;
-        position: relative;
-
-        &::after {
-          content: "";
-          width: 45px;
-          height: 4px;
-          background-color: $main-color;
-          display: inline-block;
-          right: -20px;
-          top: 50%;
-          position: absolute;
-        }
-    }
-
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    &__gift {
-    }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }

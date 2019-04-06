@@ -1,27 +1,26 @@
 .address {
+  &__item {
+    padding: 30px 20px;
+    display: flex;
+  }
 
-    &__item {
-        padding: 30px 20px;
-        display: flex;
-    }
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+  }
 
-    &__title {
-        margin: 0;
-        font-weight: 400;
-        text-transform: uppercase;
-        line-height: 20px;
-    }
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    line-height: 20px;
+  }
 
-    &__text {
-        margin: 0;
-        font-size: 14px;
-        font-family: "Arial";
-        line-height: 20px;
-    }
-
-    &__map {
-      width: 100%;
-      min-height: 360px;
-      background-image: url("../../img/bg-map-mobile@1x.png");
-    }
+  &__map {
+    width: 100%;
+    min-height: 360px;
+    background-image: url("../../img/bg-map-mobile@1x.png");
+  }
 }

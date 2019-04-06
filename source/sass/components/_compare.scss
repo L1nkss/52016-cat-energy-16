@@ -1,38 +1,38 @@
 .compare {
+  &__controls {
+    display: flex;
+    justify-content: center;
+  }
 
-    &__controls{
-        display: flex;
-        justify-content: center;
-    }
-    &__scale {
-        width: 85px;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 5px 15px;
-        display: inline-block;
-        margin: 0 20px;
-    }
+  &__scale {
+    width: 85px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 0 20px;
+  }
 
-    &__before {
-        display: inline-block;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
+  &__before {
+    display: inline-block;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 
-    &__after{
-        display: inline-block;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
+  &__after {
+    display: inline-block;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 
-    &__bar {
-        width: 30%;
-        height: 10px;
-        background-color: $main-color;
-        border-radius: 10px;
-    }
+  &__bar {
+    width: 30%;
+    height: 10px;
+    background-color: $main-color;
+    border-radius: 10px;
+  }
 
-    &__toggle {
-        display: none;
-    }
+  &__toggle {
+    display: none;
+  }
 }

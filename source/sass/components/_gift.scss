@@ -1,13 +1,13 @@
 .gift {
-    min-height: 400px;
-    background-image: url("../../img/gift-photo-mobile@1x.jpg");
-    background-size: cover;
+  min-height: 400px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
 
-    &__text {
-        margin: 0;
-        text-align: center;
-        color: #fff;
-        font-family: "Arial";
-        line-height: 20px;
-    }
+  &__text {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    line-height: 20px;
+  }
 }

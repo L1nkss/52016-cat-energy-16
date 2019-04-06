@@ -1,13 +1,13 @@
 .academy {
-    display: flex;
+  display: flex;
 
-    &__logo {
-        display: block;
-        text-decoration: none
-    }
+  &__logo {
+    display: block;
+    text-decoration: none;
+  }
 
-    &__title {
-        font-family: "Arial";
-        color: black;
-    }
+  &__title {
+    font-family: "Arial", sans-serif;
+    color: black;
+  }
 }

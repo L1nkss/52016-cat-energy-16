@@ -1,51 +1,51 @@
 .all-products {
-    text-align: center;
-    border-top: 1px solid $border-show-all;
-    border-bottom: 1px solid $border-show-all;
+  text-align: center;
+  border-top: 1px solid $border-show-all;
+  border-bottom: 1px solid $border-show-all;
 
-    &--padding {
-        padding: 80px 20px 25px;
+  &--padding {
+    padding: 80px 20px 25px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 5px;
+      background-color: $border-color;
+      top: -40px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
     }
 
-    &__text {
-      font-size: 12px;
-      font-family: "Arial";
+    &::after {
+      content: "";
+      width: 50px;
+      height: 5px;
+      background-color: $border-color;
+      top: -40px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%) rotate(90deg);
     }
+  }
 
-    &__title {
-        text-transform: uppercase;
-        margin: 0;
-        position: relative;
-
-        &:before {
-            content: "";
-            width: 50px;
-            height: 5px;
-            background-color: $border-color;
-            top: -40px;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-        }
-
-        &::after {
-            content: "";
-            width: 50px;
-            height: 5px;
-            background-color: $border-color;
-            top: -40px;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%) rotate(90deg);
-        }
-    }
-
-    &__show {
-        display: block;
-        text-decoration: none;
-        background-color: $type-color;
-        padding: 15px 0;
-        color: #444;
-        text-transform: uppercase;
-    }
+  &__show {
+    display: block;
+    text-decoration: none;
+    background-color: $type-color;
+    padding: 15px 0;
+    color: #444444;
+    text-transform: uppercase;
+  }
 }
