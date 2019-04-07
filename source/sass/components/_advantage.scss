@@ -1,4 +1,6 @@
 .advantage {
+  padding: 0 20px;
+
   &__list {
     margin: 0;
     padding: 0;
@@ -9,10 +11,6 @@
   &__title {
     font-size: 34px;
     font-weight: 400;
-  }
-
-  &--padding {
-    padding: 0 20px;
   }
 
   &__text {

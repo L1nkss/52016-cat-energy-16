@@ -1,10 +1,8 @@
 .product {
+  padding: 0 20px 25px;
+
   &__wrap {
     display: flex;
-  }
-
-  &--padding {
-    padding: 0 20px 25px;
   }
 
   &__description-list {

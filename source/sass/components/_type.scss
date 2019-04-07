@@ -1,13 +1,10 @@
 .type {
   text-align: center;
   background-color: $type-color;
+  padding: 40px 20px 0;
 
   &:first-child {
     margin-bottom: 20px;
-  }
-
-  &--padding {
-    padding: 40px 20px 0;
   }
 
   &__title {
