@@ -1,6 +1,9 @@
 .extra-product {
   display: flex;
   flex-direction: column;
+  padding: 15px 0;
+  border-top: 1px solid $grey-color--darker;
+  border-bottom: 1px solid $grey-color--darker;
 
   &__wrap {
     display: flex;
@@ -24,11 +27,5 @@
     color: $white-color;
     padding: 10px 0;
     text-transform: uppercase;
-  }
-
-  &--padding {
-    padding: 15px 0;
-    border-top: 1px solid $grey-color--darker;
-    border-bottom: 1px solid $grey-color--darker;
   }
 }
