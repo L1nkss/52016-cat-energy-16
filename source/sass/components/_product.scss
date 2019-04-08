@@ -14,7 +14,7 @@
   &__description {
     display: flex;
     font-size: 12px;
-    font-family: "Arial", sans-serif;
+    font-family: $second-font;
   }
 
   &__value {
@@ -34,8 +34,8 @@
     display: block;
     width: 100%;
     text-align: center;
-    background-color: $main-color;
-    color: #ffffff;
+    background-color: $main-color-theme;
+    color: $white-color;
     padding: 14px 0;
     text-transform: uppercase;
   }

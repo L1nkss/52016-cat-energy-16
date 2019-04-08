@@ -11,6 +11,4 @@
     }
 
     burgerToggle.addEventListener("click",toggleMenu);
-    compareScale.addEventListener("click", () => {
-    })
 })();

@@ -5,7 +5,7 @@
   &__wrap {
     display: flex;
     font-size: 14px;
-    font-family: "Arial", sans-serif;
+    font-family: $second-font;
   }
 
   &__title {
@@ -20,15 +20,15 @@
     display: block;
     text-decoration: none;
     text-align: center;
-    background-color: $main-color;
-    color: #ffffff;
+    background-color: $main-color-theme;
+    color: $white-color;
     padding: 10px 0;
     text-transform: uppercase;
   }
 
   &--padding {
     padding: 15px 0;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $grey-color--darker;
+    border-bottom: 1px solid $grey-color--darker;
   }
 }

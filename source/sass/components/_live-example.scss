@@ -1,5 +1,5 @@
 .live-example {
-  background-color: $type-color;
+  background-color: $grey-color;
   padding: 30px 20px;
 
   &__title {
@@ -22,7 +22,7 @@
 
   &__text {
     font-size: 14px;
-    font-family: "Arial", sans-serif;
+    font-family: $second-font;
     text-align: left;
   }
 
@@ -34,7 +34,7 @@
 
   &__item {
     position: relative;
-    border: 1px solid $border-dark-color;
+    border: 1px solid $grey-color--dark;
     border-radius: 5px;
     width: 46%;
     padding: 15px 0 18px;
@@ -50,9 +50,9 @@
     margin: 0;
     position: absolute;
     font-size: 12px;
-    font-family: "Arial", sans-serif;
+    font-family: $second-font;
     text-align: center;
-    background-color: $type-color;
+    background-color: $grey-color;
     left: 50%;
     transform: translateX(-50%);
   }

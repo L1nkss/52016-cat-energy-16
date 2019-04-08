@@ -14,7 +14,7 @@
 
   &__subject {
     display: flex;
-    border-bottom: 1px solid $border-nav-color;
+    border-bottom: 1px solid $grey-color--dark;
     width: 100%;
     justify-content: space-around;
   }
@@ -29,7 +29,7 @@
 .navigation__burger {
   width: 30px;
   height: 3px;
-  background-color: #000000;
+  background-color: $black-color;
   transition: 0.6s;
   border: 0;
   outline: none;
@@ -40,7 +40,7 @@
     content: "";
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: $black-color;
     display: block;
     position: absolute;
     transition: 0.6s;
@@ -57,7 +57,7 @@
 
 
   &--hide {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba($black-color, 0);
 
     &::before {
       transform: translateY(10px) rotate(45deg);

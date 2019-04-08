@@ -1,7 +1,7 @@
 .all-products {
   text-align: center;
-  border-top: 1px solid $border-show-all;
-  border-bottom: 1px solid $border-show-all;
+  border-top: 1px solid $grey-color--darker;
+  border-bottom: 1px solid $grey-color--darker;
 
   &--padding {
     padding: 80px 20px 25px;
@@ -9,7 +9,7 @@
 
   &__text {
     font-size: 12px;
-    font-family: "Arial", sans-serif;
+    font-family: $second-font;
   }
 
   &__title {
@@ -21,7 +21,7 @@
       content: "";
       width: 50px;
       height: 5px;
-      background-color: $border-color;
+      background-color: $grey-color--darker;
       top: -40px;
       position: absolute;
       left: 50%;
@@ -32,7 +32,7 @@
       content: "";
       width: 50px;
       height: 5px;
-      background-color: $border-color;
+      background-color: $grey-color--darker;
       top: -40px;
       position: absolute;
       left: 50%;
@@ -43,9 +43,9 @@
   &__show {
     display: block;
     text-decoration: none;
-    background-color: $type-color;
+    background-color: $grey-color;
     padding: 15px 0;
-    color: #444444;
+    color: $black-color;
     text-transform: uppercase;
   }
 }
