@@ -1,0 +1,31 @@
+.extra-product {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  border-top: 1px solid $grey-color--darker;
+  border-bottom: 1px solid $grey-color--darker;
+
+  &__wrap {
+    display: flex;
+    font-size: 14px;
+    font-family: $second-font;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__cost {
+    margin-left: auto;
+  }
+
+  &__order {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: $main-color-theme;
+    color: $white-color;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+}

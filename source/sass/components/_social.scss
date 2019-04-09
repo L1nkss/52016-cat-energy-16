@@ -1,0 +1,11 @@
+.social {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $grey-color--darker;
+  border-bottom: 1px solid $grey-color--darker;
+  padding: 25px 0;
+
+  &__link {
+    text-decoration: none;
+  }
+}

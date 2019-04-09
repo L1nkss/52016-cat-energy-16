@@ -1,0 +1,13 @@
+.academy {
+  display: flex;
+
+  &__logo {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-family: $second-font;
+    color: $black-color;
+  }
+}

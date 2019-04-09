@@ -1,0 +1,49 @@
+.type {
+  text-align: center;
+  background-color: $grey-color;
+  padding: 40px 20px 0;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 14px;
+    font-family: $second-font;
+    position: relative;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 20px 0;
+    color: $black-color;
+    border-top: 1px solid $grey-color--darker;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-right-arrow-long.svg");
+      width: 30px;
+      height: 20px;
+      display: block;
+      top: 40%;
+      left: 40%;
+      background-repeat: no-repeat;
+    }
+  }
+}
