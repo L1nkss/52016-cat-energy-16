@@ -57,6 +57,10 @@
       top: 40%;
       left: 40%;
       background-repeat: no-repeat;
+
+      @include respond(tablet) {
+        left: 25%;
+      }
     }
   }
 }

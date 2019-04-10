@@ -8,9 +8,18 @@
     width: 85px;
     background-color: $white-color;
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 5px 10px;
     display: inline-block;
     margin: 0 20px;
+
+    @include respond(tablet) {
+      width: 500px;
+      background-color: $grey-color--darker;
+      padding: 0;
+      height: 5px;
+      align-self: center;
+      position: relative;
+    }
   }
 
   &__before {
@@ -26,13 +35,42 @@
   }
 
   &__bar {
-    width: 30%;
+    width: 50%;
     height: 10px;
     background-color: $main-color-theme;
     border-radius: 10px;
+    border: 0;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 
   &__toggle {
     display: none;
+
+    @include respond(tablet) {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $white-color;
+      border: 1px solid $grey-color--dark;
+      position: absolute;
+      top: -12px;
+      left: 50%;
+
+      &::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $main-color-theme;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }

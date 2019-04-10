@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -18,7 +19,7 @@
       </div>
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="#">Главная</a>
+          <a class="menu__link menu--active" href="#">Главная</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="catalog.html">Каталог продуктов</a>
@@ -58,16 +59,16 @@
     <section class="advantage">
       <h3 class="advantage__title">Как это работает</h3>
       <ul class="advantage__list">
-        <li class="advantage__item">
+        <li class="advantage__item advantage__item--leaf">
           <p class="advantage__text">Функциональное питание содержит только полезные питательные вещества</p>
         </li>
-        <li class="advantage__item">
+        <li class="advantage__item advantage__item--powder">
           <p class="advantage__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="advantage__item">
+        <li class="advantage__item advantage__item--dining">
           <p class="advantage__text">Замените один-два приёма обычной еды на наше функциональное питание</p>
         </li>
-        <li class="advantage__item">
+        <li class="advantage__item advantage__item--clock">
           <p class="advantage__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -95,10 +96,11 @@
             <span class="compare__before">Было</span>
           <div class="compare__scale">
             <div class="compare__bar"></div>
+            <button class="compare__toggle" type="button"></button>
           </div>
           <span class="compare__after">Стало</span>
           <!-- Переключатель -->
-          <button class="compare__toggle" type="button"></button>
+          <!-- <button class="compare__toggle" type="button"></button> -->
         </div>
       </div>
     </section>

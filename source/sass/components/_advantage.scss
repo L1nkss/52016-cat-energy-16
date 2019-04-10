@@ -34,9 +34,46 @@
   margin: 0;
   padding: 5px 0 5px 80px;
   position: relative;
+  transition: 0.6s;
+  min-height: 100px;
 
   @include respond(tablet) {
     flex-basis: 350px;
+    padding: 0 150px 0 0;
+    flex-grow: 1;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 24px;
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../../img/advantage-clock@1x.png");
+      background-position: 50% 50%;
+    }
+  }
+
+  &--dining {
+    &::before {
+      background-image: url("../../img/advantage-dining@1x.png");
+      background-position: 50% 50%;
+    }
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../../img/advantage-leaf@1x.png");
+      background-position: 50% 50%;
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../img/advantage-powder@1x.png");
+      background-position: 50% 50%;
+    }
   }
 
   &::before {
@@ -47,9 +84,17 @@
     height: 60px;
     width: 60px;
     left: 0;
+
+    @include respond(tablet) {
+      top: 0;
+    }
   }
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @include respond(tablet) {
+      margin: 0;
+    }
   }
 }
