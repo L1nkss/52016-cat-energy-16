@@ -1,9 +1,17 @@
 .subject {
-  padding: 24px 0;
+  padding: 0 20px;
+
+  @include respond(tablet) {
+    padding: 0;
+  }
 
   &__title {
     margin: 0;
     font-size: 20px;
     text-transform: uppercase;
+  }
+
+  &__image {
+    display: block;
   }
 }

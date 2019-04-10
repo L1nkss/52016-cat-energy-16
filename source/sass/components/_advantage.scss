@@ -1,11 +1,20 @@
 .advantage {
   padding: 0 20px;
 
+  @include respond(tablet) {
+    padding: 0 30px;
+  }
+
   &__list {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    @include respond(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
@@ -25,6 +34,10 @@
   margin: 0;
   padding: 5px 0 5px 80px;
   position: relative;
+
+  @include respond(tablet) {
+    flex-basis: 350px;
+  }
 
   &::before {
     content: "";

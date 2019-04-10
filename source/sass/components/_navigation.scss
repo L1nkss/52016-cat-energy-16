@@ -1,29 +1,23 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
 
-  &__checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  @include respond(tablet) {
+    flex-direction: row;
+    padding: 0 30px;
   }
 
   &__subject {
     display: flex;
     border-bottom: 1px solid $grey-color--dark;
-    width: 100%;
-    justify-content: space-around;
-  }
-}
+    align-items: center;
 
-.navigation__toggle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    @include respond(tablet) {
+      border: 0;
+    }
+  }
 }
 
 .navigation__burger {
@@ -34,6 +28,11 @@
   border: 0;
   outline: none;
   position: relative;
+  margin-left: auto;
+
+  @include respond(tablet) {
+    display: none;
+  }
 
   &::before,
   &::after {

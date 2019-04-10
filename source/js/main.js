@@ -11,6 +11,6 @@
         menu.classList.toggle("menu--hide");
     }
 
-    burgerToggle.addEventListener("click",toggleMenu);
+    //burgerToggle.addEventListener("click",toggleMenu);
     //burgerMenu.addEventListener("click",toggleMenu)
 })();
