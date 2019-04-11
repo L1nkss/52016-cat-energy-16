@@ -1,26 +1,39 @@
 .type {
   text-align: center;
   background-color: $grey-color;
-  padding: 40px 20px 0;
   transition: 0.6s;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include respond(tablet) {
     padding-right: 300px;
+    padding-top: 75px;
+    padding-left: 52px;
+    // padding-bottom: 47px;
+    min-height: 370px;
   }
 
   &:first-child {
     margin-bottom: 20px;
+
+    @include respond(tablet) {
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
     font-size: 24px;
+    line-height: 37px;
     font-weight: 400;
 
     @include respond(tablet) {
       text-align: left;
+      font-size: 36px;
+      line-height: 37px;
     }
   }
 
@@ -29,8 +42,15 @@
     margin-bottom: 25px;
     text-align: left;
     font-size: 14px;
+    line-height: 18px;
     font-family: $second-font;
     position: relative;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
   }
 
   &__link {
@@ -38,13 +58,15 @@
     display: block;
     text-align: left;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 15px 0;
     color: $black-color;
     border-top: 1px solid $grey-color--darker;
     position: relative;
 
     @include respond(tablet) {
       border: 0;
+      font-size: 20px;
+      line-height: 20px;
     }
 
     &::after {
@@ -59,7 +81,7 @@
       background-repeat: no-repeat;
 
       @include respond(tablet) {
-        left: 25%;
+        left: 35%;
       }
     }
   }

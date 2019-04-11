@@ -14,6 +14,10 @@
 
   &__item {
     list-style: none;
+
+    @include respond(tablet) {
+      padding-top: 42px;
+    }
   }
 
   &--hide {
@@ -25,8 +29,10 @@
     text-transform: uppercase;
     display: block;
     padding: 20px 0;
+    line-height: 20px;
     text-align: center;
     font-size: 20px;
+    font-weight: 500;
     border-bottom: 1px solid $grey-color--darker;
     border-top: 1px solid $grey-color--darker;
     color: $black-color;
@@ -35,6 +41,9 @@
     @include respond(tablet) {
       border: 0;
       font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      padding: 0;
     }
   }
 }

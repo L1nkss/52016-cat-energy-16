@@ -5,10 +5,10 @@
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
   min-width: 320px;
-  background-size: 100% 50%;
+  background-size: 100% 61%;
   background-repeat: no-repeat;
   color: $white-color;
-  padding: 30px 20px 20px;
+  padding: 26px 20px 20px;
   position: relative;
   transition: 0.6s;
 
@@ -18,7 +18,8 @@
     text-align: left;
     padding: 0;
     padding-left: 120px;
-    min-height: 800px;
+    padding-top: 55px;
+    min-height: 865px;
   }
 
   &__button {
@@ -27,8 +28,9 @@
     background-color: $main-color-theme;
     display: block;
     text-decoration: none;
-    font-size: 18px;
-    padding: 13px 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0;
     text-transform: uppercase;
     text-align: center;
     color: $white-color;
@@ -36,6 +38,9 @@
     @include respond(tablet) {
       width: 245px;
       margin-top: 0;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px 0;
     }
   }
 
@@ -44,28 +49,40 @@
     text-align: center;
     font-size: 36px;
     font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 28px;
 
     @include respond(tablet) {
       font-size: 60px;
       line-height: 60px;
       text-align: left;
+      width: 425px;
+      margin-bottom: 45px;
     }
   }
 
   &__text {
     font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
+    margin: 0;
 
     @include respond(tablet) {
       font-size: 20px;
+      margin-bottom: 50px;
     }
   }
 
   &__image {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -35%);
+
     @include respond(tablet) {
       z-index: -1;
-      position: absolute;
-      right: 0;
+      top: 60%;
     }
   }
 }

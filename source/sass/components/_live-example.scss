@@ -1,11 +1,25 @@
 .live-example {
   background-color: $grey-color;
-  padding: 30px 20px;
+  padding: 20px 20px;
+  padding-bottom: 35px;
+
+  @include respond(tablet) {
+    background-color: $white-color;
+    padding-top: 45px;
+    padding-left: 30px;
+  }
 
   &__title {
     margin: 0;
     font-size: 36px;
     font-weight: 400;
+    margin-bottom: 25px;
+
+    @include respond(tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 62px;
+    }
   }
 
   &__improvement {
@@ -14,46 +28,91 @@
     margin: 0;
     padding: 0;
     justify-content: space-between;
-  }
+    flex-wrap: wrap;
 
-  &__image {
-    width: 100%;
+    @include respond(tablet) {
+      justify-content: flex-start;
+    }
   }
 
   &__text {
     font-size: 14px;
+    line-height: 18px;
+    margin: 0;
     font-family: $second-font;
     text-align: left;
+    margin-bottom: 30px;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 52px;
+    }
   }
 
   &__cost {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      margin-left: auto;
+      text-align: right;
+    }
   }
 
   &__item {
     position: relative;
     border: 1px solid $grey-color--dark;
-    border-radius: 5px;
-    width: 46%;
-    padding: 15px 0 18px;
+    border-radius: 3px;
+    width: 44%;
+    padding: 10px 0 10px;
+    margin-bottom: 17px;
+
+    @include respond(tablet) {
+      width: 22%;
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 18px;
+      margin-right: 45px;
+    }
   }
 
   &__result {
     margin: 0;
     font-size: 24px;
     text-align: center;
+    text-transform: uppercase;
+
+    @include respond(tablet) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__result-text {
     margin: 0;
     position: absolute;
     font-size: 12px;
+    line-height: 12px;
     font-family: $second-font;
     text-align: center;
     background-color: $grey-color;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0 15px;
+
+    @include respond(tablet) {
+      font-size: 14px;
+      line-height: 14px;
+      background-color: $white-color;
+      padding: 0;
+    }
   }
 }

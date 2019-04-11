@@ -9,6 +9,7 @@
     font-weight: 400;
     text-transform: uppercase;
     line-height: 20px;
+    width: 50%;
   }
 
   &__text {
@@ -16,6 +17,8 @@
     font-size: 14px;
     font-family: $second-font;
     line-height: 20px;
+    text-align: left;
+    width: 50%;
   }
 
   &__map {

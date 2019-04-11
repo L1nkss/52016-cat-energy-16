@@ -1,8 +1,12 @@
 .advantage {
   padding: 0 20px;
+  padding-top: 21px;
+  padding-bottom: 42px;
 
   @include respond(tablet) {
     padding: 0 30px;
+    padding-top: 50px;
+    border-bottom: 1px solid $grey-color--darker;
   }
 
   &__list {
@@ -14,18 +18,34 @@
     @include respond(tablet) {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
   &__title {
-    font-size: 34px;
+    font-size: 36px;
+    line-height: 60px;
     font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include respond(tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 70px;
+    }
   }
 
   &__text {
     font-size: 14px;
+    line-height: 18px;
     font-family: $second-font;
     margin: 0;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -35,13 +55,14 @@
   padding: 5px 0 5px 80px;
   position: relative;
   transition: 0.6s;
-  min-height: 100px;
+  min-height: 60px;
 
   @include respond(tablet) {
-    flex-basis: 350px;
-    padding: 0 150px 0 0;
-    flex-grow: 1;
-    min-height: 230px;
+    flex-basis: 324px;
+    //padding: 0 150px 0 0;
+    padding: 0;
+    padding-right: 100px;
+    min-height: 302px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,12 +74,20 @@
       background-image: url("../../img/advantage-clock@1x.png");
       background-position: 50% 50%;
     }
+
+    &::after {
+      content: "4";
+    }
   }
 
   &--dining {
     &::before {
       background-image: url("../../img/advantage-dining@1x.png");
       background-position: 50% 50%;
+    }
+
+    &::after {
+      content: "3";
     }
   }
 
@@ -67,6 +96,10 @@
       background-image: url("../../img/advantage-leaf@1x.png");
       background-position: 50% 50%;
     }
+
+    &::after {
+      content: "1";
+    }
   }
 
   &--powder {
@@ -74,12 +107,17 @@
       background-image: url("../../img/advantage-powder@1x.png");
       background-position: 50% 50%;
     }
+
+    &::after {
+      content: "2";
+    }
   }
 
   &::before {
     content: "";
     position: absolute;
     background-color: $main-color-theme;
+    background-repeat: no-repeat;
     display: block;
     height: 60px;
     width: 60px;
@@ -87,11 +125,27 @@
 
     @include respond(tablet) {
       top: 0;
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @include respond(tablet) {
+      position: absolute;
+      display: block;
+      top: 28%;
+      right: 29%;
+      font-size: 280px;
+      color: $grey-color--ligther;
+      z-index: -1;
     }
   }
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     @include respond(tablet) {
       margin: 0;

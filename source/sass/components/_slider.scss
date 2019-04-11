@@ -1,0 +1,19 @@
+.slider {
+  position: relative;
+  height: 240px;
+  margin-bottom: 25px;
+
+  &__images {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__image {
+    height: auto;
+  }
+
+  &--after {
+    display: none;
+  }
+}

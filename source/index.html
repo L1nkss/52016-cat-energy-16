@@ -13,7 +13,11 @@
     <nav class="navigation">
       <div class="navigation__subject subject">
         <a class="subject__logo" href="#">
-          <img class="subject__image" src="img/logo-mobile.svg" width="194px" alt="Логотип компании Cat Energy">
+          <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="subject__image" src="img/logo-mobile.svg" width="194px" alt="Логотип компании Cat Energy">
+          </picture>
+
         </a>
         <button class="navigation__burger" type="button"></button>
       </div>
@@ -22,7 +26,7 @@
           <a class="menu__link menu--active" href="#">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Каталог продуктов</a>
+          <a class="menu__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="form.html">Подбор программы</a>
@@ -34,10 +38,10 @@
   <main class="main-content">
     <section class="title">
       <h1 class="title__header">Функциональное питание для котов</h1>
-      <p class="title__text">Занялся собой?Займись котом!</p>
+      <p class="title__text">Занялся собой? Займись котом!</p>
       <picture>
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-        <img class="title__image" width="auto" src="img/index-can-mobile@1x.png" alt="Логотип товара">
+        <img class="title__image" width="219" src="img/index-can-mobile@1x.png" alt="Логотип товара">
       </picture>
       <!-- <img class="title__image" src="img/index-can-mobile@1x.png" alt="Логотип товара"> -->
       <a class="title__button" href="#">Подобрать программу</a>
@@ -75,8 +79,8 @@
     </section>
     <section class="live-example">
       <h2 class="live-example__title">Живой пример</h2>
-      <p class="live-example__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+      <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+      Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день</p>
       <ul class="live-example__improvement">
         <li class="live-example__item">
@@ -88,9 +92,17 @@
           <p class="live-example__result-text">затрачено
             времени</p>
         </li>
+        <p class="live-example__cost">Затраты на питание: 15 000 руб.</p>
       </ul>
-      <p class="live-example__cost">Затраты на питание: 15 000 руб.</p>
-      <img class="live-example__image" src="img/before-mobile@1x.png" alt="Как было">
+      <div class="live-example__slider slider">
+        <div class="slider__images slider--before">
+            <img class="slider__image" width="280" src="img/before-mobile@1x.png" alt="Как было">
+        </div>
+        <div class="slider__images slider--after">
+            <img class="slider__image" width="280" height="240" src="img/after-mobile@1x.png" alt="Как было">
+        </div>
+      </div>
+
       <div class="live-example__compare compare">
         <div class="compare__controls">
             <span class="compare__before">Было</span>
@@ -116,7 +128,9 @@
   </main>
 
   <footer class="footer">
-    <p class="footer__title">Cat Energy</p>
+    <a class="footer__title" href="#">
+      <img src="img/logo-footer.svg" width="130" alt="">
+    </a>
     <div class="footer__socials social">
       <a href="#" class="social__link">VK</a>
       <a href="#" class="social__link">Insta</a>
