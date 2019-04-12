@@ -5,6 +5,7 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 3px;
 
   @include respond(tablet) {
     padding-right: 300px;
@@ -25,21 +26,25 @@
   &__title {
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
+    text-align: left;
+    padding-left: 70px;
 
     @include respond(tablet) {
       text-align: left;
       font-size: 36px;
       line-height: 37px;
+      padding-left: 0;
+      margin-bottom: 27px;
     }
   }
 
   &__info {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     text-align: left;
     font-size: 14px;
     line-height: 18px;
@@ -73,6 +78,7 @@
       content: "";
       position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
+      background-size: 85%;
       width: 30px;
       height: 20px;
       display: block;
@@ -81,7 +87,7 @@
       background-repeat: no-repeat;
 
       @include respond(tablet) {
-        left: 35%;
+        left: 37%;
       }
     }
   }

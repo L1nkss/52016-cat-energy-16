@@ -5,7 +5,14 @@
   padding-top: 0;
 
   &__title {
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  &__link {
     display: block;
-    padding: 37px 0;
   }
 }

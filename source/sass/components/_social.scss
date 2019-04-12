@@ -1,11 +1,32 @@
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   border-top: 1px solid $grey-color--darker;
   border-bottom: 1px solid $grey-color--darker;
-  padding: 15px 0;
+  min-height: 66px;
 
   &__link {
     text-decoration: none;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    &--vk {
+      background-image: url("../img/icon-vk-mobile.svg");
+      width: 23px;
+      height: 12px;
+    }
+
+    &--instagram {
+      background-image: url("../img/icon-insta-mobile.svg");
+      width: 16px;
+      height: 15px;
+    }
+
+    &--facebook {
+      background-image: url("../img/icon-fb-mobile.svg");
+      width: 10px;
+      height: 20px;
+    }
   }
 }

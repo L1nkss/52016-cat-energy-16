@@ -41,7 +41,7 @@
       <p class="title__text">Занялся собой? Займись котом!</p>
       <picture>
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-        <img class="title__image" width="219" src="img/index-can-mobile@1x.png" alt="Логотип товара">
+        <img class="title__image" width="280" src="img/index-can-mobile@1x.png" alt="Логотип товара">
       </picture>
       <!-- <img class="title__image" src="img/index-can-mobile@1x.png" alt="Логотип товара"> -->
       <a class="title__button" href="#">Подобрать программу</a>
@@ -105,12 +105,12 @@
 
       <div class="live-example__compare compare">
         <div class="compare__controls">
-            <span class="compare__before">Было</span>
+            <span class="compare__text">Было</span>
           <div class="compare__scale">
             <div class="compare__bar"></div>
             <button class="compare__toggle" type="button"></button>
           </div>
-          <span class="compare__after">Стало</span>
+          <span class="compare__text">Стало</span>
           <!-- Переключатель -->
           <!-- <button class="compare__toggle" type="button"></button> -->
         </div>
@@ -128,20 +128,23 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__title" href="#">
-      <img src="img/logo-footer.svg" width="130" alt="">
-    </a>
+    <div class="footer__title">
+      <a class="footer__link" href="#">
+        <img src="img/logo-footer.svg" width="130" alt="">
+      </a>
+    </div>
+
     <div class="footer__socials social">
-      <a href="#" class="social__link">VK</a>
-      <a href="#" class="social__link">Insta</a>
-      <a href="#" class="social__link">Facebook</a>
+      <a href="#" class="social__link social__link--vk"></a>
+      <a href="#" class="social__link social__link--instagram"></a>
+      <a href="#" class="social__link social__link--facebook"></a>
     </div>
     <div class="footer__academy academy">
-      <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="academy__text" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="academy__title">HTML Academy</p>
       </a>
       <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="academy__image" src="#" alt="Логотип академии">
+        <img class="academy__image" src="img/htmlacademy.svg" width="27" alt="Логотип академии">
       </a>
     </div>
   </footer>

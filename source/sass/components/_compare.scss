@@ -1,4 +1,7 @@
 .compare {
+  display: flex;
+  justify-content: center;
+
   &__controls {
     display: flex;
     justify-content: center;
@@ -14,6 +17,7 @@
     border: 1px solid $grey-color--darker;
     padding-top: 4px;
     padding-left: 5px;
+    align-self: center;
 
     @include respond(tablet) {
       width: 500px;
@@ -25,13 +29,7 @@
     }
   }
 
-  &__before {
-    display: inline-block;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  &__after {
+  &__text {
     display: inline-block;
     line-height: 20px;
     text-transform: uppercase;

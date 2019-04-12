@@ -1,16 +1,14 @@
 .slider {
   position: relative;
   height: 240px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+  text-align: center;
 
   &__images {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-  }
-
-  &__image {
-    height: auto;
+    width: 320px;
   }
 
   &--after {

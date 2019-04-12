@@ -1,13 +1,17 @@
 .academy {
   display: flex;
+  min-height: 77px;
+  align-items: center;
 
   &__logo {
     display: block;
     text-decoration: none;
+    margin-left: auto;
   }
 
   &__title {
     font-family: $second-font;
     color: $black-color;
+    margin: 0;
   }
 }
