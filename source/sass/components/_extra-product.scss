@@ -1,22 +1,54 @@
 .extra-product {
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
-  border-top: 1px solid $grey-color--darker;
+  padding: 14px 0;
+  //border-top: 1px solid $grey-color--darker;
   border-bottom: 1px solid $grey-color--darker;
+  padding-bottom: 19px;
+
+  @include respond(tablet) {
+    border: 1px solid $grey-color--darker;
+    padding: 28px 36px 27px 39px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   &__wrap {
     display: flex;
     font-size: 14px;
     font-family: $second-font;
+    line-height: 14px;
+    font-weight: 400;
+    margin-bottom: 13px;
+
+    @include respond(tablet) {
+      margin-left: auto;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 23px;
+    }
   }
 
   &__title {
     margin: 0;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 13px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      display: inline;
+    }
   }
 
   &__cost {
     margin-left: auto;
+  }
+
+  &__amount {
+    margin-right: 52px;
   }
 
   &__order {
@@ -25,7 +57,11 @@
     text-align: center;
     background-color: $main-color-theme;
     color: $white-color;
-    padding: 10px 0;
+    padding: 8px 0;
     text-transform: uppercase;
+
+    @include respond(tablet) {
+      width: 100%;
+    }
   }
 }

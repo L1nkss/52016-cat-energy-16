@@ -1,32 +1,94 @@
 .product {
-  padding: 0 20px 25px;
+  padding: 0 20px 24px;
+  border-bottom: 1px solid $grey-color--dark;
+
+  @include respond(tablet) {
+    width: 324px;
+    background-color: $grey-color;
+    border: 0;
+    padding: 0 38px;
+    padding-bottom: 40px;
+    position: relative;
+    // потом удалить
+    //margin-bottom: 140px;
+
+    // ещё удалить
+    margin: 137px 0 4px 0;
+  }
+
+  &__information {
+    padding-top: 20px;
+
+    @include respond(tablet) {
+      padding-top: 0;
+    }
+  }
 
   &__wrap {
     display: flex;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      min-height: 345px;
+      margin-bottom: 5px;
+      padding-top: 162px;
+    }
   }
 
   &__description-list {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-size: 12px;
+    font-family: $second-font;
+
+    @include respond(tablet) {
+      font-size: 16px;
+    }
   }
 
   &__description {
     display: flex;
-    font-size: 12px;
-    font-family: $second-font;
+    margin-bottom: 2px;
+
+    @include respond(tablet) {
+      border-bottom: 1px solid $grey-color--dark;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__image {
+    @include respond(tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__value {
     display: inline-block;
     margin-left: auto;
+    color: $black-color;
   }
 
   &__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-right: 40px;
     text-transform: uppercase;
+    line-height: 20px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    &--br {
+      display: block;
+    }
   }
 
   &__order {
@@ -36,7 +98,8 @@
     text-align: center;
     background-color: $main-color-theme;
     color: $white-color;
-    padding: 14px 0;
+    padding: 10px 0;
     text-transform: uppercase;
+    line-height: 20px;
   }
 }

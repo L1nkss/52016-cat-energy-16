@@ -2,22 +2,54 @@
   text-align: center;
   border-top: 1px solid $grey-color--darker;
   border-bottom: 1px solid $grey-color--darker;
-  padding: 80px 20px 25px;
+  padding: 76px 20px 23px;
+
+  @include respond(tablet) {
+    border: 1px solid $grey-color--darker;
+    width: 324px;
+    min-height: 434px;
+    margin: 137px 0 4px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    justify-content: center;
+    padding-top: 40px;
+  }
 
   &__text {
     font-size: 12px;
     font-family: $second-font;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include respond(tablet) {
+      font-size: 16px;
+
+      &--br {
+        display: block;
+      }
+    }
   }
 
   &__title {
     text-transform: uppercase;
     margin: 0;
     position: relative;
+    margin-bottom: 8px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+
+      &--br {
+        display: block;
+      }
+    }
 
     &::before {
       content: "";
-      width: 50px;
-      height: 5px;
+      width: 31px;
+      height: 2px;
       background-color: $grey-color--darker;
       top: -40px;
       position: absolute;
@@ -27,8 +59,8 @@
 
     &::after {
       content: "";
-      width: 50px;
-      height: 5px;
+      width: 31px;
+      height: 2px;
       background-color: $grey-color--darker;
       top: -40px;
       position: absolute;
@@ -41,7 +73,7 @@
     display: block;
     text-decoration: none;
     background-color: $grey-color;
-    padding: 15px 0;
+    padding: 9px 0;
     color: $black-color;
     text-transform: uppercase;
   }

@@ -1,13 +1,25 @@
 .gift {
-  min-height: 400px;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-size: cover;
+
+  padding-top: 36px;
+  padding-bottom: 35px;
+
+  &__wrapper {
+    min-height: 289px;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 39px;
+  }
 
   &__text {
     margin: 0;
-    text-align: center;
     color: $white-color;
     font-family: $second-font;
     line-height: 20px;
+    width: 169px;
   }
 }

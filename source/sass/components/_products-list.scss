@@ -1,0 +1,9 @@
+.products-list {
+  @include respond(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+}

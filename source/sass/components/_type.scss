@@ -6,6 +6,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 3px;
+  position: relative;
 
   @include respond(tablet) {
     padding-right: 300px;
@@ -32,6 +33,18 @@
     font-weight: 400;
     text-align: left;
     padding-left: 70px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: $main-color-theme;
+      position: absolute;
+      left: 1%;
+      border-radius: 50%;
+      top: -13%;
+    }
 
     @include respond(tablet) {
       text-align: left;
@@ -39,6 +52,15 @@
       line-height: 37px;
       padding-left: 0;
       margin-bottom: 27px;
+      position: static;
+
+      &::before {
+        top: 52%;
+        left: 77%;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 

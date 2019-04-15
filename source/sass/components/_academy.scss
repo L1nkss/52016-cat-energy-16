@@ -1,6 +1,6 @@
 .academy {
   display: flex;
-  min-height: 77px;
+  min-height: 78px;
   align-items: center;
 
   &__logo {
@@ -13,5 +13,9 @@
     font-family: $second-font;
     color: $black-color;
     margin: 0;
+  }
+
+  &__text {
+    text-decoration: none;
   }
 }

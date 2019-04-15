@@ -1,15 +1,14 @@
 .social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-top: 1px solid $grey-color--darker;
   border-bottom: 1px solid $grey-color--darker;
-  min-height: 66px;
+  display: flex;
+  justify-content: center;
 
   &__link {
     text-decoration: none;
     background-repeat: no-repeat;
     text-align: center;
+    display: block;
 
     &--vk {
       background-image: url("../img/icon-vk-mobile.svg");
@@ -28,5 +27,13 @@
       width: 10px;
       height: 20px;
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 62px;
+    width: 125px;
   }
 }

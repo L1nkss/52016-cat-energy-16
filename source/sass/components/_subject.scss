@@ -6,7 +6,6 @@
 
   @include respond(tablet) {
     padding: 0;
-    min-height: 85px;
   }
 
   &__title {
@@ -17,5 +16,17 @@
 
   &__image {
     display: block;
+
+    @include respond(tablet) {
+      width: 176px;
+      margin-top: 20px;
+    }
+  }
+
+  &__logo {
+    @include respond(tablet) {
+      height: 85px;
+      display: block;
+    }
   }
 }
