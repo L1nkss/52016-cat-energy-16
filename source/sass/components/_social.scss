@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
 
+  @include respond(tablet) {
+    width: 33%;
+  }
+
   &__link {
     text-decoration: none;
     background-repeat: no-repeat;

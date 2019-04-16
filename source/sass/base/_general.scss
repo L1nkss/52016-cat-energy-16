@@ -15,7 +15,11 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  transition: 0.6s;
+
+  @include respond(desktop) {
+    max-width: $desktop;
+    margin: 0 auto;
+  }
 }
 
 img {

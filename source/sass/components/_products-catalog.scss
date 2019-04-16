@@ -12,6 +12,7 @@
     margin: 0;
     line-height: 60px;
     font-weight: 400;
+    transition: 0.6s;
 
     @include respond(tablet) {
       font-size: 60px;

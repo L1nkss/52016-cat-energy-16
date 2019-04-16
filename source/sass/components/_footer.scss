@@ -4,12 +4,23 @@
   padding: 35px 20px 0;
   padding-top: 0;
 
+  @include respond(tablet) {
+    display: flex;
+    padding: 0 30px;
+    min-height: 150px;
+  }
+
   &__title {
     height: 97px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+
+    @include respond(tablet) {
+      width: 33%;
+      height: auto;
+    }
   }
 
   &__link {

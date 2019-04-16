@@ -4,6 +4,11 @@
     display: flex;
     padding-bottom: 25px;
     background-color: $grey-color;
+
+    @include respond(tablet) {
+      padding: 65px 72px 58px 71px;
+      justify-content: space-between;
+    }
   }
 
   &__title {
@@ -12,6 +17,12 @@
     text-transform: uppercase;
     line-height: 20px;
     width: 50%;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 25px;
+      width: 25%;
+    }
   }
 
   &__text {
@@ -21,11 +32,29 @@
     line-height: 20px;
     text-align: left;
     width: 50%;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      width: 25%;
+      text-align: right;
+
+      &--br {
+        display: block;
+        margin-top: 18px;
+      }
+    }
   }
 
   &__map {
     width: 100%;
     min-height: 360px;
     background-image: url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond(tablet) {
+      background-image: url("../img/bg-map-tablet@1x.png");
+      min-height: 395px;
+    }
   }
 }
