@@ -7,6 +7,10 @@
     padding: 55px 30px 28px;
   }
 
+  @include respond(desktop) {
+    padding: 90px 110px 28px;
+  }
+
   &__title {
     font-size: 36px;
     margin: 0;

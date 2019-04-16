@@ -1,10 +1,15 @@
 .academy {
   display: flex;
-  min-height: 78px;
   align-items: center;
 
   @include respond(tablet) {
     width: 33%;
+  }
+
+  &__image {
+    display: block;
+    width: 27px;
+    height: 34px;
   }
 
   &__logo {

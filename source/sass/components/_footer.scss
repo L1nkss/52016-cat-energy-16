@@ -11,11 +11,10 @@
   }
 
   &__title {
-    height: 97px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding: 38px 0 25px;
 
     @include respond(tablet) {
       width: 33%;

@@ -12,11 +12,19 @@
     justify-content: space-between;
   }
 
+  @include respond(desktop) {
+    width: 480px;
+  }
+
   &__item {
     list-style: none;
 
     @include respond(tablet) {
       padding-top: 42px;
+    }
+
+    @include respond(desktop) {
+      padding-top: 74px;
     }
   }
 

@@ -5,6 +5,16 @@
     padding: 22px 30px 0;
   }
 
+  @include respond(desktop) {
+    padding: 61px 110px 0;
+  }
+
+  &__wrapper {
+    @include respond(desktop) {
+      display: flex;
+    }
+  }
+
   &__title {
     margin: 0;
     font-size: 24px;
@@ -14,18 +24,18 @@
 
     @include respond(tablet) {
       font-size: 36px;
-      padding-left: 38px;
+      //padding-left: 38px;
       margin-bottom: 71px;
     }
 
     &::after {
       content: "";
       width: 52px;
-      height: 4px;
+      height: 3px;
       background-color: $main-color-theme;
       display: inline-block;
       right: -20px;
-      top: 50%;
+      top: 54%;
       position: absolute;
 
       @include respond(tablet) {

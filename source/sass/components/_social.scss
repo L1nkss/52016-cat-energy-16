@@ -3,6 +3,8 @@
   border-bottom: 1px solid $grey-color--darker;
   display: flex;
   justify-content: center;
+  padding: 22px 0 20px;
+  padding-left: 40px;
 
   @include respond(tablet) {
     width: 33%;
@@ -13,6 +15,7 @@
     background-repeat: no-repeat;
     text-align: center;
     display: block;
+    margin-right: 40px;
 
     &--vk {
       background-image: url("../img/icon-vk-mobile.svg");
@@ -35,9 +38,7 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    min-height: 62px;
-    width: 125px;
+    justify-content: center;
   }
 }

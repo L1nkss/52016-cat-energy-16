@@ -1,7 +1,7 @@
 .all-products {
   text-align: center;
-  border-bottom: 1px solid $grey-color--darker;
-  padding: 76px 20px 23px;
+  border-bottom: 1px solid $grey-color--light;
+  padding: 76px 20px 24px;
 
   @include respond(tablet) {
     border: 1px solid $grey-color--darker;
@@ -10,9 +10,12 @@
     margin: 137px 0 4px 0;
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
     justify-content: center;
-    padding-top: 40px;
+    padding: 40px;
+  }
+
+  @include respond(desktop) {
+    width: 245px;
   }
 
   &__text {
@@ -49,22 +52,32 @@
       content: "";
       width: 31px;
       height: 2px;
-      background-color: #d9d9d9;
+      background-color: $grey-color--light;
       top: -36px;
       position: absolute;
       left: 50%;
       transform: translate(-50%);
+
+      @include respond(tablet) {
+        width: 60px;
+        top: -80px;
+      }
     }
 
     &::after {
       content: "";
       width: 31px;
       height: 2px;
-      background-color: #d9d9d9;
+      background-color: $grey-color--light;
       top: -36px;
       position: absolute;
       left: 50%;
       transform: translate(-50%) rotate(90deg);
+
+      @include respond(tablet) {
+        width: 60px;
+        top: -79px;
+      }
     }
   }
 
@@ -73,7 +86,11 @@
     text-decoration: none;
     background-color: $grey-color;
     padding: 9px 0;
-    color: $black-color;
+    color: $black-color--light;
     text-transform: uppercase;
+
+    @include respond(tablet) {
+      margin-top: auto;
+    }
   }
 }
