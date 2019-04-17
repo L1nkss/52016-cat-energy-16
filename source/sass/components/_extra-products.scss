@@ -6,12 +6,13 @@
   }
 
   @include respond(desktop) {
-    padding: 61px 110px 0;
+    padding: 61px 110px 87px;
   }
 
   &__wrapper {
     @include respond(desktop) {
       display: flex;
+      justify-content: space-between;
     }
   }
 

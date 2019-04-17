@@ -1,0 +1,21 @@
+.form-header {
+  padding: 0 20px;
+  padding-top: 13px;
+  padding-bottom: 39px;
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 26px;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 226px;
+  }
+}
