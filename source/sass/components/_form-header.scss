@@ -3,12 +3,24 @@
   padding-top: 13px;
   padding-bottom: 39px;
 
+  @include respond(tablet) {
+    padding: 0 30px;
+    padding-top: 56px;
+    padding-bottom: 50px;
+  }
+
   &__title {
     margin: 0;
     font-size: 36px;
     line-height: 60px;
     margin-bottom: 26px;
     font-weight: 400;
+
+    @include respond(tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 55px;
+    }
   }
 
   &__text {
@@ -17,5 +29,12 @@
     line-height: 18px;
     text-transform: uppercase;
     width: 226px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 330px;
+      margin-left: 40px;
+    }
   }
 }

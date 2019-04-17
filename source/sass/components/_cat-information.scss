@@ -1,10 +1,24 @@
 .cat-information {
   margin: 0;
   border: 0;
-  padding: 0 19px;
+  padding: 0 20px;
   text-transform: uppercase;
   border-bottom: 1px solid $grey-color--light;
   padding-bottom: 9px;
+
+  @include respond(tablet) {
+    border: 0;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 57px;
+  }
+
+  // wrapper
+  &__wrapper {
+    @include respond(tablet) {
+      padding: 0 70px;
+    }
+  }
 
   // блоки
   &__name,
@@ -13,6 +27,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 14px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 18px;
+    }
   }
 
   // Инпуты
@@ -30,6 +50,14 @@
     padding-left: 15px;
     transition: 0.7s;
 
+    @include respond(tablet) {
+      padding-top: 8px;
+      padding-bottom: 12px;
+      padding-left: 19px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
     &:valid {
       border: 1px solid $main-color-theme;
     }
@@ -42,5 +70,9 @@
   // Лабел
   &__label {
     margin-right: 5.6%;
+
+    @include respond(tablet) {
+      margin-right: 2.7%;
+    }
   }
 }
