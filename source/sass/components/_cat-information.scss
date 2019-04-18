@@ -13,10 +13,21 @@
     padding-bottom: 57px;
   }
 
+  @include respond(desktop) {
+    width: 46.72%;
+    margin-right: 6.55%;
+    padding-bottom: 0;
+  }
+
   // wrapper
   &__wrapper {
     @include respond(tablet) {
       padding: 0 70px;
+    }
+
+    @include respond(desktop) {
+      display: flex;
+      padding: 0 110px;
     }
   }
 

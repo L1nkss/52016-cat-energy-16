@@ -14,6 +14,10 @@
     padding-bottom: 11px;
   }
 
+  @include respond(desktop) {
+    width: 46.72%;
+  }
+
   &__list {
     margin: 0;
     padding: 0;

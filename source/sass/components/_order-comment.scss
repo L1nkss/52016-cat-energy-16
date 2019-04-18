@@ -4,11 +4,22 @@
   padding: 0 20px;
   padding-top: 6px;
 
+  @include respond(tablet) {
+    padding: 0 70px;
+    padding-bottom: 23px;
+  }
+
   &__title {
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 35px;
+
+    @include respond(tablet) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 76px;
+    }
   }
 
   &__text {
@@ -20,5 +31,13 @@
     line-height: 18px;
     text-transform: uppercase;
     border: 1px solid $black-color--lighter;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      min-height: 174px;
+      padding: 19px;
+      padding-top: 9px;
+    }
   }
 }
