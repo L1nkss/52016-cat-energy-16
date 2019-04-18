@@ -5,6 +5,23 @@
   display: flex;
   flex-direction: column;
 
+  // дополнительные классы для меню
+  &--hide {
+    display: none;
+
+    @include respond(tablet) {
+      display: flex;
+    }
+  }
+
+  &--active {
+    //border-bottom: 2px solid $white-color;
+
+    @include respond(tablet) {
+      border-bottom: 2px solid $main-color-theme;
+    }
+  }
+
   @include respond(tablet) {
     flex-direction: row;
     margin-left: auto;
@@ -26,10 +43,6 @@
     @include respond(desktop) {
       padding-top: 74px;
     }
-  }
-
-  &--hide {
-    display: none;
   }
 
   &__link {
