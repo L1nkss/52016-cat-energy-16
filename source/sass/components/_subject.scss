@@ -16,13 +16,15 @@
 
     @include respond(tablet) {
       width: 176px;
-      margin-top: 20px;
+    }
+
+    @include respond(desktop) {
+      width: 202px;
     }
   }
 
   &__logo {
     @include respond(tablet) {
-      height: 85px;
       display: block;
     }
   }

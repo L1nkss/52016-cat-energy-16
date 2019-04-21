@@ -1,4 +1,6 @@
 /* stylelint-disable */
+
+// Миксин для адаптивности
 @mixin respond ($breakpoint) {
 
     @if ($breakpoint == mobile) {
@@ -13,3 +15,8 @@
         @media (min-width: $desktop) {@content}
     };
 };
+
+// Миксин для отступов.
+@mixin content-center($top-padding: 0px, $bottom-padding: 0px) {
+
+}

@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 39px;
+    padding-bottom: 42px;
 
     @include respond(tablet) {
       min-height: 200px;
@@ -43,6 +43,11 @@
     color: $white-color;
     font-family: $second-font;
     line-height: 20px;
-    width: 169px;
+    width: 58.57%;
+
+    @include respond(tablet) {
+      width: 178px;
+      text-align: left;
+    }
   }
 }

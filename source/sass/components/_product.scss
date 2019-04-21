@@ -68,6 +68,22 @@
       top: 0;
       left: 0;
     }
+
+    @include respond(desktop) {
+      left: -39px;
+    }
+
+    &--small {
+      @include respond(tablet) {
+        top: -45px;
+      }
+    }
+
+    &--big {
+      @include respond(tablet) {
+        top: -81px;
+      }
+    }
   }
 
   &__value {

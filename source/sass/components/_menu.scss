@@ -18,7 +18,7 @@
     //border-bottom: 2px solid $white-color;
 
     @include respond(tablet) {
-      border-bottom: 2px solid $main-color-theme;
+      //border-bottom: 2px solid $main-color-theme;
     }
   }
 
@@ -35,14 +35,6 @@
 
   &__item {
     list-style: none;
-
-    @include respond(tablet) {
-      padding-top: 42px;
-    }
-
-    @include respond(desktop) {
-      padding-top: 74px;
-    }
   }
 
   &__link {

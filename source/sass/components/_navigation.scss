@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  min-height: 65px;
 
   @include respond(tablet) {
     flex-direction: row;
-    padding: 0 30px;
+    align-items: center;
+    padding: 25px 30px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
+    padding: 56px 110px;
   }
 
   &__subject {

@@ -26,10 +26,8 @@
 
     @include respond(tablet) {
       font-size: 16px;
-
-      &--br {
-        display: block;
-      }
+      width: 71.72%;
+      margin: 0 auto;
     }
   }
 
@@ -42,10 +40,8 @@
     @include respond(tablet) {
       font-size: 20px;
       line-height: 20px;
-
-      &--br {
-        display: block;
-      }
+      width: 57.37%;
+      margin: 0 auto;
     }
 
     &::before {
@@ -90,7 +86,7 @@
     text-transform: uppercase;
 
     @include respond(tablet) {
-      margin-top: auto;
+      //margin-top: auto;
     }
   }
 }

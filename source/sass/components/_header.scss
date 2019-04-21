@@ -1,0 +1,11 @@
+.header {
+  margin-bottom: 15px;
+
+  @include respond(tablet) {
+    margin-bottom: 32px;
+  }
+
+  @include respond(desktop) {
+    margin-bottom: 16px;
+  }
+}

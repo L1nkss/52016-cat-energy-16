@@ -14,6 +14,7 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    counter-reset: list-item;
 
     @include respond(tablet) {
       flex-direction: row;
@@ -77,45 +78,45 @@
 
   &--clock {
     &::before {
-      background-image: url("../../img/advantage-clock@1x.png");
-      background-position: 50% 50%;
+      background-image: url("../img/advantage-clock@1x.png");
     }
 
     &::after {
-      content: "4";
+      counter-increment: list-item;
+      content: counter(list-item);
     }
   }
 
   &--dining {
     &::before {
-      background-image: url("../../img/advantage-dining@1x.png");
-      background-position: 50% 50%;
+      background-image: url("../img/advantage-dining@1x.png");
     }
 
     &::after {
-      content: "3";
+      counter-increment: list-item;
+      content: counter(list-item);
     }
   }
 
   &--leaf {
     &::before {
-      background-image: url("../../img/advantage-leaf@1x.png");
-      background-position: 50% 50%;
+      background-image: url("../img/advantage-leaf@1x.png");
     }
 
     &::after {
-      content: "1";
+      counter-increment: list-item;
+      content: counter(list-item);
     }
   }
 
   &--powder {
     &::before {
-      background-image: url("../../img/advantage-powder@1x.png");
-      background-position: 50% 50%;
+      background-image: url("../img/advantage-powder@1x.png");
     }
 
     &::after {
-      content: "2";
+      counter-increment: list-item;
+      content: counter(list-item);
     }
   }
 
@@ -128,6 +129,7 @@
     height: 60px;
     width: 60px;
     left: 0;
+    background-position: 50%;
 
     @include respond(tablet) {
       top: 0;

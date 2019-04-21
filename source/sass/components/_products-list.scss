@@ -1,10 +1,12 @@
 .products-list {
+  margin-bottom: 22px;
+
   @include respond(tablet) {
     display: flex;
     flex-wrap: wrap;
     padding: 0 30px;
     justify-content: space-between;
-    padding-bottom: 30px;
+    margin-bottom: 51px;
   }
 
   @include respond(desktop) {
