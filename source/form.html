@@ -45,20 +45,20 @@
       <div class="cat-information__wrapper">
         <fieldset class="cat-information">
           <!-- Инпут имя -->
-          <div class="cat-information__name">
+          <p class="cat-information__name">
             <label class="cat-information__label" for="cat-name">Имя:*</label>
             <input class="cat-information__input" type="text" id="cat-name" placeholder="барсик" required>
-          </div>
+          </p>
           <!-- Инпут вес -->
-          <div class="cat-information__weight">
+          <p class="cat-information__weight">
             <label class="cat-information__label" for="cat-weight">вес (кг):*</label>
             <input class="cat-information__input" type="text" id="cat-weight" placeholder="7" required>
-          </div>
+          </p>
           <!-- Инпут возраст -->
-          <div class="cat-information__age">
+          <p class="cat-information__age">
             <label class="cat-information__label" for="cat-age">возраст (лет):</label>
             <input class="cat-information__input" type="text" id="cat-age" placeholder="7">
-          </div>
+          </p>
         </fieldset>
         <fieldset class="cat-program">
           <ul class="cat-program__list">
@@ -78,24 +78,24 @@
         </fieldset>
       </div>
       <fieldset class="owner-information">
-        <h3 class="owner-information__title">Контактные данные (владельца кота)</h3>
+        <legend class="owner-information__title">Контактные данные (владельца кота)</legend>
         <div class="owner-information__inform">
-          <div class="owner-information__email">
+          <p class="owner-information__email">
             <label class="owner-information__label" for="email">E-mail:*</label>
             <input class="owner-information__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="owner-information__mobile">
+          </p>
+          <p class="owner-information__mobile">
             <label class="owner-information__label" for="mobile">Телефон:*</label>
             <input class="owner-information__input" type="tel" id="mobile" placeholder="8 (960) 900-60-90" required>
-          </div>
+          </p>
         </div>
       </fieldset>
       <fieldset class="order-comment">
-        <h3 class="order-comment__title">Комментарий</h3>
+        <legend class="order-comment__title">Комментарий</legend>
         <textarea class="order-comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="extra-order">
-        <h3 class="extra-order__title">Дополнительно</h3>
+        <legend class="extra-order__title">Дополнительно</legend>
         <ul class="extra-order__list">
           <li class="extra-order__item">
             <input class="extra-order__input" type="checkbox" name="extra-order" id="sugar">
@@ -115,11 +115,10 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-submit">
-        <div class="form-submit__wrapper">
-            <button class="form-submit__button" type="submit">Отправить заявку</button>
-            <p class="form-submit__req-fields">* — Обязательные поля</p>
-        </div>
+      <div class="form-submit">
+          <button class="form-submit__button" type="submit">Отправить заявку</button>
+          <p class="form-submit__req-fields">* — Обязательные поля</p>
+      </div>
       </fieldset>
     </form>
     <section class="address">

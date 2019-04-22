@@ -5,12 +5,13 @@
   text-transform: uppercase;
   border-bottom: 1px solid $grey-color--light;
   padding-bottom: 9px;
+  margin-bottom: 19px;
 
   @include respond(tablet) {
     border: 0;
     padding: 0;
-    padding-top: 16px;
     padding-bottom: 57px;
+    margin-bottom: 1px;
   }
 
   @include respond(desktop) {
@@ -28,6 +29,7 @@
     @include respond(desktop) {
       display: flex;
       padding: 0 110px;
+      margin-bottom: 54px;
     }
   }
 
@@ -56,8 +58,8 @@
     outline: none;
     flex-grow: 1;
     font-family: $primary-font;
-    padding-top: 11px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 13px;
     padding-left: 15px;
     transition: 0.7s;
 
@@ -68,19 +70,11 @@
       font-size: 20px;
       line-height: 20px;
     }
-
-    &:valid {
-      border: 1px solid $main-color-theme;
-    }
-
-    &:invalid {
-      border: 1px solid $red-color;
-    }
   }
 
   // Лабел
   &__label {
-    margin-right: 5.6%;
+    margin-right: 4.8%;
 
     @include respond(tablet) {
       margin-right: 2.7%;

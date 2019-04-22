@@ -2,12 +2,18 @@
   border: 0;
   margin: 0;
   padding: 0 20px;
-  padding-top: 4px;
+  margin-bottom: 30px;
+  position: relative;
 
   @include respond(tablet) {
     padding: 0 70px;
-    padding-top: 39px;
     padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+
+  @include respond(desktop) {
+    padding: 0 110px;
+    margin-bottom: 66px;
   }
 
   &__title {
@@ -15,6 +21,34 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 32px;
+    margin-top: 0;
+
+    &::before {
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #67b737;
+        left: 0;
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 98px;
+      height: 3px;
+      background-color: #67b737;
+      right: 0;
+      top: 14px;
+
+      @include respond(tablet) {
+        width: 144px;
+        top: 22px;
+      }
+    }
 
     @include respond(tablet) {
       font-size: 36px;
@@ -32,17 +66,31 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    @include respond(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__email {
     display: flex;
     align-items: center;
     margin-bottom: 14px;
+
+    @include respond(desktop) {
+      margin-bottom: 0;
+      width: 46.72%;
+    }
   }
 
   &__mobile {
     display: flex;
     align-items: center;
+
+    @include respond(desktop) {
+      width: 46.72%;
+    }
   }
 
   //label

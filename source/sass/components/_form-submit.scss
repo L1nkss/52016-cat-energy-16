@@ -2,22 +2,21 @@
   margin: 0;
   padding: 0 20px;
   border: 0;
-  padding-top: 5px;
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
   @include respond(tablet) {
     padding: 0 70px;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 72px;
   }
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    @include respond(tablet) {
-      flex-direction: row;
-      align-items: center;
-    }
+  @include respond(tablet) {
+    padding: 0 110px;
+    padding-bottom: 82px;
   }
 
   &__button {
@@ -36,7 +35,17 @@
 
     @include respond(tablet) {
       margin: 0;
-      padding: 11px 63px;
+      padding-top: 15px;
+      padding-bottom: 17px;
+      padding-left: 64px;
+      padding-right: 66px;
+      font-size: 20px;
+      margin-right: 60px;
+    }
+
+    @include respond(desktop) {
+      width: 570px;
+      margin-right: 81px;
     }
   }
 
@@ -46,5 +55,9 @@
     line-height: 16px;
     font-family: $second-font;
     margin: 0;
+
+    @include respond(tablet) {
+      font-size: 16px;
+    }
   }
 }

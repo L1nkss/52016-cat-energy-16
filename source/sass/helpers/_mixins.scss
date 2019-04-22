@@ -17,6 +17,13 @@
 };
 
 // Миксин для отступов.
-@mixin content-center($top-padding: 0px, $bottom-padding: 0px) {
-
+@mixin content-center($type, $top-padding: 0px, $bottom-padding: 0px) {
+    @if ($type == index) {
+        @media (min-width: $mobile) {
+            padding-top: $top-padding;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: $bottom-padding;
+        }
+    }
 }

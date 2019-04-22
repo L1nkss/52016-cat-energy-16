@@ -3,13 +3,17 @@
   margin: 0;
   border: 0;
   padding-bottom: 18px;
+  position: relative;
+  margin-bottom: 6px;
 
   @include respond(tablet) {
     padding: 0 70px;
+    margin-bottom: 21px;
   }
 
   @include respond(desktop) {
     padding: 0 110px;
+    margin-bottom: 27px;
   }
 
   &__title {
@@ -17,6 +21,38 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 34px;
+
+    &::before {
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #67b737;
+        left: 0;
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 136px;
+      height: 3px;
+      background-color: #67b737;
+      right: 0;
+      top: 14px;
+
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 440px;
+        height: 3px;
+        background-color: #67b737;
+        right: 0;
+        top: 22px;
+      }
+    }
 
     @include respond(tablet) {
       font-size: 36px;
@@ -37,15 +73,14 @@
     //padding-top: 2px;
 
     @include respond(tablet) {
-      width: 44.9%;
+      width: 45%;
       min-height: 40px;
-      margin-right: auto;
       margin-bottom: 32px;
       padding-left: 58px;
     }
 
     @include respond(desktop) {
-      width: 25%;
+      width: 245px;
       min-height: 40px;
       display: flex;
       align-items: center;
@@ -60,6 +95,7 @@
     @include respond(tablet) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 

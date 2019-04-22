@@ -2,11 +2,18 @@
   margin: 0;
   border: 0;
   padding: 0 20px;
-  padding-top: 6px;
+  position: relative;
+  margin-bottom: 23px;
 
   @include respond(tablet) {
     padding: 0 70px;
     padding-bottom: 23px;
+    margin-bottom: 37px;
+  }
+
+  @include respond(tablet) {
+    padding: 0 110px;
+    margin-bottom: 62px;
   }
 
   &__title {
@@ -14,6 +21,33 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 35px;
+
+    &::before {
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #67b737;
+        left: 0;
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 158px;
+      height: 3px;
+      background-color: #67b737;
+      right: 0;
+      top: 14px;
+
+      @include respond(tablet) {
+        width: 480px;
+        top: 22px;
+      }
+    }
 
     @include respond(tablet) {
       font-size: 36px;

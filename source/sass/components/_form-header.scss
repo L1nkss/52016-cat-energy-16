@@ -1,19 +1,23 @@
 .form-header {
   padding: 0 20px;
-  padding-top: 13px;
-  padding-bottom: 39px;
+  margin-bottom: 39px;
 
   @include respond(tablet) {
     padding: 0 30px;
-    padding-top: 56px;
     padding-bottom: 50px;
+    margin-bottom: 16px;
+  }
+
+  @include respond(desktop) {
+    padding: 0 110px;
+    margin-bottom: 66px;
   }
 
   &__title {
     margin: 0;
     font-size: 36px;
     line-height: 60px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     font-weight: 400;
 
     @include respond(tablet) {
@@ -28,13 +32,17 @@
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    width: 226px;
+    width: 81.7%;
 
     @include respond(tablet) {
       font-size: 20px;
       line-height: 30px;
       width: 330px;
       margin-left: 40px;
+    }
+
+    @include respond(tablet) {
+      margin-left: 0;
     }
   }
 }
