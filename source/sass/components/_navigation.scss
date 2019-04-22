@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  position: relative;
 
   @include respond(tablet) {
     flex-direction: row;
@@ -13,13 +14,29 @@
     padding: 56px 110px;
   }
 
-  &__subject {
+  &__image {
+    display: block;
+
+    @include respond(tablet) {
+      width: 173px;
+    }
+
+    @include respond(desktop) {
+      width: 202px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 20px;
     display: flex;
-    border-bottom: 1px solid $grey-color--dark;
     align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $grey-color--darker;
 
     @include respond(tablet) {
       border: 0;
+      padding: 0;
     }
   }
 }
@@ -31,8 +48,8 @@
   border: 0;
   outline: none;
   position: relative;
-  margin-left: auto;
   background-color: rgba($black-color, 0);
+  margin-left: auto;
 
   @include respond(tablet) {
     display: none;

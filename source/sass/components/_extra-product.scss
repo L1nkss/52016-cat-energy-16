@@ -68,12 +68,19 @@
 
   &__cost {
     margin-left: auto;
+
+    @include respond(tablet) {
+      width: 95px;
+      text-align: right;
+    }
   }
 
   &__amount {
     margin-right: 52px;
 
-    @include respond(desktop) {
+    @include respond(tablet) {
+      width: 192px;
+      text-align: right;
       margin: 0;
     }
   }
