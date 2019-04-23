@@ -1,25 +1,27 @@
 .title {
-  min-height: 500px;
+  //min-height: 500px;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
   min-width: 320px;
-  background-size: 100% 61%;
+  background-size: 100% 63.5%;
   background-repeat: no-repeat;
   color: $white-color;
-  padding: 26px 20px 20px;
+  padding: 26px 20px 0;
   position: relative;
   transition: 0.6s;
+  margin-bottom: 22px;
 
   @include respond(tablet) {
     background-image: none;
     color: $black-color;
     text-align: left;
     padding: 0;
-    padding-left: 120px;
-    padding-top: 55px;
-    min-height: 865px;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 810px;
+    margin-bottom: 0;
   }
 
   &__button {
@@ -34,13 +36,20 @@
     text-transform: uppercase;
     text-align: center;
     color: $white-color;
+    padding-top: 12px;
+    padding-bottom: 11px;
 
     @include respond(tablet) {
       width: 245px;
-      margin-top: 0;
       font-size: 20px;
       line-height: 20px;
       padding: 16px 0;
+      margin-left: 88px;
+      margin-top: -582px;
+    }
+
+    @include respond(desktop) {
+      margin-top: -188px;
     }
   }
 
@@ -50,13 +59,14 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 
     @include respond(tablet) {
       font-size: 60px;
       line-height: 60px;
       text-align: left;
-      width: 425px;
+      width: 505px;
+      padding-left: 87px;
       margin-bottom: 45px;
     }
   }
@@ -66,24 +76,28 @@
     line-height: 14px;
     text-transform: uppercase;
     margin: 0;
+    margin-bottom: 28px;
 
     @include respond(tablet) {
       font-size: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 23px;
+      padding-left: 87px;
     }
   }
 
   &__image {
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -31%);
+    display: block;
+    margin-bottom: 2px;
 
     @include respond(tablet) {
+      width: 708px;
       z-index: -1;
-      top: 52%;
-      width: 93%;
+    }
+
+    @include respond(desktop) {
+      margin-top: -248px;
+      margin-left: 530px;
+      width: 552px;
     }
   }
 }

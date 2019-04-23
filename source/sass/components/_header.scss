@@ -1,5 +1,7 @@
 .header {
-  margin-bottom: 15px;
+  // убрал пока
+  //margin-bottom: 15px;
+  position: relative;
 
   @include respond(tablet) {
     margin-bottom: 32px;
@@ -7,5 +9,20 @@
 
   @include respond(desktop) {
     margin-bottom: 16px;
+  }
+
+  &::after {
+    @include respond(desktop) {
+      content: "";
+      width: 50%;
+      background-color: $main-color-theme;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
+      height: 695px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }

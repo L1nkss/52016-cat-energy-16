@@ -6,10 +6,12 @@
     display: flex;
     background-color: $grey-color;
     transition: 0.6s;
+    padding-bottom: 25px;
 
     @include respond(tablet) {
       padding: 65px 72px 58px 71px;
       justify-content: space-between;
+      padding-bottom: 58px;
     }
 
     @include respond(desktop) {
@@ -37,33 +39,39 @@
 
     @include respond(desktop) {
       font-size: 20px;
-      width: 38%;
+      width: 170px;
+    }
+  }
+
+  &__wrapper {
+    width: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $second-font;
+    font-style: normal;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      text-align: right;
+      width: 25%;
+    }
+
+    @include respond(desktop) {
+      width: 170px;
+      text-align: left;
     }
   }
 
   &__text {
     margin: 0;
-    font-size: 14px;
-    font-family: $second-font;
-    line-height: 20px;
-    text-align: left;
-    width: 50%;
 
     @include respond(tablet) {
-      font-size: 16px;
-      width: 25%;
-      text-align: right;
-
-      &--br {
-        display: block;
-        margin-top: 18px;
-      }
+      margin-bottom: 19px;
     }
+  }
 
-    @include respond(desktop) {
-      width: 38%;
-      text-align: left;
-    }
+  &__city {
+    margin: 0;
   }
 
   &__map {

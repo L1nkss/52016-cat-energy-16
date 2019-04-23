@@ -60,7 +60,7 @@
       display: inline;
     }
 
-    @include respond(tablet) {
+    @include respond(desktop) {
       margin: 0;
       width: 324px;
     }
@@ -73,6 +73,11 @@
       width: 95px;
       text-align: right;
     }
+
+    @include respond(desktop) {
+      width: 80px;
+      text-align: left;
+    }
   }
 
   &__amount {
@@ -82,6 +87,11 @@
       width: 192px;
       text-align: right;
       margin: 0;
+    }
+
+    @include respond(desktop) {
+      width: 245px;
+      text-align: left;
     }
   }
 

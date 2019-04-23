@@ -1,11 +1,9 @@
 .type {
-  text-align: center;
   background-color: $grey-color;
-  transition: 0.6s;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 3px;
+  padding-bottom: 18px;
   position: relative;
 
   @include respond(tablet) {
@@ -27,23 +25,24 @@
   &__title {
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
-    text-align: left;
-    padding-left: 70px;
+    //padding-left: 70px;
     position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
 
     &::before {
       content: "";
       width: 50px;
       height: 50px;
       background-color: $main-color-theme;
-      position: absolute;
-      left: 1%;
+      display: inline-block;
       border-radius: 50%;
-      top: -13%;
+      margin-right: 19px;
     }
 
     @include respond(tablet) {
@@ -66,12 +65,14 @@
 
   &__info {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
     text-align: left;
     font-size: 14px;
     line-height: 18px;
     font-family: $second-font;
     position: relative;
+    border-bottom: 1px solid $grey-color--darker;
+    padding-bottom: 22px;
 
     @include respond(tablet) {
       font-size: 16px;
@@ -82,13 +83,13 @@
 
   &__link {
     text-decoration: none;
-    display: block;
     text-align: left;
     text-transform: uppercase;
-    padding: 15px 0;
     color: $black-color;
-    border-top: 1px solid $grey-color--darker;
-    position: relative;
+    //border-top: 1px solid $grey-color--darker;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
 
     @include respond(tablet) {
       border: 0;
@@ -98,15 +99,13 @@
 
     &::after {
       content: "";
-      position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
-      background-size: 85%;
-      width: 30px;
-      height: 20px;
-      display: block;
-      top: 40%;
-      left: 40%;
+      background-size: 100%;
+      width: 23px;
+      height: 11px;
+      display: inline-block;
       background-repeat: no-repeat;
+      margin-left: 12px;
 
       @include respond(tablet) {
         left: 37%;

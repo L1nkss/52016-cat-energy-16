@@ -1,7 +1,7 @@
 .catalog {
   display: flex;
   flex-direction: column;
-  padding: 3px 20px 0;
+  padding: 0 20px;
 
   @include respond(tablet) {
     padding: 0 30px;
