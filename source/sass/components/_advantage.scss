@@ -1,6 +1,5 @@
 .advantage {
   padding: 0 20px;
-  padding-top: 17px;
   padding-bottom: 43px;
 
   @include respond(tablet) {
@@ -11,6 +10,8 @@
 
   @include respond(desktop) {
     padding: 0 110px;
+    border: 0;
+    margin-bottom: 13px;
   }
 
   &__list {
@@ -28,6 +29,10 @@
       min-height: 605px;
       padding-bottom: 52px;
     }
+
+    @include respond(desktop) {
+      min-height: auto;
+    }
   }
 
   &__title {
@@ -41,6 +46,10 @@
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 70px;
+    }
+
+    @include respond(desktop) {
+      margin-bottom: 72px;
     }
   }
 
@@ -84,6 +93,7 @@
     flex-basis: 245px;
     padding: 0;
     min-height: 245px;
+    padding-top: 56px;
   }
 
   &--clock {

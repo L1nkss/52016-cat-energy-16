@@ -50,6 +50,13 @@
       right: 43px;
       top: 25%;
     }
+
+    @include respond(desktop) {
+      top: 47px;
+      width: 100px;
+      height: 100px;
+      left: 52px;
+    }
   }
 
   &__title {
@@ -76,6 +83,11 @@
         transform: translate(-50%, -50%);
       }
     }
+
+    @include respond(desktop) {
+      text-align: center;
+      margin-bottom: 75px;
+    }
   }
 
   &__info {
@@ -96,6 +108,11 @@
       width: 62.82%;
       padding: 0;
       border: 0;
+    }
+
+    @include respond(desktop) {
+      width: 100%;
+      margin-bottom: 31px;
     }
   }
 

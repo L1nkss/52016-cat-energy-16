@@ -3,51 +3,27 @@
   height: 240px;
   margin-bottom: 32px;
   text-align: center;
-  width: 320px;
-  margin-left: -20px;
 
-  @include respond(tablet) {
-    height: 500px;
-    width: 708px;
-    margin-left: 20px;
+  @include respond(desktop) {
+    position: absolute;
+    top: -52px;
+    right: 76px;
   }
 
   &__images {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
+    width: 320px;
+    margin-left: -20px;
 
     @include respond(tablet) {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  &--before {
-    @include respond(tablet) {
-      //display: block;
-      left: 0;
-    }
-  }
-
-  &--after {
-    //display: none;
-
-    @include respond(tablet) {
-      //display: block;
-      align-items: flex-end;
-      right: 0;
+      width: 677px;
     }
   }
 
   &__image {
-    @include respond(tablet) {
-      width: 680px;
-      height: 517px;
-      position: absolute;
-      left: 0;
-    }
+    width: 100%;
+  }
+
+  &--after {
+    display: none;
   }
 }
