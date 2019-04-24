@@ -3,15 +3,16 @@
   padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   position: relative;
 
   @include respond(tablet) {
-    padding-right: 300px;
+    padding-right: 52px;
     padding-top: 75px;
     padding-left: 52px;
     // padding-bottom: 47px;
-    min-height: 370px;
+    min-height: 373px;
+    margin-bottom: 44px;
   }
 
   &:first-child {
@@ -20,6 +21,15 @@
     @include respond(tablet) {
       margin-bottom: 30px;
     }
+
+    @include respond(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include respond(desktop) {
+    width: 46.72%;
+    margin-bottom: 0;
   }
 
   &__icon {
@@ -32,6 +42,14 @@
     position: absolute;
     top: 24px;
     left: 22px;
+
+    @include respond(tablet) {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: 43px;
+      top: 25%;
+    }
   }
 
   &__title {
@@ -49,7 +67,6 @@
       line-height: 37px;
       padding-left: 0;
       margin-bottom: 27px;
-      position: static;
 
       &::before {
         top: 52%;
@@ -75,7 +92,10 @@
     @include respond(tablet) {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 40px;
+      margin-bottom: 56px;
+      width: 62.82%;
+      padding: 0;
+      border: 0;
     }
   }
 
@@ -84,8 +104,6 @@
     text-align: left;
     text-transform: uppercase;
     color: $black-color;
-    //border-top: 1px solid $grey-color--darker;
-    margin-right: 10px;
     display: flex;
     align-items: center;
 

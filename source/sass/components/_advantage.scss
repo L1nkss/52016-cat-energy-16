@@ -1,12 +1,16 @@
 .advantage {
   padding: 0 20px;
   padding-top: 17px;
-  padding-bottom: 42px;
+  padding-bottom: 43px;
 
   @include respond(tablet) {
     padding: 0 30px;
-    padding-top: 50px;
     border-bottom: 1px solid $grey-color--darker;
+    margin-bottom: 23px;
+  }
+
+  @include respond(desktop) {
+    padding: 0 110px;
   }
 
   &__list {
@@ -74,6 +78,12 @@
     flex-direction: column;
     justify-content: center;
     line-height: 24px;
+  }
+
+  @include respond(desktop) {
+    flex-basis: 245px;
+    padding: 0;
+    min-height: 245px;
   }
 
   &--clock {

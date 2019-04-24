@@ -5,10 +5,9 @@
 
   @include respond(tablet) {
     background-image: linear-gradient(to bottom, $white-color 58%, $grey-color--ligther 58%);
-    padding-top: 45px;
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 1080px;
+    min-height: 1058px;
   }
 
   &__title {
@@ -31,12 +30,13 @@
     padding: 0;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 33px;
 
     @include respond(tablet) {
       justify-content: flex-start;
       align-items: center;
-      margin-bottom: 90px;
+      margin-bottom: 0;
+      width: 54.23%;
     }
   }
 
@@ -52,7 +52,8 @@
     @include respond(tablet) {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 51px;
+      margin-bottom: 55px;
+      width: 95.75%;
     }
   }
 
@@ -61,8 +62,10 @@
     text-transform: uppercase;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 33px;
     margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 
     @include respond(tablet) {
       font-size: 20px;
@@ -71,10 +74,13 @@
       margin-right: 0;
       margin-top: 0;
       margin-bottom: 0;
+    }
+  }
 
-      &--wrap {
-        display: block;
-      }
+  &__br {
+    @include respond(tablet) {
+      display: block;
+      margin-top: 10px;
     }
   }
 
@@ -86,9 +92,12 @@
     padding: 10px 0 10px;
 
     @include respond(tablet) {
-      width: 23%;
+      width: 42.18%;
       padding: 15px 15px 18px;
-      margin-right: 41px;
+
+      &:first-child {
+        margin-right: 10.67%;
+      }
     }
   }
 
@@ -123,6 +132,15 @@
       padding: 0;
       width: 90%;
       bottom: -5px;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 34px;
+
+    @include respond(tablet) {
+      display: flex;
+      align-items: center;
     }
   }
 }

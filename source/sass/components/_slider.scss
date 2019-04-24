@@ -3,15 +3,17 @@
   height: 240px;
   margin-bottom: 32px;
   text-align: center;
+  width: 320px;
+  margin-left: -20px;
 
   @include respond(tablet) {
     height: 500px;
-    width: 680px;
+    width: 708px;
+    margin-left: 20px;
   }
 
   &__images {
     position: absolute;
-    height: 517px;
     top: 0;
     bottom: 0;
     overflow: hidden;

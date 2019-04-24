@@ -24,6 +24,12 @@
     margin-bottom: 0;
   }
 
+  @include respond(desktop) {
+    min-height: 508px;
+    padding-top: 34px;
+    margin-bottom: 80px;
+  }
+
   &__button {
     margin-top: auto;
     width: 100%;
@@ -50,6 +56,7 @@
 
     @include respond(desktop) {
       margin-top: -188px;
+      margin-left: 159px;
     }
   }
 
@@ -69,6 +76,11 @@
       padding-left: 87px;
       margin-bottom: 45px;
     }
+
+    @include respond(desktop) {
+      padding-left: 160px;
+      width: 52.42%;
+    }
   }
 
   &__text {
@@ -83,6 +95,10 @@
       margin-bottom: 23px;
       padding-left: 87px;
     }
+
+    @include respond(desktop) {
+      padding-left: 160px;
+    }
   }
 
   &__image {
@@ -95,7 +111,7 @@
     }
 
     @include respond(desktop) {
-      margin-top: -248px;
+      margin-top: -282px;
       margin-left: 530px;
       width: 552px;
     }
