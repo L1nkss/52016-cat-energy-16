@@ -1,28 +1,26 @@
 .footer {
-  background-color: $grey-color;
-  text-align: center;
-  padding: 35px 20px 0;
-  padding-top: 0;
+  padding: 0 20px;
+  background-color: #f2f2f2;
 
   @include respond(tablet) {
     display: flex;
-    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
+    padding-bottom: 47px;
     min-height: 150px;
   }
 
-  &__title {
+  &__logo {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 38px 0 25px;
-
-    @include respond(tablet) {
-      width: 33%;
-      height: auto;
-    }
+    padding-top: 41px;
+    padding-bottom: 20px;
   }
 
   &__link {
+    margin: auto;
     display: block;
   }
 }

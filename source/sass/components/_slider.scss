@@ -10,12 +10,23 @@
     right: 76px;
   }
 
+  &__wrapper {
+    margin-bottom: 26px;
+
+    @include respond(tablet) {
+      margin-bottom: 14px;
+      height: 513px;
+    }
+  }
+
   &__images {
     width: 320px;
     margin-left: -20px;
 
     @include respond(tablet) {
-      width: 677px;
+      width: 690px;
+      position: absolute;
+      left: 5%;
     }
   }
 
@@ -23,7 +34,15 @@
     width: 100%;
   }
 
+  &--before {
+    clip: rect(auto, 340px, auto, auto);
+  }
+
   &--after {
     display: none;
+
+    @include respond(tablet) {
+      clip: rect(auto, auto, auto, 340px);
+    }
   }
 }
