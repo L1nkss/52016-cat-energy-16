@@ -1,17 +1,17 @@
 (function main() {
     const burgerToggle = document.querySelector(".navigation__toggle");
-    const burgerMenu = document.querySelector(".navigation__burger");
+    const burgerMenu = document.querySelector(".burger");
     const compareBar = document.querySelector(".compare__bar");
     const compareScale = document.querySelector(".compare__scale");
     const menu = document.querySelector(".menu");
-    const burger = document.querySelector(".navigation__burger");
+    const burger = document.querySelector(".burger__toggle");
 
     // Закрываем меню, если JS загрузился
     menu.classList.add("menu--hide");
-    burger.classList.add("navigation__burger--hide");
+    burger.classList.add("burger__toggle--hide");
 
     function toggleMenu() {
-      burger.classList.toggle("navigation__burger--hide");
+      burger.classList.toggle("burger__toggle--hide");
       menu.classList.toggle("menu--hide");
     }
 
