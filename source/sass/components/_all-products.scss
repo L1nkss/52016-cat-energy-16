@@ -3,6 +3,8 @@
   border-bottom: 1px solid $grey-color--light;
   padding: 76px 20px 24px;
 
+  @include content-paddings(76px, 24px);
+
   @include respond(tablet) {
     border: 1px solid $grey-color--darker;
     width: 324px;

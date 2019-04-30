@@ -1,10 +1,8 @@
 .type {
   background-color: $grey-color;
-  padding-top: 29px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 19px;
   position: relative;
+
+  @include content-paddings(29px, 19px);
 
   @include respond(tablet) {
     padding-right: 52px;

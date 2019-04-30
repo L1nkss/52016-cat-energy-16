@@ -102,7 +102,7 @@
     }
   }
 
-  &__br {
+  &__cost-number {
     @include respond(tablet) {
       display: block;
       margin-top: 10px;

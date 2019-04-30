@@ -5,12 +5,14 @@
   border-bottom: 1px solid $grey-color--light;
   padding-bottom: 10px;
   transition: 0.7s;
+  margin-bottom: 29px;
 
   @include respond(tablet) {
     border: 1px solid $grey-color--light;
     padding: 0 28px;
     padding-top: 24px;
     padding-bottom: 11px;
+    margin-bottom: 76px;
   }
 
   @include respond(desktop) {

@@ -2,11 +2,12 @@
   border: 0;
   margin: 0;
   padding: 0 20px;
-  margin-bottom: 30px;
+  margin-bottom: 14px;
   position: relative;
+  overflow: hidden;
 
   @include respond(tablet) {
-    padding: 0 70px;
+    padding: 0 30px;
     padding-bottom: 28px;
     margin-bottom: 36px;
   }
@@ -22,6 +23,11 @@
     line-height: 24px;
     margin-bottom: 32px;
     margin-top: 0;
+    width: 72.28%;
+    padding: 0;
+    padding-left: 0;
+    background-color: $white-color;
+    padding-right: 20px;
 
     &::before {
       @include respond(tablet) {
@@ -38,14 +44,15 @@
     &::after {
       content: "";
       position: absolute;
-      width: 98px;
+      width: 100%;
       height: 3px;
       background-color: #67b737;
       right: 0;
       top: 14px;
+      z-index: -1;
+      left: 20px;
 
       @include respond(tablet) {
-        width: 144px;
         top: 22px;
       }
     }
@@ -53,7 +60,9 @@
     @include respond(tablet) {
       font-size: 36px;
       line-height: 36px;
+      width: auto;
       margin-bottom: 73px;
+      padding-left: 40px;
     }
   }
 
@@ -77,6 +86,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 14px;
+    margin-top: 0;
 
     @include respond(desktop) {
       margin-bottom: 0;
@@ -87,6 +97,7 @@
   &__mobile {
     display: flex;
     align-items: center;
+    margin-top: 0;
 
     @include respond(desktop) {
       width: 46.72%;

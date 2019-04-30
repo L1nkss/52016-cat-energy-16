@@ -7,6 +7,10 @@
   position: relative;
   background-color: transparent;
 
+  @include respond(tablet) {
+    display: none;
+  }
+
   &__toggle {
     width: 25px;
     height: 2px;

@@ -1,11 +1,12 @@
 .cat-information {
   margin: 0;
   border: 0;
-  padding: 0 20px;
   text-transform: uppercase;
   border-bottom: 1px solid $grey-color--light;
   padding-bottom: 9px;
   margin-bottom: 19px;
+
+  @include content-paddings();
 
   @include respond(tablet) {
     border: 0;
@@ -40,6 +41,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 14px;
+    margin-top: 0;
 
     @include respond(tablet) {
       font-size: 20px;
