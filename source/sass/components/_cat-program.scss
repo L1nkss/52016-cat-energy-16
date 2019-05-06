@@ -17,6 +17,7 @@
 
   @include respond(desktop) {
     width: 46.72%;
+    margin-bottom: 0;
   }
 
   &__list {

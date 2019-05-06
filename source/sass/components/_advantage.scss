@@ -1,11 +1,11 @@
 .advantage {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 
   @include content-paddings();
 
   @include respond(tablet) {
     border-bottom: 1px solid $grey-color--darker;
-    margin-bottom: 23px;
+    margin-bottom: 43px;
   }
 
   @include respond(desktop) {
@@ -171,6 +171,10 @@
       color: $grey-color--ligther;
       z-index: -1;
       width: 115px;
+    }
+
+    @include respond(desktop) {
+      left: 70%;
     }
   }
 

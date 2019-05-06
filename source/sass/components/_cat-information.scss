@@ -3,10 +3,9 @@
   border: 0;
   text-transform: uppercase;
   border-bottom: 1px solid $grey-color--light;
-  padding-bottom: 9px;
   margin-bottom: 19px;
 
-  @include content-paddings();
+  @include content-paddings(0, 9px);
 
   @include respond(tablet) {
     border: 0;
@@ -35,9 +34,7 @@
   }
 
   // блоки
-  &__name,
-  &__weight,
-  &__age {
+  &__field {
     display: flex;
     align-items: center;
     margin-bottom: 14px;

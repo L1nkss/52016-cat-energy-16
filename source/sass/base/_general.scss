@@ -17,7 +17,6 @@ body {
   font-weight: 400;
 
   @include respond(desktop) {
-    max-width: $desktop;
     margin: 0 auto;
   }
 }

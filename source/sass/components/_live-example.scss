@@ -1,17 +1,16 @@
 .live-example {
   background-color: $grey-color;
-  padding: 20px 20px;
-  padding-bottom: 56px;
+
+  @include content-paddings(20px, 56px);
 
   @include respond(tablet) {
     background-image: linear-gradient(to bottom, $white-color 56.3%, $grey-color--ligther 56.3%);
-    padding-left: 30px;
-    padding-right: 30px;
     min-height: 1058px;
+    padding-top: 0;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
+    //padding: 0 110px;
     position: relative;
     background-image: linear-gradient(to bottom, $white-color 22.6%, $grey-color--ligther 22.6%);
     min-height: auto;

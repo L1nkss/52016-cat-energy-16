@@ -19,6 +19,10 @@
 
     @include respond(tablet) {
       width: 173px;
+
+      &:active {
+        opacity: 0.5;
+      }
     }
 
     @include respond(desktop) {

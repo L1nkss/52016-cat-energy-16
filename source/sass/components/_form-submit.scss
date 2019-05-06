@@ -14,7 +14,7 @@
     padding-bottom: 72px;
   }
 
-  @include respond(tablet) {
+  @include respond(desktop) {
     padding: 0 110px;
     padding-bottom: 82px;
   }
