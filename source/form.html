@@ -16,7 +16,7 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="navigation__image" src="img/logo-mobile.svg" width="194px" alt="Логотип компании Cat Energy">
+            <img class="navigation__image" src="img/logo-mobile.svg" width="194" alt="Логотип компании Cat Energy">
           </picture>
         </a>
         <button class="burger" type="button">
@@ -25,9 +25,9 @@
       </div>
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link menu--active" href="index.html">Главная</a>
+          <a class="menu__link" href="index.html">Главная</a>
         </li>
-        <li class="menu__item menu--active">
+        <li class="menu__item">
           <a class="menu__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="menu__item">
@@ -43,7 +43,7 @@
         программу питания для вашего кота</p>
     </section>
     <form class="form">
-      <div class="cat-information__wrapper">
+      <div class="form__wrapper">
         <fieldset class="cat-information">
           <!-- Инпут имя -->
           <p class="cat-information__field">
@@ -79,24 +79,27 @@
         </fieldset>
       </div>
       <fieldset class="owner-information">
-        <legend class="owner-information__title">Контактные данные (владельца кота)</legend>
+        <!-- <legend class="owner-information__title">Контактные данные (владельца кота)</legend> -->
+        <legend class="form__legend-title">Контактные данные (владельца кота)</legend>
         <div class="owner-information__inform">
-          <p class="owner-information__email">
+          <p class="owner-information__item">
             <label class="owner-information__label" for="email">E-mail:*</label>
             <input class="owner-information__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
           </p>
-          <p class="owner-information__mobile">
+          <p class="owner-information__item">
             <label class="owner-information__label" for="mobile">Телефон:*</label>
             <input class="owner-information__input" type="tel" id="mobile" placeholder="8 (960) 900-60-90" required>
           </p>
         </div>
       </fieldset>
       <fieldset class="order-comment">
-        <legend class="order-comment__title">Комментарий</legend>
+        <!-- <legend class="order-comment__title">Комментарий</legend> -->
+        <legend class="form__legend-title">Комментарий</legend>
         <textarea class="order-comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="extra-order">
-        <legend class="extra-order__title">Дополнительно</legend>
+        <!-- <legend class="extra-order__title">Дополнительно</legend> -->
+        <legend class="form__legend-title">Дополнительно</legend>
         <ul class="extra-order__list">
           <li class="extra-order__item">
             <input class="extra-order__input" type="checkbox" name="extra-order" id="sugar">

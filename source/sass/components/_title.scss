@@ -10,7 +10,6 @@
   color: $white-color;
   padding: 26px 20px 0;
   position: relative;
-  transition: 0.6s;
   margin-bottom: 22px;
 
   @include respond(tablet) {
@@ -103,7 +102,7 @@
 
   &__image {
     display: block;
-    margin-bottom: 2px;
+    margin: 0 auto 2px;
 
     @include respond(tablet) {
       width: 708px;

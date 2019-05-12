@@ -84,7 +84,7 @@
     }
   }
 
-  &__email {
+  &__item {
     display: flex;
     align-items: center;
     margin-bottom: 14px;
@@ -92,16 +92,6 @@
 
     @include respond(desktop) {
       margin-bottom: 0;
-      width: 46.72%;
-    }
-  }
-
-  &__mobile {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-
-    @include respond(desktop) {
       width: 46.72%;
     }
   }

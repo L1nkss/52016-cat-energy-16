@@ -20,19 +20,6 @@
     padding-bottom: 0;
   }
 
-  // wrapper
-  &__wrapper {
-    @include respond(tablet) {
-      padding: 0 70px;
-    }
-
-    @include respond(desktop) {
-      display: flex;
-      padding: 0 110px;
-      margin-bottom: 54px;
-    }
-  }
-
   // блоки
   &__field {
     display: flex;
@@ -60,7 +47,7 @@
     padding-top: 12px;
     padding-bottom: 13px;
     padding-left: 15px;
-    transition: 0.7s;
+    padding-right: 30px;
 
     @include respond(tablet) {
       padding-top: 8px;

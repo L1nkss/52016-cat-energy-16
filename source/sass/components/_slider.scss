@@ -33,21 +33,21 @@
     @include respond(desktop) {
       left: -19%;
     }
+
+    &--before {
+      clip: rect(auto, 340px, auto, auto);
+    }
+
+    &--after {
+      display: none;
+
+      @include respond(tablet) {
+        clip: rect(auto, auto, auto, 340px);
+      }
+    }
   }
 
   &__image {
     width: 100%;
-  }
-
-  &--before {
-    clip: rect(auto, 340px, auto, auto);
-  }
-
-  &--after {
-    display: none;
-
-    @include respond(tablet) {
-      clip: rect(auto, auto, auto, 340px);
-    }
   }
 }

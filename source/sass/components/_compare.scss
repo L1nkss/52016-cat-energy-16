@@ -25,7 +25,6 @@
       cursor: pointer;
       transform: translate(-50%, -50%);
       box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
-      transition: 0.3s;
     }
   }
 
@@ -74,7 +73,6 @@
       border-radius: 50px;
       background: $main-color-theme;
       transform: translateY(-50%);
-      transition: 0.3s;
 
       @include respond(tablet) {
         content: "";
