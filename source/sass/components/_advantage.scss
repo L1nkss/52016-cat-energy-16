@@ -5,7 +5,7 @@
 
   @include respond(tablet) {
     border-bottom: 1px solid $grey-color--darker;
-    margin-bottom: 43px;
+    margin-bottom: 23px;
   }
 
   @include respond(desktop) {
