@@ -89,11 +89,18 @@
     align-items: center;
     margin-bottom: 14px;
     margin-top: 0;
+    position: relative;
 
     @include respond(desktop) {
       margin-bottom: 0;
       width: 46.72%;
     }
+  }
+
+  // Иконки
+  &__icon {
+    position: absolute;
+    right: 15px;
   }
 
   //label

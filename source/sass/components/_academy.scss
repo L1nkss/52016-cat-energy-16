@@ -1,5 +1,10 @@
 .academy {
-  padding: 20px 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+
+  @include respond(tablet) {
+    width: 22.88%;
+  }
 
   &__link {
     display: flex;
@@ -9,7 +14,12 @@
     text-decoration: none;
     color: #444444;
     text-transform: none;
-    width: 280px;
     margin: 0 auto;
+  }
+
+  &__icon {
+    fill: $grey-color-icons;
+    margin-right: -6px;
+    margin-top: 1px;
   }
 }

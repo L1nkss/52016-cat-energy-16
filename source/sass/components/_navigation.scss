@@ -7,12 +7,17 @@
   @include respond(tablet) {
     flex-direction: row;
     align-items: center;
-    padding: 25px 30px;
+
+    @include content-paddings(25px, 25px);
   }
 
   @include respond(desktop) {
-    padding: 56px 110px;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    @include content-paddings(56px, 56px);
   }
+
 
   &__image {
     display: block;

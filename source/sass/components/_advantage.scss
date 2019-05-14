@@ -10,7 +10,8 @@
 
   @include respond(desktop) {
     border: 0;
-    margin-bottom: 13px;
+    max-width: 1300px;
+    margin: 0 auto 13px;
   }
 
   &__list {

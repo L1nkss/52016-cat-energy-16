@@ -1,16 +1,17 @@
 .products-list {
   margin-bottom: 22px;
 
+  @include content-paddings();
+
   @include respond(tablet) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px;
     justify-content: space-between;
     margin-bottom: 51px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
-    margin-bottom: 62px;
+    max-width: 1300px;
+    margin: 0 auto 62px;
   }
 }

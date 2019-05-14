@@ -1,15 +1,17 @@
 .products-catalog {
-  padding: 0 20px 28px;
   border-bottom: 1px solid $grey-color--ligther;
+
+  @include content-paddings(0, 28px);
 
   @include respond(tablet) {
     border: 0;
-    padding: 0 30px;
+    padding-bottom: 0;
     margin-bottom: 28px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
+    margin: 0 auto;
+    max-width: 1300px;
   }
 
   &__title {

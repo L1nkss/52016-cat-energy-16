@@ -5,19 +5,19 @@
 
   @include respond(desktop) {
     display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
-  &__container {
+  &__information {
     @include respond(desktop) {
-      width: 50%;
+      width: 46.72%;
     }
+  }
 
-    &:first-child {
-      margin-bottom: 34px;
-
-      @include respond(tablet) {
-        margin-bottom: 89px;
-      }
+  &__slider {
+    @include respond(desktop) {
+      width: 53.28%;
     }
   }
 
@@ -49,6 +49,11 @@
       margin-bottom: 0;
       width: 54.23%;
     }
+
+    @include respond(desktop) {
+      margin-bottom: 61px;
+      width: 100%;
+    }
   }
 
   &__text {
@@ -65,6 +70,11 @@
       line-height: 24px;
       margin-bottom: 55px;
       width: 95.75%;
+    }
+
+    @include respond(desktop) {
+      width: 70.49%;
+      margin-bottom: 68px;
     }
   }
 
@@ -86,12 +96,22 @@
       margin-top: 0;
       margin-bottom: 0;
     }
+
+    @include respond(desktop) {
+      margin-left: 0;
+    }
   }
 
   &__cost-number {
     @include respond(tablet) {
       display: block;
       margin-top: 10px;
+    }
+
+    @include respond(desktop) {
+      display: inline-block;
+      margin-top: 0;
+      margin-left: 59px;
     }
   }
 
@@ -108,6 +128,14 @@
 
       &:first-child {
         margin-right: 10.67%;
+      }
+    }
+
+    @include respond(desktop) {
+      width: 28.07%;
+
+      &:first-child {
+        margin-right: 6.67%;
       }
     }
   }
@@ -143,6 +171,10 @@
       padding: 0;
       width: 90%;
       bottom: -5px;
+    }
+
+    @include respond(desktop) {
+      background-color: $grey-color;
     }
   }
 
