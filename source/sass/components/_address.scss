@@ -4,9 +4,8 @@
   &__item {
     display: flex;
     background-color: $grey-color;
-    padding-bottom: 25px;
 
-    @include content-paddings(29px, 29px);
+    @include content-paddings(29px, 25px);
 
     @include respond(tablet) {
       padding: 65px 72px 58px 71px;
@@ -89,10 +88,11 @@
 
   &__map {
     width: 100%;
-    min-height: 360px;
+    min-height: 362px;
     background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -37px;
 
     @include respond(tablet) {
       background-image: url("../img/bg-map-tablet@1x.png");

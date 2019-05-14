@@ -1,7 +1,8 @@
 // Основные цвета
 $black-color: #000000;
 $black-color--light: #444444;
-$black-color--lighter: #cdcdcd;
+$black-color--lighter: #e6e6e6;
+$black-color--darker: #cecece;
 $white-color: #ffffff;
 $grey-color: #f2f2f2;
 $grey-color--light: #ededed;
@@ -13,6 +14,9 @@ $red-color: red;
 
 // Заливка иконок
 $grey-color-icons: #666666;
+
+// Заливка границ
+$border-grey-color: #cfcfcf;
 
 // Шрифт
 $primary-font: "Oswald", "Arial", sans-serif;

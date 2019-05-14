@@ -49,23 +49,40 @@
       padding-left: 40px;
       padding-right: 41px;
     }
+
+    &--order-margin {
+      @include respond(tablet) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &--extra-margin {
+      @include respond(tablet) {
+        margin-bottom: 57px;
+      }
+    }
   }
 
   // wrapper
   &__wrapper {
     @include respond(tablet) {
-      padding: 0 70px;
+      @include content-paddings();
     }
 
     @include respond(desktop) {
       display: flex;
-      padding: 0 110px;
-      margin-bottom: 54px;
+      //padding: 0 110px;
+      max-width: 1300px;
+      margin: 0 auto 69px;
     }
   }
 
   // перенос слова
   &__legend-wrap {
-    display: none;
+    display: inline-block;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 }

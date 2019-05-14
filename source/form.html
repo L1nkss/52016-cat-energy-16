@@ -100,15 +100,17 @@
       </fieldset>
       <fieldset class="order-comment">
         <!-- <legend class="order-comment__title">Комментарий</legend> -->
-        <legend class="form__legend-title">Комментарий</legend>
-        <textarea class="order-comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <legend class="form__legend-title form__legend-title--order-margin">Комментарий</legend>
+        <p class="order-comment__wrapper">
+          <textarea class="order-comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </p>
       </fieldset>
       <fieldset class="extra-order">
         <!-- <legend class="extra-order__title">Дополнительно</legend> -->
-        <legend class="form__legend-title">Дополнительно</legend>
+        <legend class="form__legend-title form__legend-title--extra-margin">Дополнительно</legend>
         <ul class="extra-order__list">
           <li class="extra-order__item">
-            <input class="extra-order__input" type="checkbox" name="extra-order" id="sugar">
+            <input class="extra-order__input" type="checkbox" name="extra-order" id="sugar" checked>
             <label class="extra-order__label" for="sugar">Сахарозаменитель</label>
           </li>
           <li class="extra-order__item">
@@ -148,7 +150,7 @@
   <footer class="footer">
     <div class="footer__logo">
       <a class="footer__link" href="#">
-        <img class="footer__image" src="img/logo-footer.svg" width="135" height="24" alt="Логотип компании Cat-energy">
+        <img class="footer__image" src="img/logo-footer.svg" width="127" height="24" alt="Логотип компании Cat-energy">
       </a>
     </div>
     <div class="footer__social social">

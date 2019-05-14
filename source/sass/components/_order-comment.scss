@@ -9,7 +9,7 @@
   @include respond(tablet) {
     padding: 0 30px;
     padding-bottom: 23px;
-    margin-bottom: 37px;
+    margin-bottom: 21px;
   }
 
   @include respond(desktop) {
@@ -72,12 +72,22 @@
     text-transform: uppercase;
     border: 1px solid $black-color--lighter;
 
+    &::placeholder {
+      color: $black-color--light;
+    }
+
     @include respond(tablet) {
       font-size: 20px;
       line-height: 30px;
       min-height: 174px;
       padding: 19px;
       padding-top: 9px;
+    }
+  }
+
+  &__wrapper {
+    @include respond(tablet) {
+      padding: 0 40px;
     }
   }
 }

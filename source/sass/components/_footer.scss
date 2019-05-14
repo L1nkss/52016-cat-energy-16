@@ -16,10 +16,11 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 37px 0 31px;
+    padding: 39px 0 31px;
 
     @include respond(tablet) {
       width: 22.88%;
+      padding: 31px 0 31px;
     }
   }
 

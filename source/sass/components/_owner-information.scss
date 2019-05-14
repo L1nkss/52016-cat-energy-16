@@ -1,19 +1,17 @@
 .owner-information {
   border: 0;
   margin: 0;
-  padding: 0 20px;
   margin-bottom: 14px;
   position: relative;
   overflow: hidden;
 
+  @include content-paddings();
+
   @include respond(tablet) {
-    padding: 0 30px;
-    padding-bottom: 28px;
-    margin-bottom: 16px;
+    margin-bottom: 49px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
     margin-bottom: 66px;
   }
 
@@ -128,8 +126,12 @@
     text-transform: uppercase;
     padding: 12px 0;
     padding-bottom: 13px;
-    padding-left: 15px;
+    padding-left: 14px;
     padding-right: 30px;
+
+    &::placeholder {
+      color: $black-color--light;
+    }
 
     @include respond(tablet) {
       font-size: 20px;

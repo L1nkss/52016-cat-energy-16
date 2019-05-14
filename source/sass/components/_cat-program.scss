@@ -1,10 +1,10 @@
 .cat-program {
   border: 0;
   margin: 0;
-  padding: 0 20px;
   border-bottom: 1px solid $grey-color--light;
-  padding-bottom: 10px;
   margin-bottom: 29px;
+
+  @include content-paddings(0, 8px);
 
   @include respond(tablet) {
     border: 1px solid $grey-color--light;
@@ -29,7 +29,7 @@
     position: relative;
     padding-left: 45px;
     padding-top: 4px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 
     @include respond(tablet) {
       padding-left: 59px;
@@ -58,7 +58,7 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      border: 1px solid $black-color--lighter;
+      border: 1px solid $black-color--darker;
 
       @include respond(tablet) {
         width: 39px;

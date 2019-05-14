@@ -3,14 +3,13 @@
   margin-top: 15px;
 
   @include respond(tablet) {
-    padding: 0 30px;
     padding-bottom: 50px;
     margin-bottom: 67px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
-    margin-bottom: 66px;
+    max-width: 1300px;
+    margin: 0 auto 66px;
   }
 
   @include content-paddings();
