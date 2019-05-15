@@ -1,22 +1,22 @@
 .form-submit {
   margin: 0;
-  padding: 0 20px;
   border: 0;
-  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   text-align: center;
 
+  @include content-paddings(0, 32px);
+
   @include respond(tablet) {
-    padding: 0 70px;
     flex-direction: row;
     align-items: center;
     padding-bottom: 72px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
     padding-bottom: 82px;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   &__button {

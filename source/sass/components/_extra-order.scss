@@ -71,7 +71,15 @@
     align-items: center;
     margin-bottom: 13px;
 
-    //padding-top: 2px;
+    &:hover {
+      .extra-order__label::before {
+        border: 1px solid $border-hover-color;
+      }
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
 
     @include respond(tablet) {
       width: 45%;
@@ -125,6 +133,7 @@
       border: 1px solid $border-grey-color;
       top: 0;
       left: 0;
+      transition: 0.6s;
 
       @include respond(tablet) {
         width: 40px;

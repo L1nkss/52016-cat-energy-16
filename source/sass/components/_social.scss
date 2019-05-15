@@ -32,6 +32,15 @@
   &__icon {
     fill: $grey-color-icons;
 
+    &:hover {
+      fill: $main-color-theme;
+    }
+
+    &:active {
+      fill: $main-color-theme;
+      opacity: 0.4;
+    }
+
     &--vk {
       // width: 31px;
       // height: 19px;
