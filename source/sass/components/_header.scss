@@ -25,5 +25,15 @@
         background-repeat: no-repeat;
       }
     }
+
+    & .menu__link {
+      @include respond(desktop) {
+        color: $white-color;
+
+        &[href="#"] {
+          border-bottom: 2px solid $white-color;
+        }
+      }
+    }
   }
 }

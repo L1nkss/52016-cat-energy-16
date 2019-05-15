@@ -1,12 +1,10 @@
 .extra-products {
-  padding: 0 20px;
-
-  @include respond(tablet) {
-    padding: 0 30px;
-  }
+  @include content-paddings();
 
   @include respond(desktop) {
-    padding: 0 110px 87px;
+    padding-bottom: 87px;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   &__wrapper {
@@ -54,5 +52,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include respond(desktop) {
+      width: 73.36%;
+    }
   }
 }

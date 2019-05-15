@@ -92,7 +92,6 @@
     background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -37px;
 
     @include respond(tablet) {
       background-image: url("../img/bg-map-tablet@1x.png");
@@ -101,7 +100,7 @@
 
     @include respond(desktop) {
       background-image: url("../img/bg-map-desktop@1x.png");
-      min-height: 395px;
+      min-height: 401px;
       position: relative;
     }
   }

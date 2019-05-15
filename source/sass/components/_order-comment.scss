@@ -1,20 +1,20 @@
 .order-comment {
   margin: 0;
   border: 0;
-  padding: 0 20px;
   position: relative;
   margin-bottom: 23px;
   overflow: hidden;
 
+  @include content-paddings();
+
   @include respond(tablet) {
-    padding: 0 30px;
     padding-bottom: 23px;
     margin-bottom: 21px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
-    margin-bottom: 62px;
+    max-width: 1300px;
+    margin: 0 auto 22px;
   }
 
   &__title {
@@ -88,6 +88,10 @@
   &__wrapper {
     @include respond(tablet) {
       padding: 0 40px;
+    }
+
+    @include respond(desktop) {
+      padding: 0;
     }
   }
 }

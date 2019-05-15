@@ -66,6 +66,7 @@
   &__description {
     display: flex;
     margin-bottom: 2px;
+    color: $black-color--light;
 
     @include respond(tablet) {
       border-bottom: 1px solid $grey-color--dark;
@@ -119,6 +120,10 @@
     @include respond(tablet) {
       width: 75.3%;
       margin: 0 auto;
+    }
+
+    @include respond(desktop) {
+      width: 69.3%;
     }
   }
 }

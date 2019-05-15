@@ -12,6 +12,12 @@
     min-height: 150px;
   }
 
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
   &__logo {
     position: relative;
     display: flex;

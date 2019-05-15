@@ -23,6 +23,7 @@
     padding: 15px 0;
     border-left: none;
     border-right: none;
+    justify-content: space-between;
   }
 
   &__wrap {
@@ -42,8 +43,8 @@
 
     @include respond(desktop) {
       margin: 0;
-      width: 320px;
-      padding-right: 20px;
+      width: 31.84%;
+      padding-top: 10px;
     }
   }
 
@@ -62,7 +63,7 @@
 
     @include respond(desktop) {
       margin: 0;
-      width: 324px;
+      width: 31.84%;
     }
   }
 
@@ -75,7 +76,7 @@
     }
 
     @include respond(desktop) {
-      width: 80px;
+      width: 14.03%;
       text-align: left;
     }
   }
@@ -90,7 +91,7 @@
     }
 
     @include respond(desktop) {
-      width: 245px;
+      width: 85.96%;
       text-align: left;
     }
   }

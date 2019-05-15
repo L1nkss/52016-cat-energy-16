@@ -1,16 +1,17 @@
 .products-catalog {
   border-bottom: 1px solid $grey-color--ligther;
 
-  @include content-paddings(0, 28px);
+  @include content-paddings(15px, 28px);
 
   @include respond(tablet) {
     border: 0;
     padding-bottom: 0;
     margin-bottom: 28px;
+    padding-top: 1px;
   }
 
   @include respond(desktop) {
-    margin: 0 auto;
+    margin: 0 auto 28px;
     max-width: 1300px;
   }
 

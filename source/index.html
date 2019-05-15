@@ -42,7 +42,7 @@
       <h1 class="title__header">Функциональное питание для котов</h1>
       <p class="title__text">Занялся собой? Займись котом!</p>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
         <img class="title__image" width="280" src="img/index-can-mobile@1x.png" alt="Логотип товара">
       </picture>
@@ -189,32 +189,40 @@
   <footer class="footer">
     <div class="footer__logo">
       <a class="footer__link" href="#">
-        <img src="img/logo-footer.svg" width="128" height="24" alt="">
+        <img class="footer__image" src="img/logo-footer.svg" width="127" height="24" alt="Логотип компании Cat-energy">
       </a>
     </div>
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#">
-            <img src="img/icon-vk-mobile.svg" width="22" height="22" alt="">
+          <a class="social__link" href="#">
+            <svg class="social__icon social__icon--vk" width="22" height="12">
+              <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#">
-            <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="">
+          <a class="social__link" href="#">
+            <svg class="social__icon social__icon--inst" width="16" height="16">
+              <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#">
-            <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="">
+          <a class="social__link" href="#">
+            <svg class="social__icon social__icon--fb" width="10" height="19">
+              <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
+            </svg>
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright academy">
       <a class="academy__link" href="#">
-        HTML Academy
-        <img src="img/htmlacademy.svg" width="26.94" height="34.09" alt="">
+        <span class="academy__name">HTML Academy</span>
+        <svg class="academy__icon" width="40" height="40">
+          <use xlink:href="img/new-sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>

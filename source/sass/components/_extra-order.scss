@@ -1,5 +1,4 @@
 .extra-order {
-  padding: 0 20px;
   margin: 0;
   border: 0;
   padding-bottom: 18px;
@@ -7,14 +6,15 @@
   margin-bottom: 2px;
   overflow: hidden;
 
+  @include content-paddings();
+
   @include respond(tablet) {
-    padding: 0 30px;
     margin-bottom: 21px;
   }
 
   @include respond(desktop) {
-    padding: 0 110px;
-    margin-bottom: 27px;
+    max-width: 1300px;
+    margin: 0 auto 27px;
   }
 
   &__title {
@@ -98,6 +98,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 0 40px;
+    }
+
+    @include respond(tablet) {
+      padding: 0;
     }
   }
 
