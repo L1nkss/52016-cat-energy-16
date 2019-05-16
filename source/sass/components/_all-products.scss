@@ -1,39 +1,90 @@
 .all-products {
   text-align: center;
-  border-top: 1px solid $grey-color--darker;
-  border-bottom: 1px solid $grey-color--darker;
-  padding: 80px 20px 25px;
+  border-bottom: 1px solid $grey-color--light;
+  padding: 76px 20px 24px;
+
+  @include content-paddings(76px, 24px);
+
+  @include respond(tablet) {
+    border: 1px solid $grey-color--darker;
+    width: 324px;
+    min-height: 434px;
+    margin: 137px 0 4px 0;
+    padding: 40px;
+    padding-top: 164px;
+  }
+
+  @include respond(desktop) {
+    width: 245px;
+    padding: 164px 37.5px 0;
+  }
 
   &__text {
     font-size: 12px;
     font-family: $second-font;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      width: 71.72%;
+      margin: 0 auto;
+      margin-bottom: 84px;
+    }
+
+    @include respond(desktop) {
+      width: 100%;
+    }
   }
 
   &__title {
     text-transform: uppercase;
     margin: 0;
     position: relative;
+    margin-bottom: 8px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+      width: 57.37%;
+      margin: 0 auto;
+      margin-bottom: 27px;
+    }
+
+    @include respond(desktop) {
+      width: 83.41%;
+    }
 
     &::before {
       content: "";
-      width: 50px;
-      height: 5px;
-      background-color: $grey-color--darker;
-      top: -40px;
+      width: 31px;
+      height: 2px;
+      background-color: $grey-color--light;
+      top: -36px;
       position: absolute;
       left: 50%;
       transform: translate(-50%);
+
+      @include respond(tablet) {
+        width: 60px;
+        top: -80px;
+      }
     }
 
     &::after {
       content: "";
-      width: 50px;
-      height: 5px;
-      background-color: $grey-color--darker;
-      top: -40px;
+      width: 31px;
+      height: 2px;
+      background-color: $grey-color--light;
+      top: -36px;
       position: absolute;
       left: 50%;
       transform: translate(-50%) rotate(90deg);
+
+      @include respond(tablet) {
+        width: 60px;
+        top: -79px;
+      }
     }
   }
 
@@ -41,8 +92,12 @@
     display: block;
     text-decoration: none;
     background-color: $grey-color;
-    padding: 15px 0;
-    color: $black-color;
+    padding: 9px 0;
+    color: $black-color--light;
     text-transform: uppercase;
+
+    @include respond(tablet) {
+      //margin-top: auto;
+    }
   }
 }

@@ -1,0 +1,49 @@
+.form-header {
+  margin-bottom: 39px;
+  margin-top: 15px;
+
+  @include respond(tablet) {
+    padding-bottom: 50px;
+    margin-bottom: 67px;
+  }
+
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto 66px;
+  }
+
+  @include content-paddings();
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 24px;
+    font-weight: 400;
+
+    @include respond(tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 81.7%;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 330px;
+      margin-left: 40px;
+    }
+
+    @include respond(desktop) {
+      margin-left: 0;
+    }
+  }
+}

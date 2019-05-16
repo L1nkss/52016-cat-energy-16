@@ -1,20 +1,37 @@
-.live-example {
+.example {
   background-color: $grey-color;
 
-  @include content-paddings(20px, 56px);
+  @include content-paddings(20px, 33px);
 
   @include respond(tablet) {
-    background-image: linear-gradient(to bottom, $white-color 56.3%, $grey-color--ligther 56.3%);
-    min-height: 1058px;
-    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @include respond(desktop) {
-    //padding: 0 110px;
-    position: relative;
-    background-image: linear-gradient(to bottom, $white-color 22.6%, $grey-color--ligther 22.6%);
-    min-height: auto;
-    padding-bottom: 74px;
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  &__information {
+    @include respond(tablet) {
+      margin-bottom: 90px;
+    }
+
+    @include respond(desktop) {
+      width: 46.72%;
+    }
+  }
+
+  &__slider {
+    @include respond(tablet) {
+      padding-bottom: 69px;
+    }
+
+    @include respond(desktop) {
+      width: 53.28%;
+    }
   }
 
   &__title {
@@ -30,7 +47,7 @@
     }
 
     @include respond(desktop) {
-      margin-bottom: 146px;
+      margin-bottom: 147px;
     }
   }
 
@@ -52,6 +69,7 @@
 
     @include respond(desktop) {
       margin-bottom: 61px;
+      width: 100%;
     }
   }
 
@@ -72,7 +90,7 @@
     }
 
     @include respond(desktop) {
-      width: 35.65%;
+      width: 76.49%;
       margin-bottom: 68px;
     }
   }
@@ -131,10 +149,10 @@
     }
 
     @include respond(desktop) {
-      width: 24.11%;
+      width: 28.07%;
 
       &:first-child {
-        margin-right: 6.67%;
+        margin-right: 7.67%;
       }
     }
   }
@@ -183,7 +201,7 @@
     @include respond(tablet) {
       display: flex;
       align-items: center;
-      margin-bottom: 85px;
+      margin-bottom: 0;
     }
 
     @include respond(desktop) {

@@ -1,0 +1,90 @@
+.form {
+  overflow: hidden;
+  // legend titles
+  &__legend-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 34px;
+    margin-top: 0;
+    //width: 72.28%;
+    display: inline-block;
+    padding: 0;
+    padding-left: 0;
+    background-color: $white-color;
+    padding-right: 20px;
+
+    &::before {
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #67b737;
+        left: 0;
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      //width: 100%;
+      width: 100vw;
+      height: 3px;
+      background-color: #67b737;
+      //right: 0;
+      top: 14px;
+      z-index: -1;
+      //left: 20px;
+
+      @include respond(tablet) {
+        top: 22px;
+      }
+    }
+
+    @include respond(tablet) {
+      font-size: 36px;
+      line-height: 36px;
+      width: auto;
+      margin-bottom: 73px;
+      //padding-left: 40px;
+      padding-right: 41px;
+    }
+
+    &--order-margin {
+      @include respond(tablet) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &--extra-margin {
+      @include respond(tablet) {
+        margin-bottom: 57px;
+      }
+    }
+  }
+
+  // wrapper
+  &__wrapper {
+    @include respond(tablet) {
+      @include content-paddings();
+    }
+
+    @include respond(desktop) {
+      display: flex;
+      //padding: 0 110px;
+      max-width: 1300px;
+      margin: 0 auto 69px;
+    }
+  }
+
+  // перенос слова
+  &__legend-wrap {
+    display: inline-block;
+
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+}

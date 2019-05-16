@@ -1,7 +1,34 @@
 .address {
+  position: relative;
+
   &__item {
-    padding: 30px 20px;
     display: flex;
+    background-color: $grey-color;
+
+    @include content-paddings(29px, 25px);
+
+    @include respond(tablet) {
+      padding: 65px 72px 58px 71px;
+      justify-content: space-between;
+      padding-bottom: 58px;
+
+      @include content-paddings(65px, 58px);
+    }
+
+    @include respond(desktop) {
+      position: absolute;
+      z-index: 1;
+      background-color: $white-color;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 110px;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    &--white {
+      background-color: $white-color;
+    }
   }
 
   &__title {
@@ -9,18 +36,72 @@
     font-weight: 400;
     text-transform: uppercase;
     line-height: 20px;
+    width: 50%;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 25px;
+      width: 25%;
+      margin-left: 40px;
+    }
+
+    @include respond(desktop) {
+      font-size: 20px;
+      width: 170px;
+      margin-right: 80px;
+      margin-left: 0;
+    }
+  }
+
+  &__wrapper {
+    width: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $second-font;
+    font-style: normal;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      text-align: right;
+      width: 25%;
+      margin-right: 40px;
+    }
+
+    @include respond(desktop) {
+      width: 170px;
+      text-align: left;
+      margin-right: 0;
+    }
   }
 
   &__text {
     margin: 0;
-    font-size: 14px;
-    font-family: $second-font;
-    line-height: 20px;
+
+    @include respond(tablet) {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__city {
+    margin: 0;
   }
 
   &__map {
     width: 100%;
-    min-height: 360px;
+    min-height: 362px;
     background-image: url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond(tablet) {
+      background-image: url("../img/bg-map-tablet@1x.png");
+      min-height: 395px;
+    }
+
+    @include respond(desktop) {
+      background-image: url("../img/bg-map-desktop@1x.png");
+      min-height: 401px;
+      position: relative;
+    }
   }
 }

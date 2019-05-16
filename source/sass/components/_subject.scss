@@ -1,9 +1,31 @@
 .subject {
-  padding: 24px 0;
+  padding: 14px 20px;
+
+  @include respond(tablet) {
+    padding: 0;
+  }
 
   &__title {
     margin: 0;
     font-size: 20px;
     text-transform: uppercase;
+  }
+
+  &__image {
+    display: block;
+
+    @include respond(tablet) {
+      width: 176px;
+    }
+
+    @include respond(desktop) {
+      width: 202px;
+    }
+  }
+
+  &__logo {
+    @include respond(tablet) {
+      display: block;
+    }
   }
 }

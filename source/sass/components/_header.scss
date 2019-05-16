@@ -1,0 +1,39 @@
+.header {
+  // убрал пока
+  position: relative;
+
+  @include respond(tablet) {
+    margin-bottom: 32px;
+  }
+
+  @include respond(desktop) {
+    margin-bottom: 16px;
+  }
+
+  &--preview {
+    &::after {
+      @include respond(desktop) {
+        content: "";
+        width: 50%;
+        background-color: $main-color-theme;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -5;
+        height: 695px;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    & .menu__link {
+      @include respond(desktop) {
+        color: $white-color;
+
+        &[href="#"] {
+          border-bottom: 2px solid $white-color;
+        }
+      }
+    }
+  }
+}

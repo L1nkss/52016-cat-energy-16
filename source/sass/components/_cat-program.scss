@@ -1,0 +1,106 @@
+.cat-program {
+  border: 0;
+  margin: 0;
+  border-bottom: 1px solid $grey-color--light;
+  margin-bottom: 29px;
+
+  @include content-paddings(0, 8px);
+
+  @include respond(tablet) {
+    border: 1px solid $grey-color--light;
+    padding: 0 28px;
+    padding-top: 24px;
+    padding-bottom: 11px;
+    margin-bottom: 76px;
+  }
+
+  @include respond(desktop) {
+    width: 46.72%;
+    margin-bottom: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 45px;
+    padding-top: 4px;
+    margin-bottom: 15px;
+
+    @include respond(tablet) {
+      padding-left: 59px;
+      padding-top: 8px;
+      margin-bottom: 21px;
+    }
+  }
+  // Label
+  &__label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $black-color--darker;
+
+      @include respond(tablet) {
+        width: 39px;
+        height: 39px;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $main-color-theme;
+
+      @include respond(tablet) {
+        top: 11px;
+        left: 11px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  //Input
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked + .cat-program__label::after {
+      display: block;
+    }
+  }
+}

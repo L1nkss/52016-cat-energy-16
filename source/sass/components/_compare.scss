@@ -1,38 +1,92 @@
 .compare {
-  &__controls {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
 
-  &__scale {
-    width: 85px;
-    background-color: $white-color;
-    border-radius: 10px;
-    padding: 5px 15px;
-    display: inline-block;
-    margin: 0 20px;
-  }
-
-  &__before {
-    display: inline-block;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  &__after {
-    display: inline-block;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  &__bar {
-    width: 30%;
-    height: 10px;
-    background-color: $main-color-theme;
-    border-radius: 10px;
+  @include respond(tablet) {
+    width: 575px;
   }
 
   &__toggle {
     display: none;
+
+    @include respond(tablet) {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50.5%;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #dcdcdc;
+      background: #ffffff;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__button {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    color: #111111;
+    font-family: $primary-font;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      border-bottom: 1px dotted #d9d9d9;
+    }
+  }
+
+  &__scale {
+    position: relative;
+    //max-width: 84px;
+    width: 43.58%;
+    height: 14px;
+    border: 1px solid $grey-color--darker;
+    border-radius: 50px;
+    background: $white-color;
+
+    @include respond(tablet) {
+      width: 100%;
+      height: 6px;
+      margin: 0 25px;
+      background: #d9d9d9;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      right: 5px;
+      width: 35px;
+      height: 6px;
+      border-radius: 50px;
+      background: $main-color-theme;
+      transform: translateY(-50%);
+
+      @include respond(tablet) {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 9px;
+        bottom: 0;
+        right: 0;
+        left: 3px;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: $main-color-theme;
+      }
+    }
   }
 }

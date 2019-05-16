@@ -1,12 +1,34 @@
 .title {
-  min-height: 500px;
+  //min-height: 500px;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  min-width: 320px;
+  background-size: 100% 63.5%;
   background-repeat: no-repeat;
   color: $white-color;
-  padding: 30px 20px 20px;
+  padding: 26px 20px 0;
+  position: relative;
+  margin-bottom: 22px;
+
+  @include respond(tablet) {
+    background-image: none;
+    color: $black-color;
+    text-align: left;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 810px;
+    margin-bottom: 0;
+  }
+
+  @include respond(desktop) {
+    min-height: 508px;
+    padding-top: 34px;
+    max-width: 1300px;
+    margin: 0 auto 80px;
+  }
 
   &__button {
     margin-top: auto;
@@ -14,10 +36,27 @@
     background-color: $main-color-theme;
     display: block;
     text-decoration: none;
-    font-size: 18px;
-    padding: 13px 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 0;
     text-transform: uppercase;
+    text-align: center;
     color: $white-color;
+    padding-top: 12px;
+    padding-bottom: 11px;
+
+    @include respond(tablet) {
+      width: 245px;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px 0;
+      margin-left: 88px;
+      margin-top: -582px;
+    }
+
+    @include respond(desktop) {
+      margin-top: -188px;
+    }
   }
 
   &__header {
@@ -25,13 +64,50 @@
     text-align: center;
     font-size: 36px;
     font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 25px;
+
+    @include respond(tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      width: 505px;
+      padding-left: 87px;
+      margin-bottom: 45px;
+    }
+
+    @include respond(desktop) {
+      width: 52.42%;
+    }
   }
 
   &__text {
     font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 28px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      margin-bottom: 23px;
+      padding-left: 87px;
+    }
   }
 
   &__image {
-    width: auto;
+    display: block;
+    margin: 0 auto 2px;
+
+    @include respond(tablet) {
+      width: 708px;
+      z-index: -1;
+    }
+
+    @include respond(desktop) {
+      margin-top: -282px;
+      margin-left: 460px;
+      width: 552px;
+    }
   }
 }

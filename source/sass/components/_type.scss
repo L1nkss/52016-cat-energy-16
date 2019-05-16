@@ -1,49 +1,203 @@
 .type {
-  text-align: center;
   background-color: $grey-color;
-  padding: 40px 20px 0;
+  position: relative;
+
+  @include content-paddings(29px, 19px);
+
+  @include respond(tablet) {
+    padding-right: 52px;
+    padding-top: 75px;
+    padding-left: 52px;
+    // padding-bottom: 47px;
+    min-height: 373px;
+    margin-bottom: 44px;
+  }
 
   &:first-child {
     margin-bottom: 20px;
+
+    @include respond(tablet) {
+      margin-bottom: 30px;
+    }
+
+    @include respond(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include respond(desktop) {
+    width: 46.72%;
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    background-color: $main-color-theme;
+    display: block;
+    border-radius: 50%;
+    margin-right: 19px;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+
+    &--slim {
+      &::before {
+        background-image: url("../img/icon-cat-slim.svg");
+        width: 35px;
+        left: 15%;
+
+        @include respond(tablet) {
+          width: 140px;
+          left: 15%;
+          top: -6%;
+        }
+      }
+    }
+
+    &--pro {
+      &::before {
+        background-image: url("../img/icon-cat-pro.svg");
+        width: 73px;
+        left: -11px;
+        top: 17%;
+
+        @include respond(tablet) {
+          width: 268px;
+          left: -33px;
+          top: 20%;
+        }
+
+        @include respond(desktop) {
+          width: 135px;
+          left: -18px;
+        }
+      }
+    }
+
+    @include respond(tablet) {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: 43px;
+      top: 25%;
+    }
+
+    @include respond(desktop) {
+      top: 47px;
+      width: 100px;
+      height: 100px;
+      left: 52px;
+    }
   }
 
   &__title {
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
     font-size: 24px;
+    line-height: 37px;
     font-weight: 400;
+    padding-left: 70px;
+
+    @include respond(tablet) {
+      text-align: left;
+      font-size: 36px;
+      line-height: 37px;
+      padding-left: 0;
+      margin-bottom: 27px;
+
+      &::before {
+        top: 52%;
+        left: 77%;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @include respond(desktop) {
+      text-align: center;
+      margin-bottom: 75px;
+    }
   }
 
   &__info {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-align: left;
     font-size: 14px;
+    line-height: 18px;
     font-family: $second-font;
     position: relative;
+    border-bottom: 1px solid $grey-color--darker;
+    padding-bottom: 22px;
+
+    @include respond(tablet) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 56px;
+      width: 62.82%;
+      padding: 0;
+      border: 0;
+    }
+
+    @include respond(desktop) {
+      width: 100%;
+      margin-bottom: 31px;
+    }
   }
 
   &__link {
     text-decoration: none;
-    display: block;
     text-align: left;
     text-transform: uppercase;
-    padding: 20px 0;
     color: $black-color;
-    border-top: 1px solid $grey-color--darker;
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      &::after {
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+        width: 30px;
+      }
+    }
+
+    &:active {
+      opacity: 0.4;
+
+      &::after {
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+        width: 30px;
+      }
+    }
+
+    @include respond(tablet) {
+      border: 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
 
     &::after {
       content: "";
-      position: absolute;
       background-image: url("../img/icon-right-arrow-long.svg");
-      width: 30px;
-      height: 20px;
-      display: block;
-      top: 40%;
-      left: 40%;
+      background-size: 100%;
+      width: 23px;
+      height: 11px;
+      display: inline-block;
       background-repeat: no-repeat;
+      margin-left: 12px;
+
+      @include respond(tablet) {
+        left: 37%;
+      }
     }
   }
 }

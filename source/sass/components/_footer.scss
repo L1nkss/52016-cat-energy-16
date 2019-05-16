@@ -1,10 +1,49 @@
 .footer {
-  background-color: $grey-color;
-  text-align: center;
-  padding: 35px 20px 0;
+  background-color: #f2f2f2;
 
-  &__title {
-    margin: 0;
-    font-size: 36px;
+  @include content-paddings();
+
+  @include respond(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 47px;
+    min-height: 150px;
+  }
+
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  &__logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 39px 0 31px;
+
+    @include respond(tablet) {
+      width: 22.88%;
+      padding: 31px 0 31px;
+    }
+  }
+
+  &__link {
+    margin: auto;
+    display: block;
+
+    @include respond(tablet) {
+      margin: 0;
+    }
+  }
+
+  &__image {
+    display: block;
+
+    @include respond(tablet) {
+      width: 129px;
+    }
   }
 }

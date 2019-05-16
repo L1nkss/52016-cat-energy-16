@@ -1,11 +1,74 @@
 .social {
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid $grey-color--darker;
-  border-bottom: 1px solid $grey-color--darker;
-  padding: 25px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 19px;
+  padding-bottom: 19px;
 
-  &__link {
-    text-decoration: none;
+  @include respond(tablet) {
+    border: 0;
+    width: 45.76%;
+    padding-top: 20px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0 18px;
+    width: 21px;
+
+    @include respond(tablet) {
+      margin: 0 15px;
+      width: 25px;
+    }
+  }
+
+  &__icon {
+    fill: $grey-color-icons;
+
+    &:hover {
+      fill: $main-color-theme;
+    }
+
+    &:active {
+      fill: $main-color-theme;
+      opacity: 0.4;
+    }
+
+    &--vk {
+      // width: 31px;
+      // height: 19px;
+
+      @include respond(tablet) {
+        width: 31px;
+        height: 19px;
+      }
+    }
+
+    &--inst {
+      // width: 31px;
+      // height: 19px;
+
+      @include respond(tablet) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &--fb {
+      // width: 31px;
+      // height: 19px;
+
+      @include respond(tablet) {
+        width: 16px;
+        height: 30px;
+      }
+    }
   }
 }

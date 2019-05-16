@@ -1,0 +1,90 @@
+.cat-information {
+  margin: 0;
+  border: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid $grey-color--light;
+  margin-bottom: 19px;
+
+  @include content-paddings(0, 9px);
+
+  @include respond(tablet) {
+    border: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 52px;
+  }
+
+  @include respond(desktop) {
+    width: 46.72%;
+    margin-right: 6.55%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  // блоки
+  &__field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 0;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include respond(desktop) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Инпуты
+  &__input {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $black-color--light;
+    border: 1px solid $black-color--lighter;
+    outline: none;
+    flex-grow: 1;
+    font-family: $primary-font;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 30px;
+
+    &::placeholder {
+      color: $black-color--light;
+    }
+
+    &:hover {
+      border-color: $border-hover-color;
+    }
+
+    &:focus {
+      border-color: $black-color;
+    }
+
+    @include respond(tablet) {
+      padding-top: 8px;
+      padding-bottom: 12px;
+      padding-left: 19px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  // Лабел
+  &__label {
+    margin-right: 4.8%;
+    flex-shrink: 0;
+
+    @include respond(tablet) {
+      margin-right: 2.7%;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.order-comment {
+  margin: 0;
+  border: 0;
+  position: relative;
+  margin-bottom: 23px;
+  overflow: hidden;
+
+  @include content-paddings();
+
+  @include respond(tablet) {
+    padding-bottom: 23px;
+    margin-bottom: 21px;
+  }
+
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto 22px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 35px;
+    background-color: $white-color;
+    padding-right: 20px;
+
+    &::before {
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #67b737;
+        left: 0;
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #67b737;
+      right: 0;
+      top: 14px;
+      z-index: -1;
+      left: 20px;
+
+      @include respond(tablet) {
+        top: 22px;
+      }
+    }
+
+    @include respond(tablet) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 76px;
+      padding-left: 40px;
+      padding-right: 39px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    min-height: 150px;
+    padding: 13px;
+    font-size: 16px;
+    font-family: $primary-font;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid $black-color--lighter;
+
+    &::placeholder {
+      color: $black-color--light;
+    }
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      min-height: 174px;
+      padding: 19px;
+      padding-top: 9px;
+    }
+  }
+
+  &__wrapper {
+    @include respond(tablet) {
+      padding: 0 40px;
+    }
+
+    @include respond(desktop) {
+      padding: 0;
+    }
+  }
+}

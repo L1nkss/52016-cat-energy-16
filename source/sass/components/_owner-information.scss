@@ -1,0 +1,143 @@
+.owner-information {
+  border: 0;
+  margin: 0;
+  margin-bottom: 14px;
+  position: relative;
+  //overflow: hidden;
+
+  @include content-paddings();
+
+  @include respond(tablet) {
+    margin-bottom: 49px;
+  }
+
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto 66px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+    margin-top: 0;
+    width: 72.28%;
+    padding: 0;
+    padding-left: 0;
+    background-color: $white-color;
+    padding-right: 20px;
+
+    &::before {
+      @include respond(tablet) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #67b737;
+        left: 0;
+        top: 22px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #67b737;
+      //right: 0;
+      top: 14px;
+      z-index: -1;
+      left: 20px;
+
+      @include respond(tablet) {
+        top: 22px;
+      }
+    }
+
+    @include respond(tablet) {
+      font-size: 36px;
+      line-height: 36px;
+      width: auto;
+      margin-bottom: 73px;
+      padding-left: 40px;
+      padding-right: 41px;
+    }
+  }
+
+  &__inform {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0 40px;
+    }
+
+    @include respond(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 0;
+    position: relative;
+
+    @include respond(desktop) {
+      margin-bottom: 0;
+      width: 46.72%;
+    }
+  }
+
+  // Иконки
+  &__icon {
+    position: absolute;
+    right: 15px;
+  }
+
+  //label
+  &__label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-right: 11px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  //input
+
+  &__input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    flex-grow: 1;
+    border: 1px solid $black-color--lighter;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    padding: 12px 0;
+    padding-bottom: 13px;
+    padding-left: 14px;
+    padding-right: 30px;
+
+    &::placeholder {
+      color: $black-color--light;
+    }
+
+    @include respond(tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

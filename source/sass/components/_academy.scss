@@ -1,13 +1,34 @@
 .academy {
-  display: flex;
+  padding-top: 18px;
+  padding-bottom: 21px;
 
-  &__logo {
-    display: block;
-    text-decoration: none;
+  @include respond(tablet) {
+    width: 22.88%;
   }
 
-  &__title {
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: $second-font;
-    color: $black-color;
+    text-decoration: none;
+    color: #444444;
+    text-transform: none;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    fill: $grey-color-icons;
+    margin-right: -6px;
+    margin-top: 1px;
+
+    &:hover {
+      fill: $main-color-theme;
+    }
+
+    &:active {
+      fill: $main-color-theme;
+      opacity: 0.4;
+    }
   }
 }

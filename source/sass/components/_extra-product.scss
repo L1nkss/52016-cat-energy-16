@@ -1,22 +1,99 @@
 .extra-product {
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
-  border-top: 1px solid $grey-color--darker;
-  border-bottom: 1px solid $grey-color--darker;
+  padding: 14px 0;
+  border-top: 1px solid $black-color--lighter;
+  padding-bottom: 17px;
+  transform: 0.6s;
+
+  &:last-child {
+    border-bottom: 1px solid $black-color--lighter;
+  }
+
+  @include respond(tablet) {
+    border-left: 1px solid $black-color--lighter;
+    border-right: 1px solid $black-color--lighter;
+    padding: 28px 36px 27px 37px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include respond(desktop) {
+    align-items: center;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+    justify-content: space-between;
+  }
 
   &__wrap {
     display: flex;
     font-size: 14px;
     font-family: $second-font;
+    line-height: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+
+    @include respond(tablet) {
+      margin-left: auto;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 23px;
+    }
+
+    @include respond(desktop) {
+      margin: 0;
+      width: 31.84%;
+      padding-top: 10px;
+    }
   }
 
   &__title {
     margin: 0;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 13px;
+
+    @include respond(tablet) {
+      font-size: 20px;
+      display: inline;
+    }
+
+    @include respond(desktop) {
+      margin: 0;
+      width: 31.84%;
+    }
   }
 
   &__cost {
     margin-left: auto;
+
+    @include respond(tablet) {
+      width: 95px;
+      text-align: right;
+    }
+
+    @include respond(desktop) {
+      width: 14.03%;
+      text-align: left;
+    }
+  }
+
+  &__amount {
+    margin-right: 52px;
+
+    @include respond(tablet) {
+      width: 192px;
+      text-align: right;
+      margin: 0;
+    }
+
+    @include respond(desktop) {
+      width: 85.96%;
+      text-align: left;
+    }
   }
 
   &__order {
@@ -25,7 +102,19 @@
     text-align: center;
     background-color: $main-color-theme;
     color: $white-color;
-    padding: 10px 0;
+    padding: 8px 0;
     text-transform: uppercase;
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+
+    @include respond(desktop) {
+      width: auto;
+      padding: 10px 92px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
   }
 }

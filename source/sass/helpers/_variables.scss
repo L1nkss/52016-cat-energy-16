@@ -1,11 +1,25 @@
 // Основные цвета
 $black-color: #000000;
+$black-color--light: #444444;
+$black-color--lighter: #e6e6e6;
+$black-color--darker: #cecece;
 $white-color: #ffffff;
 $grey-color: #f2f2f2;
+$grey-color--light: #ededed;
 $grey-color--ligther: #f1f1f1;
 $grey-color--dark: #d3d3d3;
 $grey-color--darker: #d9d9d9;
 $main-color-theme: #67b737;
+$red-color: red;
+
+// Заливка иконок
+$grey-color-icons: #666666;
+
+// Заливка границ
+$border-grey-color: #cdcdcd;
+
+// Граница при hover
+$border-hover-color: #bababa;
 
 // Шрифт
 $primary-font: "Oswald", "Arial", sans-serif;
@@ -16,4 +30,8 @@ $second-font: "Arial", sans-serif;
 // $border-color: #d9d9d9;
 // $border-dark-color: #dddddd;
 // $border-nav-color: #e6e6e6;
-// $border-show-all: #ededed;
+
+// Breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1300px;

@@ -1,70 +1,103 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-width: 320px;
+  position: relative;
 
-  &__checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  @include respond(tablet) {
+    flex-direction: row;
+    align-items: center;
+
+    @include content-paddings(25px, 25px);
   }
 
-  &__subject {
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    @include content-paddings(56px, 56px);
+  }
+
+
+  &__image {
+    display: block;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
+    @include respond(tablet) {
+      width: 173px;
+    }
+
+    @include respond(desktop) {
+      width: 202px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 20px;
     display: flex;
-    border-bottom: 1px solid $grey-color--dark;
-    width: 100%;
-    justify-content: space-around;
-  }
-}
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $grey-color--darker;
 
-.navigation__toggle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    @include respond(tablet) {
+      border: 0;
+      padding: 0;
+    }
+  }
 }
 
 .navigation__burger {
-  width: 30px;
-  height: 3px;
-  background-color: $black-color;
-  transition: 0.6s;
+  width: 25px;
+  height: 2px;
   border: 0;
   outline: none;
   position: relative;
+  background-color: rgba($black-color, 0);
+  margin-left: auto;
+
+  @include respond(tablet) {
+    display: none;
+  }
 
   &::before,
   &::after {
     content: "";
-    width: 30px;
-    height: 3px;
+    width: 25px;
+    height: 2px;
     background-color: $black-color;
     display: block;
     position: absolute;
-    transition: 0.6s;
     left: 0;
   }
 
   &::before {
-    top: -10px;
+    top: -8px;
+    transform: translateY(8px) rotate(45deg);
   }
 
   &::after {
-    top: 10px;
+    top: 8px;
+    transform: translateY(-8px) rotate(-45deg);
   }
 
 
   &--hide {
-    background-color: rgba($black-color, 0);
+    background-color: $black-color;
 
     &::before {
-      transform: translateY(10px) rotate(45deg);
+      transform: translateY(0) rotate(0);
     }
 
     &::after {
-      transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(0) rotate(0);
     }
   }
 }

@@ -1,22 +1,50 @@
 .extra-products {
-  padding: 35px 20px 0;
+  @include content-paddings();
+
+  @include respond(desktop) {
+    padding-bottom: 87px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    @include respond(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__title {
     margin: 0;
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     position: relative;
+
+    @include respond(tablet) {
+      font-size: 36px;
+      padding-left: 40px;
+      margin-bottom: 71px;
+    }
+
+    @include respond(desktop) {
+      padding-left: 0;
+    }
 
     &::after {
       content: "";
-      width: 45px;
-      height: 4px;
+      width: 52px;
+      height: 3px;
       background-color: $main-color-theme;
       display: inline-block;
       right: -20px;
-      top: 50%;
+      top: 54%;
       position: absolute;
+
+      @include respond(tablet) {
+        width: 326px;
+        right: -30px;
+      }
     }
   }
 
@@ -24,5 +52,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include respond(desktop) {
+      width: 73.36%;
+    }
   }
 }

@@ -1,0 +1,41 @@
+/* stylelint-disable */
+
+// Миксин для адаптивности
+@mixin respond ($breakpoint) {
+
+    @if ($breakpoint == mobile) {
+        @media (min-width: $mobile) {@content}
+    };
+
+    @if ($breakpoint == tablet) {
+        @media (min-width: $tablet) {@content}
+    };
+
+    @if ($breakpoint == desktop) {
+        @media (min-width: $desktop) {@content}
+    };
+};
+
+// Миксин для отступов.
+@mixin content-paddings($top-padding: 0px, $bottom-padding: 0px) {
+    @media (min-width: $mobile) {
+        padding-top: $top-padding;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: $bottom-padding;
+    }
+    @media (min-width: $tablet) {
+        padding-top: $top-padding;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: $bottom-padding;
+    }
+    @media (min-width: $desktop) {
+        padding-top: $top-padding;
+        // padding-left: 110px;
+        // padding-right: 110px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: $bottom-padding;
+    }
+}

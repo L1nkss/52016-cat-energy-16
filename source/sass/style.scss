@@ -1,11 +1,11 @@
 // Базовые настройки
 @import "base/font";
 @import "helpers/variables";
+@import "helpers/mixins";
 @import "base/general";
 
 // Components
 @import "components/navigation";
-@import "components/subject";
 @import "components/menu.scss";
 @import "components/title";
 @import "components/catalog";
@@ -16,6 +16,7 @@
 @import "components/footer";
 @import "components/social";
 @import "components/academy";
+@import "components/products-list";
 @import "components/products-catalog";
 @import "components/product";
 @import "components/all-products";
@@ -23,3 +24,15 @@
 @import "components/extra-product";
 @import "components/gift";
 @import "components/compare";
+@import "components/slider";
+@import "components/form-header";
+@import "components/cat-information";
+@import "components/cat-program";
+@import "components/owner-information";
+@import "components/order-comment";
+@import "components/extra-order";
+@import "components/form-submit";
+@import "components/header";
+@import "components/burger";
+@import "components/example";
+@import "components/form";
