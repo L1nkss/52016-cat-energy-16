@@ -1,12 +1,17 @@
 .example {
   background-color: $grey-color;
 
-  @include content-paddings(20px, 56px);
+  @include content-paddings(20px, 33px);
+
+  @include respond(tablet) {
+    padding-bottom: 0;
+  }
 
   @include respond(desktop) {
     display: flex;
     max-width: 1300px;
     margin: 0 auto;
+    padding-top: 0;
   }
 
   &__information {
@@ -16,6 +21,10 @@
   }
 
   &__slider {
+    @include respond(tablet) {
+      padding-bottom: 69px;
+    }
+
     @include respond(desktop) {
       width: 53.28%;
     }
@@ -31,6 +40,10 @@
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 62px;
+    }
+
+    @include respond(desktop) {
+      margin-bottom: 147px;
     }
   }
 
@@ -56,6 +69,12 @@
     }
   }
 
+  &__information {
+    @include respond(tablet) {
+      margin-bottom: 90px;
+    }
+  }
+
   &__text {
     font-size: 14px;
     line-height: 18px;
@@ -73,7 +92,7 @@
     }
 
     @include respond(desktop) {
-      width: 70.49%;
+      width: 76.49%;
       margin-bottom: 68px;
     }
   }
@@ -135,7 +154,7 @@
       width: 28.07%;
 
       &:first-child {
-        margin-right: 6.67%;
+        margin-right: 7.67%;
       }
     }
   }

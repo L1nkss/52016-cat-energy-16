@@ -1,9 +1,13 @@
 .slider {
   position: relative;
   //height: 240px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   text-align: center;
   //margin-left: -20px;
+
+  @include respond(tablet) {
+    margin-bottom: 10px;
+  }
 
   @include respond(desktop) {
     // position: absolute;

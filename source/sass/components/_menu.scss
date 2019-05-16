@@ -41,6 +41,14 @@
     //border-top: 1px solid $grey-color--darker;
     color: $black-color;
 
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
     @include respond(tablet) {
       border: 0;
       font-size: 18px;

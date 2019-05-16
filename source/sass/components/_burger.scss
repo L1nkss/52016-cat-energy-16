@@ -20,6 +20,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.6s;
 
     &::after {
       content: "";
@@ -30,6 +31,7 @@
       position: absolute;
       top: -8px;
       transform: translateY(8px) rotate(45deg);
+      transition: 0.6s;
     }
 
     &::before {
@@ -41,6 +43,7 @@
       position: absolute;
       top: 8px;
       transform: translateY(-8px) rotate(-45deg);
+      transition: 0.6s;
     }
 
     &--hide {

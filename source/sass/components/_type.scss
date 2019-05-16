@@ -41,6 +41,47 @@
     top: 24px;
     left: 22px;
 
+    &::before {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+
+    &--slim {
+      &::before {
+        background-image: url("../img/icon-cat-slim.svg");
+        width: 35px;
+        left: 15%;
+
+        @include respond(tablet) {
+          width: 140px;
+          left: 15%;
+          top: -6%;
+        }
+      }
+    }
+
+    &--pro {
+      &::before {
+        background-image: url("../img/icon-cat-pro.svg");
+        width: 73px;
+        left: -11px;
+        top: 17%;
+
+        @include respond(tablet) {
+          width: 268px;
+          left: -33px;
+          top: 20%;
+        }
+
+        @include respond(desktop) {
+          width: 135px;
+          left: -18px;
+        }
+      }
+    }
+
     @include respond(tablet) {
       width: 200px;
       height: 200px;
@@ -119,8 +160,24 @@
     text-align: left;
     text-transform: uppercase;
     color: $black-color;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+
+    &:hover {
+      &::after {
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+        width: 30px;
+      }
+    }
+
+    &:active {
+      opacity: 0.4;
+
+      &::after {
+        background-image: url("../../img/icon-right-arrow-verylong.svg");
+        width: 30px;
+      }
+    }
 
     @include respond(tablet) {
       border: 0;

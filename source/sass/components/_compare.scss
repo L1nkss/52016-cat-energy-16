@@ -1,6 +1,6 @@
 .compare {
   display: flex;
-  width: 195px;
+  width: 197px;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
@@ -41,7 +41,6 @@
 
     @include respond(tablet) {
       font-size: 20px;
-      padding: 5px 0;
       border-bottom: 1px dotted #d9d9d9;
     }
   }
@@ -49,7 +48,7 @@
   &__scale {
     position: relative;
     //max-width: 84px;
-    width: 100%;
+    width: 43.58%;
     height: 14px;
     border: 1px solid $grey-color--darker;
     border-radius: 50px;

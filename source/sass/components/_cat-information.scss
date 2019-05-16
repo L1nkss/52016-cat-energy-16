@@ -61,6 +61,14 @@
       color: $black-color--light;
     }
 
+    &:hover {
+      border-color: $border-hover-color;
+    }
+
+    &:focus {
+      border-color: $black-color;
+    }
+
     @include respond(tablet) {
       padding-top: 8px;
       padding-bottom: 12px;
