@@ -1,17 +1,19 @@
 .example {
   background-color: $grey-color;
 
-  @include content-paddings(20px, 33px);
+  &__container {
+    @include content-paddings(20px, 33px);
 
-  @include respond(tablet) {
-    padding-bottom: 0;
-  }
+    @include respond(tablet) {
+      padding-bottom: 0;
+    }
 
-  @include respond(desktop) {
-    display: flex;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding-top: 0;
+    @include respond(desktop) {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+    }
   }
 
   &__information {

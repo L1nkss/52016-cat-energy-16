@@ -129,10 +129,19 @@
     padding: 12px 0;
     padding-bottom: 13px;
     padding-left: 14px;
-    padding-right: 30px;
+    padding-right: 40px;
 
     &::placeholder {
       color: $black-color--light;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $black-color;
+    }
+
+    &:focus + .owner-information__icon {
+      fill: $main-color-theme;
     }
 
     @include respond(tablet) {

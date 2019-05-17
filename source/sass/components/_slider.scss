@@ -66,5 +66,22 @@
       right: 0;
       margin: 0 auto;
     }
+
+    &--before {
+      @include respond(tablet) {
+        //clip: rect(auto, 340px, auto, auto);
+        clip: rect(auto, 345px, auto, auto);
+      }
+    }
+
+    &--after {
+      display: none;
+
+      @include respond(tablet) {
+        display: block;
+        //clip: rect(auto, auto, auto, 340px);
+        clip: rect(auto, auto, auto, 345px);
+      }
+    }
   }
 }

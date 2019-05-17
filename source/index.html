@@ -85,55 +85,64 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__information">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов
-          в день</p>
-        <div class="example__wrapper">
-          <ul class="example__improvement">
-            <li class="example__item">
-              <p class="example__result">5 кг</p>
-              <p class="example__result-text">снижение веса</p>
-            </li>
-            <li class="example__item">
-              <p class="example__result">60 дней</p>
-              <p class="example__result-text">затрачено времени</p>
-            </li>
-          </ul>
-          <p class="example__cost">Затраты на питание: <span class="example__cost-number">15 000 руб.</span></p>
-        </div>
-      </div>
-      <div class="example__slider">
-        <div class="slider">
-          <div class="slider__wrapper">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="slider__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                alt="Большой кот">
-            </picture>
-            <picture>
-            </picture>
+      <div class="example__container">
+        <div class="example__information">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в день</p>
+          <div class="example__wrapper">
+            <ul class="example__improvement">
+              <li class="example__item">
+                <p class="example__result">5 кг</p>
+                <p class="example__result-text">снижение веса</p>
+              </li>
+              <li class="example__item">
+                <p class="example__result">60 дней</p>
+                <p class="example__result-text">затрачено времени</p>
+              </li>
+            </ul>
+            <p class="example__cost">Затраты на питание: <span class="example__cost-number">15 000 руб.</span></p>
           </div>
         </div>
-        <div class="compare">
-          <button class="compare__button" type="button">Было</button>
-          <div class="compare__scale">
-            <button class="compare__toggle" type="button"></button>
+        <div class="example__slider">
+          <div class="slider">
+            <div class="slider__wrapper">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  alt="Большой кот">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  alt="Уже не большой кот">
+              </picture>
+            </div>
           </div>
-          <button class="compare__button" type="button">Стало</button>
+          <div class="compare">
+            <button class="compare__button" type="button">Было</button>
+            <div class="compare__scale">
+              <button class="compare__toggle" type="button"></button>
+            </div>
+            <button class="compare__button" type="button">Стало</button>
+          </div>
         </div>
       </div>
     </section>
     </section>
     <section class="address">
-      <div class="address__item address__item--white">
-        <p class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="address__wrapper">
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__city">Санкт-Петербург</p>
-        </address>
+      <div class="address__container">
+        <div class="address__item address__item--white">
+          <p class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="address__wrapper">
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__city">Санкт-Петербург</p>
+          </address>
+        </div>
       </div>
       <div class="address__map">
 
@@ -141,43 +150,46 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <a class="footer__link" href="#">
-        <img class="footer__image" src="img/logo-footer.svg" width="127" height="24" alt="Логотип компании Cat-energy">
-      </a>
-    </div>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__icon social__icon--vk" width="22" height="12">
-              <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__icon social__icon--inst" width="16" height="16">
-              <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__icon social__icon--fb" width="10" height="19">
-              <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright academy">
-      <a class="academy__link" href="#">
-        <span class="academy__name">HTML Academy</span>
-        <svg class="academy__icon" width="40" height="40">
-          <use xlink:href="img/new-sprite.svg#htmlacademy"></use>
-        </svg>
-      </a>
+    <div class="footer__container">
+      <div class="footer__logo">
+        <a class="footer__link" href="#">
+          <img class="footer__image" src="img/logo-footer.svg" width="127" height="24"
+            alt="Логотип компании Cat-energy">
+        </a>
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--vk" width="22" height="12">
+                <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--inst" width="16" height="16">
+                <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--fb" width="10" height="19">
+                <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright academy">
+        <a class="academy__link" href="#">
+          <span class="academy__name">HTML Academy</span>
+          <svg class="academy__icon" width="40" height="40">
+            <use xlink:href="img/new-sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
