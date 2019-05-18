@@ -10,7 +10,9 @@
   }
 
   @include respond(desktop) {
-    // position: absolute;
+    position: absolute;
+    top: -49px;
+    left: -80px;
     // top: -52px;
     // right: 76px;
   }

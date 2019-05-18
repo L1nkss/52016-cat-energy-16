@@ -1,3 +1,7 @@
 .main-content {
   overflow: hidden;
+
+  &--overflow {
+    overflow: visible;
+  }
 }

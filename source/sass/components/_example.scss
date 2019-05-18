@@ -1,6 +1,10 @@
 .example {
   background-color: $grey-color;
 
+  @include respond(desktop) {
+    background-image: linear-gradient(to bottom, white 20%, $grey-color 20%);
+  }
+
   &__container {
     @include content-paddings(20px, 33px);
 
@@ -13,6 +17,8 @@
       max-width: 1300px;
       margin: 0 auto;
       padding-top: 0;
+      padding-bottom: 74px;
+      justify-content: space-between;
     }
   }
 
@@ -23,6 +29,7 @@
 
     @include respond(desktop) {
       width: 46.72%;
+      margin-bottom: 0;
     }
   }
 
@@ -32,7 +39,12 @@
     }
 
     @include respond(desktop) {
-      width: 53.28%;
+      width: 46.72%;
+      padding-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      position: relative;
     }
   }
 
