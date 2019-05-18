@@ -3,13 +3,14 @@
   border: 0;
   padding-bottom: 18px;
   position: relative;
-  margin-bottom: 2px;
-  overflow: hidden;
+  margin-bottom: 20px;
+  //overflow: hidden;
 
   @include content-paddings();
 
   @include respond(tablet) {
     margin-bottom: 21px;
+    padding: 0;
   }
 
   @include respond(desktop) {
@@ -106,10 +107,6 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 0 40px;
-    }
-
-    @include respond(tablet) {
-      padding: 0;
     }
   }
 

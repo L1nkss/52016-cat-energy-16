@@ -2,12 +2,13 @@
   margin: 0;
   border: 0;
   position: relative;
-  margin-bottom: 23px;
-  overflow: hidden;
+  margin-bottom: 6px;
+  //overflow: hidden;
 
   @include content-paddings();
 
   @include respond(tablet) {
+    padding: 0;
     padding-bottom: 23px;
     margin-bottom: 21px;
   }
@@ -65,7 +66,7 @@
   &__text {
     width: 100%;
     min-height: 150px;
-    padding: 13px;
+    padding: 11px 13px 13px 14px;
     font-size: 16px;
     font-family: $primary-font;
     line-height: 18px;
@@ -88,10 +89,6 @@
   &__wrapper {
     @include respond(tablet) {
       padding: 0 40px;
-    }
-
-    @include respond(desktop) {
-      padding: 0;
     }
   }
 }

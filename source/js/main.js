@@ -23,5 +23,4 @@
 
 })();
 
-
 //  clip: rect(auto, 345px, auto, auto);

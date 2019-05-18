@@ -1,5 +1,9 @@
 .form {
   overflow: hidden;
+
+  @include respond(tablet) {
+    @include content-paddings();
+  }
   // legend titles
   &__legend-title {
     font-size: 24px;
@@ -18,11 +22,14 @@
       @include respond(tablet) {
         content: "";
         position: absolute;
-        width: 30px;
+        //width: 30px;
+        width: 100vw;
         height: 3px;
         background-color: #67b737;
-        left: 0;
+        //left: 0;
+        right: 0;
         top: 22px;
+        z-index: -1;
       }
     }
 
@@ -48,11 +55,21 @@
       line-height: 36px;
       width: auto;
       margin-bottom: 73px;
-      //padding-left: 40px;
+      padding-left: 40px;
       padding-right: 41px;
     }
 
+    &--owner-margin {
+      margin-bottom: 32px;
+
+      @include respond(tablet) {
+        margin-bottom: 72px;
+      }
+    }
+
     &--order-margin {
+      margin-bottom: 20px;
+
       @include respond(tablet) {
         margin-bottom: 60px;
       }
@@ -68,7 +85,8 @@
   // wrapper
   &__wrapper {
     @include respond(tablet) {
-      @include content-paddings();
+      //@include content-paddings();
+      padding: 0 40px;
     }
 
     @include respond(desktop) {

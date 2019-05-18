@@ -15,6 +15,10 @@
     color: #444444;
     text-transform: none;
     margin: 0 auto;
+
+    @include respond(desktop) {
+      justify-content: flex-end;
+    }
   }
 
   &__icon {
@@ -29,6 +33,10 @@
     &:active {
       fill: $main-color-theme;
       opacity: 0.4;
+    }
+
+    @include respond(desktop) {
+      margin-left: 16px;
     }
   }
 }
