@@ -20,6 +20,9 @@
   &__wrapper {
     max-width: 280px;
     margin: 0 auto 26px;
+    // Проба (Удалить если не получится)
+    height: 240px;
+    position: relative;
 
     @include respond(tablet) {
       margin-bottom: 14px;
@@ -60,6 +63,12 @@
     //width: 100%;
     max-width: inherit;
     margin-left: -20px;
+    display: block;
+    // Проба (Удалить если не получится)
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     @include respond(tablet) {
       position: absolute;
@@ -70,6 +79,8 @@
     }
 
     &--before {
+      clip: rect(auto, 320px, auto, auto);
+
       @include respond(tablet) {
         //clip: rect(auto, 340px, auto, auto);
         clip: rect(auto, 345px, auto, auto);
@@ -77,7 +88,8 @@
     }
 
     &--after {
-      display: none;
+      //display: none;
+      clip: rect(auto, auto, auto, 320px);
 
       @include respond(tablet) {
         display: block;

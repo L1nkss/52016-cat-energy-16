@@ -11,11 +11,14 @@
     padding: 0;
     padding-bottom: 40px;
     position: relative;
-    margin: 137px 0 4px 0;
+    // margin: 137px 0 4px 0;
+    margin: 137px 3.9% 4px 3.9%;
   }
 
   @include respond(desktop) {
     width: 245px;
+    margin-left: 3.076%;
+    margin-right: 3.076%;
   }
 
   &__information {

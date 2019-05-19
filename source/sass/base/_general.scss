@@ -21,3 +21,120 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+// Кнопки
+.button {
+  //width: 100%;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+
+  &--green {
+    background-color: $main-color-theme;
+    color: $white-color;
+
+    &:hover {
+      background-color: $main-color-theme--dark;
+    }
+
+    &:active {
+      background-color: $main-color-theme--dark;
+      color: rgba($white-color, 0.4);
+    }
+  }
+
+  &--grey {
+    background-color: $grey-color;
+    color: $black-color--light;
+    padding: 9px 0;
+
+    &:hover {
+      background-color: $grey-color--darker;
+    }
+
+    &:active {
+      background-color: $grey-color--darker;
+      color: rgba($black-color--light, 0.4);
+    }
+  }
+
+  &--title {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    margin-top: auto;
+
+    @include respond(tablet) {
+      width: 245px;
+      margin-left: 88px;
+      margin-top: -582px;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px 0;
+    }
+
+    @include respond(desktop) {
+      margin-top: -188px;
+    }
+  }
+
+  &--form-submit {
+    font-family: $primary-font;
+    margin-bottom: 21px;
+    font-size: 16px;
+    padding: 16px 0;
+
+    @include respond(tablet) {
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 17px;
+      padding-left: 64px;
+      padding-right: 66px;
+      font-size: 20px;
+      margin-right: 60px;
+    }
+
+    @include respond(desktop) {
+      width: 570px;
+      margin-right: 81px;
+    }
+  }
+
+  &--product-order {
+    line-height: 20px;
+    font-size: 16px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+
+    @include respond(tablet) {
+      width: 75.3%;
+      margin: 0 auto;
+    }
+
+    @include respond(desktop) {
+      width: 69.3%;
+    }
+  }
+
+  &--extra-order {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+
+    @include respond(desktop) {
+      width: auto;
+      padding: 10px 92px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}

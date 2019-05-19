@@ -1,9 +1,8 @@
 (function main() {
-    const burgerToggle = document.querySelector(".navigation__toggle");
     const burgerMenu = document.querySelector(".burger");
-    const compareBar = document.querySelector(".compare__bar");
     const menu = document.querySelector(".menu");
     const burger = document.querySelector(".burger__toggle");
+    const button = document.querySelector(".compare");
 
     // Закрываем меню, если JS загрузился
     menu.classList.add("menu--hide");
@@ -18,6 +17,19 @@
     burgerMenu.addEventListener("click",toggleMenu)
 
     // Смена изображения before/after
+    button.addEventListener("click", e => {
+      const imageAfter = document.querySelector(".slider__image--after");
+      const imageBefore = document.querySelector(".slider__image--before");
+      const imageWidth = document.querySelector(".slider__image").width;
+
+      if (e.target.innerHTML === "Было") {
+        imageBefore.style.clip = `rect(auto, ${imageWidth}px, auto, auto)`;
+        imageAfter.style.clip = `rect(auto, auto, auto, ${imageWidth}px)`;
+      } else if (e.target.innerHTML === "Стало") {
+        imageBefore.style.clip = `rect(auto, 0, auto, auto)`;
+        imageAfter.style.clip = `rect(auto, auto, auto, 0)`;
+      }
+    })
 
     // Смени изображения с помощью toggle
 

@@ -1,6 +1,10 @@
 .example {
   background-color: $grey-color;
 
+  @include respond(tablet) {
+    background-image: linear-gradient(to bottom, white 56.3%, $grey-color 56.3%);
+  }
+
   @include respond(desktop) {
     background-image: linear-gradient(to bottom, white 20%, $grey-color 20%);
   }
