@@ -17,19 +17,6 @@
     burgerMenu.addEventListener("click",toggleMenu)
 
     // Смена изображения before/after
-    button.addEventListener("click", e => {
-      const imageAfter = document.querySelector(".slider__image--after");
-      const imageBefore = document.querySelector(".slider__image--before");
-      const imageWidth = document.querySelector(".slider__image").width;
-
-      if (e.target.innerHTML === "Было") {
-        imageBefore.style.clip = `rect(auto, ${imageWidth}px, auto, auto)`;
-        imageAfter.style.clip = `rect(auto, auto, auto, ${imageWidth}px)`;
-      } else if (e.target.innerHTML === "Стало") {
-        imageBefore.style.clip = `rect(auto, 0, auto, auto)`;
-        imageAfter.style.clip = `rect(auto, auto, auto, 0)`;
-      }
-    })
 
     // Смени изображения с помощью toggle
 

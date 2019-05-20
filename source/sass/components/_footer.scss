@@ -36,6 +36,14 @@
     margin: auto;
     display: block;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
     @include respond(tablet) {
       margin: 0;
     }

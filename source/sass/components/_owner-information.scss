@@ -140,10 +140,22 @@
     &:focus {
       outline: none;
       border: 1px solid $black-color;
+
+      & + .owner-information__icon {
+        fill: $main-color-theme;
+      }
     }
 
-    &:focus + .owner-information__icon {
-      fill: $main-color-theme;
+    // &:focus + .owner-information__icon {
+    //   fill: $main-color-theme;
+    // }
+
+    &:invalid {
+      border-color: $error-color;
+
+      & + .owner-information__icon {
+        fill: $error-color;
+      }
     }
 
     @include respond(tablet) {
