@@ -4,7 +4,7 @@
 
   @include content-paddings(0, 24px);
 
-  @include respond(tablet) {
+  @include respond(tablet) {    // 8.47 -tablet  6.55% - desktop
     width: 324px;
     background-color: $grey-color;
     border: 0;
@@ -12,10 +12,35 @@
     padding-bottom: 40px;
     position: relative;
     margin: 137px 0 4px 0;
+    margin-right: 60px;
+
+    @include product-margins;
+
+    // &:nth-child(2n) {
+    //   margin-right: 0;
+    // }
+
+    @media (min-width: 1152px) {
+      &:nth-child(2n) {
+        //margin-right: 60px;
+      }
+
+      &:nth-child(3n) {
+        //margin-right: 0;
+      }
+    }
   }
 
   @include respond(desktop) {
     width: 245px;
+
+    // &:nth-child(n) {
+    //   margin-right: 80px;
+    // }
+
+    // &:nth-child(4n) {
+    //   margin-right: 0;
+    // }
   }
 
   &__information {

@@ -1,17 +1,29 @@
 .example {
   background-color: $grey-color;
 
-  @include content-paddings(20px, 33px);
-
   @include respond(tablet) {
-    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, white 56.3%, $grey-color 56.3%);
   }
 
   @include respond(desktop) {
-    display: flex;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding-top: 0;
+    background-image: linear-gradient(to bottom, white 20%, $grey-color 20%);
+  }
+
+  &__container {
+    @include content-paddings(20px, 33px);
+
+    @include respond(tablet) {
+      padding-bottom: 0;
+    }
+
+    @include respond(desktop) {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+      padding-bottom: 74px;
+      justify-content: space-between;
+    }
   }
 
   &__information {
@@ -21,6 +33,7 @@
 
     @include respond(desktop) {
       width: 46.72%;
+      margin-bottom: 0;
     }
   }
 
@@ -30,7 +43,12 @@
     }
 
     @include respond(desktop) {
-      width: 53.28%;
+      width: 46.72%;
+      padding-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      position: relative;
     }
   }
 

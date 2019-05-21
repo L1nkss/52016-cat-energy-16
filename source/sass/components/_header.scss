@@ -15,7 +15,6 @@
       @include respond(desktop) {
         content: "";
         width: 50%;
-        background-color: $main-color-theme;
         position: absolute;
         top: 0;
         right: 0;

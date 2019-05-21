@@ -32,10 +32,30 @@
     }
     @media (min-width: $desktop) {
         padding-top: $top-padding;
-        // padding-left: 110px;
-        // padding-right: 110px;
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: $bottom-padding;
     }
+}
+
+// Миксин для карточек страницы catalog
+
+@mixin product-margins {
+  margin-right: 60px;
+
+  @media (max-width: 1151px) {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $desktop) and (min-width: 1152px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 0;
+  }
 }

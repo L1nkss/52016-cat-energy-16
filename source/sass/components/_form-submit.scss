@@ -10,7 +10,7 @@
   @include respond(tablet) {
     flex-direction: row;
     align-items: center;
-    padding-bottom: 72px;
+    padding: 0 40px 72px;
   }
 
   @include respond(desktop) {

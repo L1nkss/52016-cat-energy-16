@@ -69,6 +69,10 @@
       border-color: $black-color;
     }
 
+    &:invalid {
+      border-color: $error-color;
+    }
+
     @include respond(tablet) {
       padding-top: 8px;
       padding-bottom: 12px;

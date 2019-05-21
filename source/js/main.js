@@ -1,10 +1,8 @@
 (function main() {
-    const burgerToggle = document.querySelector(".navigation__toggle");
     const burgerMenu = document.querySelector(".burger");
-    const compareBar = document.querySelector(".compare__bar");
-    const compareScale = document.querySelector(".compare__scale");
     const menu = document.querySelector(".menu");
     const burger = document.querySelector(".burger__toggle");
+    const button = document.querySelector(".compare");
 
     // Закрываем меню, если JS загрузился
     menu.classList.add("menu--hide");
@@ -17,4 +15,11 @@
 
     //burgerToggle.addEventListener("click",toggleMenu);
     burgerMenu.addEventListener("click",toggleMenu)
+
+    // Смена изображения before/after
+
+    // Смени изображения с помощью toggle
+
 })();
+
+//  clip: rect(auto, 345px, auto, auto);

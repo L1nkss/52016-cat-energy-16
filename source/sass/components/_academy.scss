@@ -8,19 +8,25 @@
 
   &__link {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: $second-font;
     text-decoration: none;
     color: #444444;
     text-transform: none;
     margin: 0 auto;
+    max-width: 280px;
+
+    @include respond(desktop) {
+      justify-content: flex-end;
+    }
   }
 
   &__icon {
     fill: $grey-color-icons;
     margin-right: -6px;
     margin-top: 1px;
+    margin-left: auto;
 
     &:hover {
       fill: $main-color-theme;
@@ -29,6 +35,10 @@
     &:active {
       fill: $main-color-theme;
       opacity: 0.4;
+    }
+
+    @include respond(desktop) {
+      margin-left: 16px;
     }
   }
 }
