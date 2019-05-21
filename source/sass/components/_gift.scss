@@ -15,6 +15,7 @@
     min-height: 289px;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
     background-size: cover;
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -30,6 +31,8 @@
       background-image: url("../img/gift-photo-tablet@1x.jpg");
       flex-direction: row;
       padding: 0;
+      padding-right: 107px;
+      padding-top: 8px;
 
       @include retina-image("../img/gift-photo-tablet@2x.jpg");
     }
@@ -38,10 +41,25 @@
       min-height: 289px;
       width: 245px;
       background-image: url("../img/gift-photo-desktop@1x.jpg");
-      flex-direction: row;
+      flex-direction: column;
       padding: 0;
+      padding-bottom: 42px;
 
       @include retina-image("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  &__icon {
+    fill: $white-color;
+    position: absolute;
+    top: 65px;
+
+    @include respond(tablet) {
+      left: 91px;
+    }
+
+    @include respond(desktop) {
+      left: 96px;
     }
   }
 
@@ -55,6 +73,11 @@
     @include respond(tablet) {
       width: 178px;
       text-align: left;
+    }
+
+    @include respond(desktop) {
+      width: 178px;
+      text-align: center;
     }
   }
 }

@@ -19,13 +19,13 @@
 
   &__wrapper {
     max-width: 280px;
-    margin: 0 auto 26px;
+    margin: 0 auto 30px;
     // Проба (Удалить если не получится)
     height: 240px;
     position: relative;
 
     @include respond(tablet) {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       height: 513px;
       position: relative;
       max-width: inherit;

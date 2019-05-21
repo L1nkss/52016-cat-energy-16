@@ -24,7 +24,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 39px 0 31px;
+    padding: 40px 0 26px;
 
     @include respond(tablet) {
       width: 22.88%;
@@ -50,7 +50,7 @@
   }
 
   &__image {
-    display: block;
+    //display: block;
 
     @include respond(tablet) {
       width: 129px;

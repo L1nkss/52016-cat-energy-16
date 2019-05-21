@@ -40,5 +40,6 @@
   ],
   "engines": {
     "node": "8.15"
-  }
+  },
+  "dependencies": {}
 }

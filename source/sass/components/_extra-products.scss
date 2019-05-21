@@ -56,9 +56,13 @@
       height: 3px;
       background-color: #67b737;
       //right: 0;
-      top: 30px;
+      top: 20px;
       z-index: -1;
       //left: 20px;
+
+      @include respond(tablet) {
+        top: 30px;
+      }
     }
   }
 

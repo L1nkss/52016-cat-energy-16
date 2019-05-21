@@ -1,13 +1,13 @@
 .social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 22px;
+  padding-bottom: 21px;
 
   @include respond(tablet) {
     border: 0;
     width: 45.76%;
-    padding-top: 20px;
+    padding-top: 8px;
   }
 
   &__list {
@@ -22,15 +22,22 @@
   &__item {
     margin: 0 18px;
     width: 21px;
+    display: flex;
+    justify-content: center;
+
+    &--justify-fb {
+      justify-content: flex-start;
+    }
 
     @include respond(tablet) {
-      margin: 0 15px;
-      width: 25px;
+      margin: 0 12px;
+      width: 30px;
     }
   }
 
   &__icon {
     fill: $grey-color-icons;
+    display: block;
 
     &:hover {
       fill: $main-color-theme;
@@ -46,8 +53,8 @@
       // height: 19px;
 
       @include respond(tablet) {
-        width: 31px;
-        height: 19px;
+        width: 30px;
+        height: 16px;
       }
     }
 
@@ -56,8 +63,8 @@
       // height: 19px;
 
       @include respond(tablet) {
-        width: 25px;
-        height: 25px;
+        width: 23px;
+        height: 23px;
       }
     }
 
@@ -66,8 +73,8 @@
       // height: 19px;
 
       @include respond(tablet) {
-        width: 16px;
-        height: 30px;
+        width: 14px;
+        height: 28px;
       }
     }
   }

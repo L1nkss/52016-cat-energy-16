@@ -264,7 +264,7 @@
       <article class="all-products">
         <p class="all-products__title">Показать ещё 100500 товаров</p>
         <p class="all-products__text">На самом деле вкусов гораздо больше!</p>
-        <a class="button button--grey" href="#">Показать все</a>
+        <a class="button button--grey button--show-all" href="#">Показать все</a>
       </article>
     </section>
     <section class="extra-products">
@@ -311,6 +311,9 @@
         </ul>
         <div class="extra-products__gift gift">
           <div class="gift__wrapper">
+            <svg class="gift__icon" width="55" height="60">
+              <use xlink:href="img/new-sprite.svg#icon-gift"></use>
+            </svg>
             <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
@@ -333,48 +336,53 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__logo">
-        <a class="footer__link" href="#">
-          <img class="footer__image" src="img/logo-footer.svg" width="127" height="24"
-            alt="Логотип компании Cat-energy">
-        </a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon social__icon--vk" width="22" height="12">
-                <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a class="footer__link" href="#">
+            <!-- <img class="footer__image" src="img/logo-footer.svg" width="127" height="24"
+              alt="Логотип компании Cat-energy"> -->
+              <svg class="footer__image" width="127" height="24">
+                <use xlink:href="img/new-sprite.svg#logo-footer"></use>
               </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon social__icon--inst" width="16" height="16">
-                <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon social__icon--fb" width="10" height="19">
-                <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          </a>
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--vk" width="22" height="12">
+                  <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--inst" width="16" height="16">
+                  <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--justify-fb">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--fb" width="10" height="19">
+                  <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright academy">
+          <a class="academy__link" href="#">
+            <span class="academy__name">HTML Academy</span>
+            <svg class="academy__icon" width="40" height="40">
+              <use xlink:href="img/new-sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="footer__copyright academy">
-        <a class="academy__link" href="#">
-          <span class="academy__name">HTML Academy</span>
-          <svg class="academy__icon" width="40" height="40">
-            <use xlink:href="img/new-sprite.svg#htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.js" defer=""></script>
   <script src="js/main.js"></script>
 </body>
 
