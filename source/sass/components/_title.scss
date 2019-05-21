@@ -12,6 +12,8 @@
   margin-bottom: 22px;
   background-position: 50% 0, 0 0;
 
+  @include retina-image("../img/index-background-mobile@2x.jpg");
+
   @include respond(tablet) {
     background-image: none;
     color: $black-color;

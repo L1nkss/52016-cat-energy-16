@@ -99,6 +99,8 @@
   &--clock {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
+
+      @include retina-image("../img/advantage-clock@2x.png");
     }
 
     &::after {
@@ -110,6 +112,8 @@
   &--dining {
     &::before {
       background-image: url("../img/advantage-dining@1x.png");
+
+      @include retina-image("../img/advantage-dining@2x.png");
     }
 
     &::after {
@@ -121,6 +125,8 @@
   &--leaf {
     &::before {
       background-image: url("../img/advantage-leaf@1x.png");
+
+      @include retina-image("../img/advantage-leaf@2x.png");
     }
 
     &::after {
@@ -132,6 +138,8 @@
   &--powder {
     &::before {
       background-image: url("../img/advantage-powder@1x.png");
+
+      @include retina-image("../img/advantage-powder@2x.png");
     }
 
     &::after {

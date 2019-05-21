@@ -23,11 +23,15 @@
     padding-bottom: 42px;
     background-position: center;
 
+    @include retina-image("../img/gift-photo-mobile@2x.jpg");
+
     @include respond(tablet) {
       min-height: 200px;
       background-image: url("../img/gift-photo-tablet@1x.jpg");
       flex-direction: row;
       padding: 0;
+
+      @include retina-image("../img/gift-photo-tablet@2x.jpg");
     }
 
     @include respond(desktop) {
@@ -36,6 +40,8 @@
       background-image: url("../img/gift-photo-desktop@1x.jpg");
       flex-direction: row;
       padding: 0;
+
+      @include retina-image("../img/gift-photo-desktop@2x.jpg");
     }
   }
 

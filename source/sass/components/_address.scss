@@ -101,15 +101,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include retina-image("../img/bg-map-mobile@2x.png");
+
     @include respond(tablet) {
       background-image: url("../img/bg-map-tablet@1x.png");
       min-height: 395px;
+
+      @include retina-image("../img/bg-map-tablet@2x.png");
     }
 
     @include respond(desktop) {
       background-image: url("../img/bg-map-desktop@1x.png");
       min-height: 401px;
       position: relative;
+
+      @include retina-image("../img/bg-map-desktop@2x.png");
     }
   }
 }
