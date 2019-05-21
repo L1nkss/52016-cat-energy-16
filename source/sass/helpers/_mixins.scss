@@ -60,8 +60,12 @@
   }
 }
 // Миксин для ретиновой графики
-@mixin retina-image($url) {
+@mixin retina-image($url, $gradient: none) {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url($url);
+    @if ($gradient == none) {
+      background-image: url($url);
+    } @else {
+      background-image: url($url), linear-gradient($gradient);
+    }
   }
 }

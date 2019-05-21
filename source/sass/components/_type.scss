@@ -50,7 +50,8 @@
 
     &--slim {
       &::before {
-        background-image: url("../img/icon-cat-slim.svg");
+        //background-image: url("../img/icon-cat-slim.svg");
+        background-image: url("../test-sprite.svg#smile-view-face");
         width: 35px;
         left: 15%;
 
