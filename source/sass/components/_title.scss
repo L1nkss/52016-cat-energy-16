@@ -10,6 +10,9 @@
   padding: 26px 20px 0;
   position: relative;
   margin-bottom: 22px;
+
+  @include retina-image("../img/index-background-mobile@2x.jpg",(#65a93c 305px, transparent 305px));
+  background-size: 320px, auto;
   background-position: 50% 0, 0 0;
 
   @include respond(tablet) {

@@ -50,7 +50,6 @@ img {
   &--grey {
     background-color: $grey-color;
     color: $black-color--light;
-    padding: 9px 0;
 
     &:hover {
       background-color: $grey-color--darker;
@@ -60,6 +59,13 @@ img {
       background-color: $grey-color--darker;
       color: rgba($black-color--light, 0.4);
     }
+  }
+
+  &--show-all {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &--title {

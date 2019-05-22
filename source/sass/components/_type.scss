@@ -2,11 +2,11 @@
   background-color: $grey-color;
   position: relative;
 
-  @include content-paddings(29px, 19px);
+  @include content-paddings(29px, 18px);
 
   @include respond(tablet) {
     padding-right: 52px;
-    padding-top: 75px;
+    padding-top: 77px;
     padding-left: 52px;
     // padding-bottom: 47px;
     min-height: 373px;
@@ -41,47 +41,6 @@
     top: 24px;
     left: 22px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-repeat: no-repeat;
-      height: 100%;
-    }
-
-    &--slim {
-      &::before {
-        background-image: url("../img/icon-cat-slim.svg");
-        width: 35px;
-        left: 15%;
-
-        @include respond(tablet) {
-          width: 140px;
-          left: 15%;
-          top: -6%;
-        }
-      }
-    }
-
-    &--pro {
-      &::before {
-        background-image: url("../img/icon-cat-pro.svg");
-        width: 73px;
-        left: -11px;
-        top: 17%;
-
-        @include respond(tablet) {
-          width: 268px;
-          left: -33px;
-          top: 20%;
-        }
-
-        @include respond(desktop) {
-          width: 135px;
-          left: -18px;
-        }
-      }
-    }
-
     @include respond(tablet) {
       width: 200px;
       height: 200px;
@@ -98,10 +57,46 @@
     }
   }
 
+  &__slim {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    top: -2px;
+
+    @include respond(tablet) {
+      width: 140px;
+      top: -16px;
+    }
+
+    @include respond(desktop) {
+      width: 70px;
+      top: -8px;
+    }
+  }
+
+  &__pro {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    top: 0;
+
+    @include respond(tablet) {
+      width: 268px;
+      top: -4px;
+    }
+
+    @include respond(desktop) {
+      width: 134px;
+      top: 0;
+    }
+  }
+
   &__title {
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
@@ -112,7 +107,7 @@
       font-size: 36px;
       line-height: 37px;
       padding-left: 0;
-      margin-bottom: 27px;
+      margin-bottom: 25px;
 
       &::before {
         top: 52%;
@@ -124,8 +119,8 @@
     }
 
     @include respond(desktop) {
-      text-align: center;
-      margin-bottom: 75px;
+      padding-left: 162px;
+      margin-bottom: 73px;
     }
   }
 
@@ -198,6 +193,18 @@
       @include respond(tablet) {
         left: 37%;
       }
+    }
+  }
+
+  &__wrap {
+    display: none;
+
+    @include respond(tablet) {
+      display: block;
+    }
+
+    @include respond(desktop) {
+      display: none;
     }
   }
 }

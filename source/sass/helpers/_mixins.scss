@@ -59,3 +59,13 @@
     margin-right: 0;
   }
 }
+// Миксин для ретиновой графики
+@mixin retina-image($url, $gradient: none) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @if ($gradient == none) {
+      background-image: url($url);
+    } @else {
+      background-image: url($url), linear-gradient($gradient);
+    }
+  }
+}
