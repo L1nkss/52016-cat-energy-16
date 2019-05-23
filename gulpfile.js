@@ -42,7 +42,7 @@ gulp.task("server", function () {
 gulp.task("sprite",function(){
   return gulp.src("source/img/*.svg")
     .pipe(svgstore({
-      inlineSvg: true
+      inlineSvg: true     
     }))
     .pipe(rename("new-sprite.svg"))
     .pipe(gulp.dest("source/img"))
@@ -53,7 +53,11 @@ gulp.task("image-optimaz",function(){
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo(
+        {
+          plugins: [{removeAttrs: true}]
+        }
+      )
     ]))
     .pipe(gulp.dest("source/img"));
 })

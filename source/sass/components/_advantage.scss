@@ -19,7 +19,6 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    counter-reset: list-item;
 
     @include respond(tablet) {
       flex-direction: row;
@@ -27,6 +26,8 @@
       justify-content: space-between;
       align-content: space-between;
       min-height: 603px;
+      counter-reset: section;
+      list-style-type: none;
     }
 
     @include respond(desktop) {
@@ -61,6 +62,7 @@
     @include respond(tablet) {
       font-size: 16px;
       line-height: 24px;
+      max-width: 250px;
     }
   }
 }
@@ -100,11 +102,6 @@
 
       @include retina-image("../img/advantage-clock@2x.png");
     }
-
-    &::after {
-      counter-increment: list-item;
-      content: counter(list-item);
-    }
   }
 
   &--dining {
@@ -112,11 +109,6 @@
       background-image: url("../img/advantage-dining@1x.png");
 
       @include retina-image("../img/advantage-dining@2x.png");
-    }
-
-    &::after {
-      counter-increment: list-item;
-      content: counter(list-item);
     }
   }
 
@@ -126,11 +118,6 @@
 
       @include retina-image("../img/advantage-leaf@2x.png");
     }
-
-    &::after {
-      counter-increment: list-item;
-      content: counter(list-item);
-    }
   }
 
   &--powder {
@@ -138,11 +125,6 @@
       background-image: url("../img/advantage-powder@1x.png");
 
       @include retina-image("../img/advantage-powder@2x.png");
-    }
-
-    &::after {
-      counter-increment: list-item;
-      content: counter(list-item);
     }
   }
 
@@ -167,9 +149,9 @@
   }
 
   &::after {
-    display: none;
-
     @include respond(tablet) {
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       display: block;
       top: 90px;
@@ -178,7 +160,7 @@
       transform: translate(-50%);
       color: $grey-color--ligther;
       z-index: -1;
-      width: 115px;
+      //width: 115px;
     }
 
     @include respond(desktop) {
