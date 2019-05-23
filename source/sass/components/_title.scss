@@ -33,35 +33,6 @@
     margin: 0 auto 80px;
   }
 
-  &__button {
-    margin-top: auto;
-    width: 100%;
-    background-color: $main-color-theme;
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 11px 0;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white-color;
-    padding-top: 12px;
-    padding-bottom: 11px;
-
-    @include respond(tablet) {
-      width: 245px;
-      font-size: 20px;
-      line-height: 20px;
-      padding: 16px 0;
-      margin-left: 88px;
-      margin-top: -582px;
-    }
-
-    @include respond(desktop) {
-      margin-top: -188px;
-    }
-  }
-
   &__header {
     margin: 0;
     text-align: center;
@@ -81,6 +52,7 @@
 
     @include respond(desktop) {
       width: 52.42%;
+      padding-left: 90px;
     }
   }
 
@@ -89,18 +61,22 @@
     line-height: 14px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
 
     @include respond(tablet) {
       font-size: 20px;
       margin-bottom: 23px;
       padding-left: 87px;
     }
+
+    @include respond(desktop) {
+      padding-left: 90px;
+    }
   }
 
   &__image {
     display: block;
-    margin: 0 auto 2px;
+    margin: 0 auto 3px;
 
     @include respond(tablet) {
       width: 708px;

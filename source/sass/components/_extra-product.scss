@@ -21,6 +21,7 @@
   @include respond(desktop) {
     align-items: center;
     padding: 15px 0;
+    padding-bottom: 16px;
     border-left: none;
     border-right: none;
     justify-content: space-between;

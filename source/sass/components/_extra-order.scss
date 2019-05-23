@@ -3,19 +3,19 @@
   border: 0;
   padding-bottom: 18px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   //overflow: hidden;
 
   @include content-paddings();
 
   @include respond(tablet) {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
     padding: 0;
   }
 
   @include respond(desktop) {
     max-width: 1300px;
-    margin: 0 auto 27px;
+    margin: 0 auto 30px;
   }
 
   &__title {
@@ -70,7 +70,7 @@
     min-height: 30px;
     display: flex;
     align-items: center;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 
     &:hover {
       .extra-order__label::before {

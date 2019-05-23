@@ -9,7 +9,7 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     margin-top: 0;
     //width: 72.28%;
     display: inline-block;
@@ -61,7 +61,7 @@
     }
 
     &--owner-margin {
-      margin-bottom: 32px;
+      margin-bottom: 34px;
 
       @include respond(tablet) {
         margin-bottom: 72px;
@@ -69,7 +69,7 @@
     }
 
     &--order-margin {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
 
       @include respond(tablet) {
         margin-bottom: 60px;

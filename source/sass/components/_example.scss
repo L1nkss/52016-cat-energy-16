@@ -10,7 +10,7 @@
   }
 
   &__container {
-    @include content-paddings(20px, 33px);
+    @include content-paddings(20px, 36px);
 
     @include respond(tablet) {
       padding-bottom: 0;
@@ -21,7 +21,7 @@
       max-width: 1300px;
       margin: 0 auto;
       padding-top: 0;
-      padding-bottom: 74px;
+      padding-bottom: 75px;
       justify-content: space-between;
     }
   }
@@ -39,7 +39,7 @@
 
   &__slider {
     @include respond(tablet) {
-      padding-bottom: 69px;
+      padding-bottom: 74px;
     }
 
     @include respond(desktop) {
@@ -99,6 +99,7 @@
     text-align: left;
     margin-bottom: 23px;
     width: 95.35%;
+    color: $black-color--light;
 
     @include respond(tablet) {
       font-size: 16px;
@@ -198,6 +199,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 0 15px;
+    color: $black-color--light;
 
     @include respond(tablet) {
       font-size: 14px;

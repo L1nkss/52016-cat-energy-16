@@ -27,7 +27,7 @@
       position: absolute;
       z-index: 1;
       background-color: $white-color;
-      top: 50%;
+      top: 49%;
       transform: translateY(-50%);
       //left: 110px;
       padding-left: 75px;
@@ -84,6 +84,7 @@
 
   &__text {
     margin: 0;
+    color: $black-color--light;
 
     @include respond(tablet) {
       margin-bottom: 19px;
@@ -112,7 +113,7 @@
 
     @include respond(desktop) {
       background-image: url("../img/bg-map-desktop@1x.png");
-      min-height: 401px;
+      min-height: 400px;
       position: relative;
 
       @include retina-image("../img/bg-map-desktop@2x.png");
