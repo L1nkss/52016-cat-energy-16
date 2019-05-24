@@ -134,6 +134,7 @@
     padding-bottom: 13px;
     padding-left: 14px;
     padding-right: 40px;
+    transition: 0.6s;
 
     &::placeholder {
       color: $black-color--light;
@@ -146,6 +147,14 @@
       & + .owner-information__icon {
         fill: $main-color-theme;
       }
+
+      &:invalid {
+        border-color: $error-color;
+
+        & + .owner-information__icon {
+          fill: $error-color;
+        }
+      }
     }
 
     // &:focus + .owner-information__icon {
@@ -153,10 +162,10 @@
     // }
 
     &:invalid {
-      border-color: $error-color;
+      //border-color: $error-color;
 
       & + .owner-information__icon {
-        fill: $error-color;
+        //fill: $error-color;
       }
     }
 

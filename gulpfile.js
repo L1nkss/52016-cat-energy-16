@@ -13,6 +13,8 @@ var rename = require("gulp-rename");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -22,17 +24,17 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -40,12 +42,16 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
-  gulp.watch("source/script/*.js").on("change", server.reload);
+  //gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/script/*.js", gulp.series("refresh"));
 });
 
 gulp.task("html",function(){
   return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(gulp.dest("build"));
 })
 
@@ -64,11 +70,11 @@ gulp.task("image-optimaz",function(){
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo(
-        {
-          plugins: [{  removeAttrs: {
-            attrs: '*:(stroke|fill):((?!^none$).)*'
-          }}]
-        }
+        // {
+        //   plugins: [{  removeAttrs: {
+        //     attrs: '*:(stroke|fill):((?!^none$).)*'
+        //   }}]
+        // }
       )
     ]))
     .pipe(gulp.dest("source/img"));

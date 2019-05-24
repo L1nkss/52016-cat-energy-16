@@ -56,6 +56,7 @@
     padding-bottom: 13px;
     padding-left: 15px;
     padding-right: 30px;
+    transition: 0.6s;
 
     &::placeholder {
       color: $black-color--light;
@@ -67,10 +68,14 @@
 
     &:focus {
       border-color: $black-color;
+
+      &:invalid {
+        border-color: $error-color;
+      }
     }
 
     &:invalid {
-      border-color: $error-color;
+      //border-color: $error-color;
     }
 
     @include respond(tablet) {
