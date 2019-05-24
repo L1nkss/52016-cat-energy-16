@@ -1,14 +1,14 @@
 .owner-information {
   border: 0;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   position: relative;
   //overflow: hidden;
 
   @include content-paddings();
 
   @include respond(tablet) {
-    margin-bottom: 49px;
+    margin-bottom: 45px;
     padding: 0;
   }
 
@@ -77,6 +77,7 @@
       font-size: 20px;
       line-height: 20px;
       padding: 0 40px;
+      padding-right: 35px;
     }
 
     @include respond(desktop) {
@@ -93,6 +94,11 @@
     margin-top: 0;
     position: relative;
 
+    @include respond(tablet) {
+      margin-bottom: 20px;
+      //width: 46.72%;
+    }
+
     @include respond(desktop) {
       margin-bottom: 0;
       width: 46.72%;
@@ -105,6 +111,18 @@
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+
+    @include respond(tablet) {
+      right: 21px;
+    }
+
+    &--mobile-pos {
+      right: 13px;
+
+      @include respond(tablet) {
+        right: 18px;
+      }
+    }
   }
 
   //label
@@ -117,6 +135,15 @@
     @include respond(tablet) {
       font-size: 20px;
       line-height: 20px;
+      margin-right: 20px;
+    }
+
+    &--margin-field {
+      margin-right: 9px;
+
+      @include respond(tablet) {
+        margin-right: 14px;
+      }
     }
   }
 
@@ -172,6 +199,9 @@
     @include respond(tablet) {
       font-size: 20px;
       line-height: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 20px;
     }
   }
 }

@@ -3,7 +3,7 @@
   border: 0;
   text-transform: uppercase;
   border-bottom: 1px solid $grey-color--light;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   @include content-paddings(0, 9px);
 
@@ -15,7 +15,7 @@
   }
 
   @include respond(desktop) {
-    width: 46.72%;
+    width: 46.6%;
     margin-right: 6.55%;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -79,9 +79,9 @@
     }
 
     @include respond(tablet) {
-      padding-top: 8px;
-      padding-bottom: 12px;
-      padding-left: 19px;
+      padding-top: 9px;
+      padding-bottom: 11px;
+      padding-left: 18px;
       font-size: 20px;
       line-height: 20px;
     }
@@ -94,6 +94,15 @@
 
     @include respond(tablet) {
       margin-right: 2.7%;
+    }
+
+    // Margin для 2ого блока
+    &--margin-field {
+      margin-right: 6%;
+
+      @include respond(tablet) {
+        margin-right: 3.3%;
+      }
     }
   }
 }
