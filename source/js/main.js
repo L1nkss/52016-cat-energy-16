@@ -19,7 +19,6 @@
     // Смена изображения before/after
 
     // Смени изображения с помощью toggle
-
 })();
 
 //  clip: rect(auto, 345px, auto, auto);

@@ -1,12 +1,12 @@
 .slider {
   position: relative;
   //height: 240px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
   text-align: center;
   //margin-left: -20px;
 
   @include respond(tablet) {
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 
   @include respond(desktop) {
@@ -19,7 +19,7 @@
 
   &__wrapper {
     max-width: 280px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     // Проба (Удалить если не получится)
     height: 240px;
     position: relative;

@@ -55,6 +55,8 @@
       line-height: 25px;
       font-weight: 400;
       padding: 9px 0;
+      padding-top: 11px;
+      padding-bottom: 7px;
 
       &[href="#"] {
         border-bottom: 2px solid $main-color-theme;

@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <div class="sprite-hide">
+        <include src="build/img/new-sprite.svg"></include>
+      </div>
   <header class="header">
     <nav class="navigation">
       <div class="navigation__wrapper">
@@ -367,11 +370,8 @@
       <div class="footer__container">
         <div class="footer__logo">
           <a class="footer__link" href="index.html">
-            <!-- <img class="footer__image" src="img/logo-footer.svg" width="127" height="24"
-              alt="Логотип компании Cat-energy"> -->
-              <svg class="footer__image" width="127" height="24">
-                <use xlink:href="img/new-sprite.svg#logo-footer"></use>
-              </svg>
+            <img class="footer__image" src="img/logo-footer.svg" width="128" height="24"
+              alt="Логотип компании Cat-energy">
           </a>
         </div>
         <div class="footer__social social">
@@ -403,7 +403,7 @@
           <a class="academy__link" href="#">
             <span class="academy__name">HTML Academy</span>
             <svg class="academy__icon" width="40" height="40">
-              <use xlink:href="img/new-sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/new-sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>

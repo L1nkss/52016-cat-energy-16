@@ -2,20 +2,18 @@
   border: 0;
   margin: 0;
   border-bottom: 1px solid $grey-color--light;
-  margin-bottom: 29px;
 
-  @include content-paddings(0, 8px);
+  @include content-paddings(0, 10px);
 
   @include respond(tablet) {
     border: 1px solid $grey-color--light;
-    padding: 0 28px;
+    padding: 0 27px;
     padding-top: 24px;
     padding-bottom: 11px;
-    margin-bottom: 76px;
   }
 
   @include respond(desktop) {
-    width: 46.72%;
+    width: 46.6%;
     margin-bottom: 0;
   }
 
@@ -29,12 +27,12 @@
     position: relative;
     padding-left: 45px;
     padding-top: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 
     @include respond(tablet) {
       padding-left: 59px;
-      padding-top: 8px;
-      margin-bottom: 21px;
+      padding-top: 9px;
+      margin-bottom: 20px;
     }
   }
   // Label
@@ -61,8 +59,8 @@
       border: 1px solid $black-color--darker;
 
       @include respond(tablet) {
-        width: 39px;
-        height: 39px;
+        width: 40px;
+        height: 40px;
       }
     }
 
@@ -70,8 +68,8 @@
       content: "";
       display: none;
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 9px;
+      left: 9px;
       width: 12px;
       height: 12px;
       border-radius: 50%;

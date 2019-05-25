@@ -4,7 +4,7 @@
 
   @include respond(tablet) {
     padding-bottom: 50px;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   @include respond(desktop) {
@@ -18,7 +18,7 @@
     margin: 0;
     font-size: 36px;
     line-height: 60px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-weight: 400;
 
     @include respond(tablet) {

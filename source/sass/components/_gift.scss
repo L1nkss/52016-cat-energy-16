@@ -44,6 +44,7 @@
       flex-direction: column;
       padding: 0;
       padding-bottom: 42px;
+      justify-content: flex-end;
 
       @include retina-image("../img/gift-photo-desktop@2x.jpg");
     }

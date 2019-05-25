@@ -22,6 +22,11 @@ img {
   height: auto;
 }
 
+// Скрыть svg sprite
+.sprite-hide {
+  display: none;
+}
+
 // Кнопки
 .button {
   //width: 100%;
@@ -69,14 +74,14 @@ img {
   }
 
   &--title {
-    padding-top: 12px;
+    padding-top: 11px;
     padding-bottom: 11px;
     margin-top: auto;
 
     @include respond(tablet) {
       width: 245px;
       margin-left: 88px;
-      margin-top: -582px;
+      margin-top: -584px;
       font-size: 20px;
       line-height: 20px;
       padding: 16px 0;
@@ -84,6 +89,7 @@ img {
 
     @include respond(desktop) {
       margin-top: -188px;
+      margin-left: 90px;
     }
   }
 
@@ -91,12 +97,12 @@ img {
     font-family: $primary-font;
     margin-bottom: 21px;
     font-size: 16px;
-    padding: 16px 0;
+    padding: 11px 0;
 
     @include respond(tablet) {
       margin: 0;
       padding-top: 15px;
-      padding-bottom: 17px;
+      padding-bottom: 19px;
       padding-left: 64px;
       padding-right: 66px;
       font-size: 20px;

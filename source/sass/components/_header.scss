@@ -1,9 +1,12 @@
 .header {
-  // убрал пока
   position: relative;
 
   @include respond(tablet) {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
+
+    &--margin-form {
+      margin-bottom: 19px;
+    }
   }
 
   @include respond(desktop) {
