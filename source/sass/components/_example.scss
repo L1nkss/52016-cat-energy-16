@@ -39,7 +39,7 @@
 
   &__slider {
     @include respond(tablet) {
-      padding-bottom: 74px;
+      padding-bottom: 73px;
     }
 
     @include respond(desktop) {
@@ -104,7 +104,7 @@
     @include respond(tablet) {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 55px;
+      margin-bottom: 53px;
       width: 95.75%;
     }
 
@@ -206,7 +206,7 @@
       line-height: 14px;
       background-color: $white-color;
       padding: 0;
-      width: 90%;
+      width: 80%;
       bottom: -5px;
     }
 
