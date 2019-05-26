@@ -9,7 +9,7 @@
     border: 1px solid $grey-color--darker;
     width: 324px;
     min-height: 431px;
-    margin: 137px 0 4px 0;
+    margin: 140px 0 0 0;
     padding: 36px;
     padding-top: 164px;
   }
@@ -17,7 +17,7 @@
   @include respond(desktop) {
     width: 245px;
     padding: 164px 37.5px 0;
-    margin-bottom: 1px;
+    margin-top: 143px;
   }
 
   &__text {

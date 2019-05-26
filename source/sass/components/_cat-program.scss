@@ -29,6 +29,10 @@
     padding-top: 4px;
     margin-bottom: 14px;
 
+    &:active {
+      opacity: 0.4;
+    }
+
     @include respond(tablet) {
       padding-left: 59px;
       padding-top: 9px;

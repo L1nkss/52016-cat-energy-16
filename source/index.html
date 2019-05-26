@@ -6,9 +6,12 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1db4f344-2d67-4477-88fb-bebcfad05d3" type="text/javascript"></script>
 </head>
 
-<body">
+<body>
     <div class="sprite-hide">
       <include src="build/img/new-sprite.svg"></include>
     </div>
@@ -153,7 +156,6 @@
         </div>
       </div>
     </section>
-    </section>
     <section class="address">
       <div class="address__container">
         <div class="address__item address__item--white">
@@ -164,7 +166,7 @@
           </address>
         </div>
       </div>
-      <div class="address__map">
+      <div class="address__map" id="map">
 
       </div>
     </section>
@@ -182,21 +184,21 @@
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__icon social__icon--vk" width="22" height="12">
-                <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
+                <use xlink:href="img/new-sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__icon social__icon--inst" width="16" height="16">
-                <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
+                <use xlink:href="img/new-sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--fb">
             <a class="social__link" href="#">
               <svg class="social__icon social__icon--fb" width="10" height="19">
-                <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
+                <use xlink:href="img/new-sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -212,9 +214,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/picturefill.js"></script>
-  <script src="js/svgxuse.js" defer=""></script>
-  <script src="js/main.js"></script>
+  <script src="js/picturefill-min.js"></script>
+  <script src="js/svgxuse-min.js" defer=""></script>
+  <script src="js/main-min.js"></script>
+  <script src="js/map-min.js"></script>
 </body>
-
 </html>

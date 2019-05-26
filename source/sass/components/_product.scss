@@ -9,9 +9,9 @@
     background-color: $grey-color;
     border: 0;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 41px;
     position: relative;
-    margin: 137px 0 4px 0;
+    margin: 140px 0 0 0;
     margin-right: 60px;
 
     @include product-margins;
@@ -33,6 +33,7 @@
 
   @include respond(desktop) {
     width: 245px;
+    margin-top: 143px;
 
     // &:nth-child(n) {
     //   margin-right: 80px;
@@ -48,8 +49,12 @@
     width: 50%;
 
     @include respond(tablet) {
-      padding: 0 40px;
+      padding: 0 37px 0 39px;
       width: 100%;
+    }
+
+    @include respond(desktop) {
+      padding-right: 39px;
     }
   }
 
@@ -96,6 +101,7 @@
     @include respond(tablet) {
       border-bottom: 1px solid $grey-color--dark;
       padding-top: 5px;
+      margin-bottom: 3px;
       padding-bottom: 5px;
     }
   }
@@ -117,13 +123,16 @@
     padding-right: 40px;
     text-transform: uppercase;
     line-height: 20px;
+    display: block;
+    color: $black-color;
+    text-decoration: none;
 
     @include respond(tablet) {
       font-size: 20px;
       padding: 0;
       text-align: center;
       width: 53.41%;
-      margin: 0 auto 22px;
+      margin: 0 auto 20px;
     }
 
     @include respond(desktop) {
