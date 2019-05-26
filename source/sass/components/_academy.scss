@@ -1,14 +1,14 @@
 .academy {
   padding-top: 18px;
-  padding-bottom: 21px;
+  padding-bottom: 24px;
 
   @include respond(tablet) {
     width: 22.88%;
-    padding-top: 7px;
+    padding-top: 10px;
   }
 
-  @include respond(tablet) {
-    padding-top: 18px;
+  @include respond(desktop) {
+    padding-top: 14px;
   }
 
   &__link {
