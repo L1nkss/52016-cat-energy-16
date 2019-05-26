@@ -101,6 +101,7 @@
     background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: $grey-color;
 
     @include retina-image("../img/bg-map-mobile@2x.png");
 

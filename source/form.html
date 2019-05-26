@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1db4f344-2d67-4477-88fb-bebcfad05d3" type="text/javascript"></script>
 </head>
 
 <body>
@@ -17,7 +20,7 @@
       <div class="navigation__wrapper">
         <a class="navigation__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="navigation__image" src="img/logo-mobile.svg" width="191" alt="Логотип компании Cat Energy">
           </picture>
@@ -136,7 +139,6 @@
         <button class="button button--form-submit button--green" type="submit">Отправить заявку</button>
         <p class="form-submit__req-fields">* — Обязательные поля</p>
       </div>
-      </fieldset>
     </form>
     <section class="address">
       <div class="address__container">
@@ -148,7 +150,7 @@
           </address>
         </div>
       </div>
-      <div class="address__map">
+      <div class="address__map" id="map">
 
       </div>
     </section>
@@ -167,21 +169,21 @@
             <li class="social__item">
               <a class="social__link" href="#">
                 <svg class="social__icon social__icon--vk" width="22" height="12">
-                  <use xlink:href="img/new-sprite.svg#icon-vk-mobile"></use>
+                  <use xlink:href="img/new-sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
                 <svg class="social__icon social__icon--inst" width="16" height="16">
-                  <use xlink:href="img/new-sprite.svg#icon-insta-mobile"></use>
+                  <use xlink:href="img/new-sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item social__item--fb">
               <a class="social__link" href="#">
                 <svg class="social__icon social__icon--fb" width="10" height="19">
-                  <use xlink:href="img/new-sprite.svg#icon-fb-mobile"></use>
+                  <use xlink:href="img/new-sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -197,9 +199,10 @@
         </div>
       </div>
     </footer>
-  <script src="js/picturefill.js"></script>
-  <script src="js/svgxuse.js" defer=""></script>
-  <script src="js/main.js"></script>
+  <script src="js/picturefill-min.js"></script>
+  <script src="js/svgxuse-min.js" defer=""></script>
+  <script src="js/main-min.js"></script>
+  <script src="js/map-min.js"></script>
   </body>
 
 </html>

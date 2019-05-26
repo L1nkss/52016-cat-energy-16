@@ -15,6 +15,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var minify = require("gulp-minify");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -30,6 +31,13 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("js-minify", function(done) {
+  gulp.src("source/js/*.js")
+    .pipe(minify())
+    .pipe(gulp.dest("source/js"))
+    done();
 });
 
 gulp.task("server", function () {
@@ -88,7 +96,7 @@ gulp.task("copy",function(){
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/*-min.js"
   ],{
     base: "source"
   })

@@ -97,6 +97,26 @@
     padding-top: 52px;
   }
 
+  &::after {
+    @include respond(tablet) {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      display: block;
+      top: 90px;
+      font-size: 280px;
+      right: 10px;
+      transform: translate(-50%);
+      color: $grey-color--ligther;
+      z-index: -1;
+      //width: 115px;
+    }
+
+    @include respond(desktop) {
+      left: 62%;
+    }
+  }
+
   &--clock {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
@@ -118,6 +138,12 @@
       background-image: url("../img/advantage-leaf@1x.png");
 
       @include retina-image("../img/advantage-leaf@2x.png");
+    }
+
+    &::after {
+      @include respond(tablet) {
+        right: 40px;
+      }
     }
   }
 
@@ -146,26 +172,6 @@
       height: 80px;
       width: 80px;
       background-size: 63%;
-    }
-  }
-
-  &::after {
-    @include respond(tablet) {
-      counter-increment: section;
-      content: counter(section);
-      position: absolute;
-      display: block;
-      top: 90px;
-      font-size: 280px;
-      right: 10px;
-      transform: translate(-50%);
-      color: $grey-color--ligther;
-      z-index: -1;
-      //width: 115px;
-    }
-
-    @include respond(desktop) {
-      left: 70%;
     }
   }
 

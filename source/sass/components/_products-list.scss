@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     //justify-content: space-between;
-    margin-bottom: 53px;
+    margin-bottom: 57px;
     justify-content: center;
 
     @include content-paddings();
@@ -13,7 +13,7 @@
 
   @include respond(desktop) {
     max-width: 1300px;
-    margin: 0 auto 62px;
+    margin: 0 auto 65px;
     justify-content: space-between;
   }
 }
