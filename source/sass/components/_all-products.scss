@@ -19,86 +19,82 @@
     padding: 164px 37.5px 0;
     margin-top: 143px;
   }
+}
 
-  &__text {
-    font-size: 12px;
-    font-family: $second-font;
-    margin: 0;
-    margin-bottom: 22px;
+.all-products__text {
+  font-size: 12px;
+  font-family: $second-font;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @include respond(tablet) {
+    font-size: 16px;
+    width: 71.72%;
+    margin: 0 auto;
+    margin-bottom: 84px;
+  }
+
+  @include respond(desktop) {
+    width: 100%;
+  }
+}
+
+.all-products__title {
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  margin-bottom: 8px;
+
+  @include respond(tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 57.37%;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  @include respond(desktop) {
+    width: 83.41%;
+  }
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 2px;
+    background-color: $grey-color--light;
+    top: -36px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 
     @include respond(tablet) {
-      font-size: 16px;
-      width: 71.72%;
-      margin: 0 auto;
-      margin-bottom: 84px;
-    }
-
-    @include respond(desktop) {
-      width: 100%;
+      width: 60px;
+      top: -80px;
     }
   }
 
-  &__title {
-    text-transform: uppercase;
-    margin: 0;
-    position: relative;
-    margin-bottom: 8px;
+  &::after {
+    content: "";
+    width: 31px;
+    height: 2px;
+    background-color: $grey-color--light;
+    top: -36px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(90deg);
 
     @include respond(tablet) {
-      font-size: 20px;
-      line-height: 20px;
-      width: 57.37%;
-      margin: 0 auto;
-      margin-bottom: 27px;
-    }
-
-    @include respond(desktop) {
-      width: 83.41%;
-    }
-
-    &::before {
-      content: "";
-      width: 31px;
-      height: 2px;
-      background-color: $grey-color--light;
-      top: -36px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-
-      @include respond(tablet) {
-        width: 60px;
-        top: -80px;
-      }
-    }
-
-    &::after {
-      content: "";
-      width: 31px;
-      height: 2px;
-      background-color: $grey-color--light;
-      top: -36px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%) rotate(90deg);
-
-      @include respond(tablet) {
-        width: 60px;
-        top: -79px;
-      }
+      width: 60px;
+      top: -79px;
     }
   }
+}
 
-  &__show {
-    display: block;
-    text-decoration: none;
-    background-color: $grey-color;
-    padding: 9px 0;
-    color: $black-color--light;
-    text-transform: uppercase;
-
-    @include respond(tablet) {
-      //margin-top: auto;
-    }
-  }
+.all-products__show {
+  display: block;
+  text-decoration: none;
+  background-color: $grey-color;
+  padding: 9px 0;
+  color: $black-color--light;
+  text-transform: uppercase;
 }

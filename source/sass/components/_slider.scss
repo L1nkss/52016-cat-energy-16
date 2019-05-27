@@ -1,101 +1,90 @@
 .slider {
   position: relative;
-  //height: 240px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   text-align: center;
-  //margin-left: -20px;
 
   @include respond(tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   @include respond(desktop) {
     position: absolute;
     top: -49px;
     left: -80px;
-    // top: -52px;
-    // right: 76px;
   }
+}
 
-  &__wrapper {
-    max-width: 280px;
-    margin: 0 auto;
-    // Проба (Удалить если не получится)
-    height: 240px;
+.slider__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  height: 240px;
+  position: relative;
+
+  @include respond(tablet) {
+    height: 513px;
     position: relative;
-
-    @include respond(tablet) {
-      margin-bottom: 12px;
-      height: 513px;
-      position: relative;
-      max-width: inherit;
-    }
-  }
-
-  &__images {
-    width: 320px;
-    margin: 0 auto;
-
-    @include respond(tablet) {
-      width: 690px;
-      position: absolute;
-      left: 5%;
-    }
-
-    @include respond(desktop) {
-      left: -19%;
-    }
-
-    &--before {
-      clip: rect(auto, 340px, auto, auto);
-    }
-
-    &--after {
-      display: none;
-
-      @include respond(tablet) {
-        clip: rect(auto, auto, auto, 340px);
-      }
-    }
-  }
-
-  &__image {
-    //width: 100%;
     max-width: inherit;
-    margin-left: -20px;
-    display: block;
-    // Проба (Удалить если не получится)
+  }
+}
+
+.slider__images {
+  width: 320px;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    width: 690px;
+    position: absolute;
+    left: 5%;
+  }
+
+  @include respond(desktop) {
+    left: -19%;
+  }
+
+  &--before {
+    clip: rect(auto, 340px, auto, auto);
+  }
+
+  &--after {
+    display: none;
+
+    @include respond(tablet) {
+      clip: rect(auto, auto, auto, 340px);
+    }
+  }
+}
+
+.slider__image {
+  max-width: inherit;
+  margin-left: -20px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @include respond(tablet) {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 0 auto;
+  }
+
+  &--before {
+    clip: rect(auto, 320px, auto, auto);
 
     @include respond(tablet) {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
+      clip: rect(auto, 345px, auto, auto);
     }
+  }
 
-    &--before {
-      clip: rect(auto, 320px, auto, auto);
+  &--after {
+    clip: rect(auto, auto, auto, 320px);
 
-      @include respond(tablet) {
-        //clip: rect(auto, 340px, auto, auto);
-        clip: rect(auto, 345px, auto, auto);
-      }
-    }
-
-    &--after {
-      //display: none;
-      clip: rect(auto, auto, auto, 320px);
-
-      @include respond(tablet) {
-        display: block;
-        //clip: rect(auto, auto, auto, 340px);
-        clip: rect(auto, auto, auto, 345px);
-      }
+    @include respond(tablet) {
+      display: block;
+      clip: rect(auto, auto, auto, 345px);
     }
   }
 }

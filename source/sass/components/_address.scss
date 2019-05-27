@@ -1,123 +1,124 @@
 .address {
   position: relative;
+}
 
-  &__container {
-    @include respond(desktop) {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 40px;
-    }
+.address__container {
+  @include respond(desktop) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+.address__item {
+  display: flex;
+  background-color: $grey-color;
+
+  @include content-paddings(29px, 25px);
+
+  @include respond(tablet) {
+    padding: 65px 72px 58px 71px;
+    justify-content: space-between;
+    padding-bottom: 57px;
+
+    @include content-paddings(65px, 58px);
   }
 
-  &__item {
-    display: flex;
-    background-color: $grey-color;
-
-    @include content-paddings(29px, 25px);
-
-    @include respond(tablet) {
-      padding: 65px 72px 58px 71px;
-      justify-content: space-between;
-      padding-bottom: 58px;
-
-      @include content-paddings(65px, 58px);
-    }
-
-    @include respond(desktop) {
-      position: absolute;
-      z-index: 1;
-      background-color: $white-color;
-      top: 49%;
-      transform: translateY(-50%);
-      //left: 110px;
-      padding-left: 75px;
-      padding-right: 75px;
-    }
-
-    &--white {
-      background-color: $white-color;
-    }
+  @include respond(desktop) {
+    position: absolute;
+    z-index: 1;
+    background-color: $white-color;
+    top: 49%;
+    transform: translateY(-50%);
+    //left: 110px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 
-  &__title {
-    margin: 0;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 20px;
-    width: 50%;
+  &--white {
+    background-color: $white-color;
+  }
+}
 
-    @include respond(tablet) {
-      font-size: 20px;
-      line-height: 25px;
-      width: 25%;
-      margin-left: 40px;
-    }
+.address__title {
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+  width: 50%;
 
-    @include respond(desktop) {
-      font-size: 20px;
-      width: 170px;
-      margin-right: 80px;
-      margin-left: 0;
-    }
+  @include respond(tablet) {
+    font-size: 20px;
+    line-height: 25px;
+    width: 25%;
+    margin-left: 40px;
   }
 
-  &__wrapper {
-    width: 50%;
-    font-size: 14px;
-    line-height: 20px;
-    font-family: $second-font;
-    font-style: normal;
+  @include respond(desktop) {
+    font-size: 20px;
+    width: 170px;
+    margin-right: 80px;
+    margin-left: 0;
+  }
+}
 
-    @include respond(tablet) {
-      font-size: 16px;
-      text-align: right;
-      width: 25%;
-      margin-right: 40px;
-    }
+.address__wrapper {
+  width: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $second-font;
+  font-style: normal;
+  color: $black-color--light;
 
-    @include respond(desktop) {
-      width: 170px;
-      text-align: left;
-      margin-right: 0;
-    }
+  @include respond(tablet) {
+    font-size: 16px;
+    text-align: right;
+    width: 25%;
+    margin-right: 40px;
   }
 
-  &__text {
-    margin: 0;
-    color: $black-color--light;
+  @include respond(desktop) {
+    width: 170px;
+    text-align: left;
+    margin-right: 0;
+  }
+}
 
-    @include respond(tablet) {
-      margin-bottom: 19px;
-    }
+.address__text {
+  margin: 0;
+
+  @include respond(tablet) {
+    margin-bottom: 19px;
+  }
+}
+
+.address__city {
+  margin: 0;
+}
+
+.address__map {
+  width: 100%;
+  height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $grey-color;
+  overflow: hidden;
+
+  @include retina-image("../img/bg-map-mobile@2x.png");
+
+  @include respond(tablet) {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    height: 395px;
+
+    @include retina-image("../img/bg-map-tablet@2x.png");
   }
 
-  &__city {
-    margin: 0;
-  }
+  @include respond(desktop) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    height: 398px;
+    position: relative;
 
-  &__map {
-    width: 100%;
-    min-height: 362px;
-    background-image: url("../img/bg-map-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $grey-color;
-
-    @include retina-image("../img/bg-map-mobile@2x.png");
-
-    @include respond(tablet) {
-      background-image: url("../img/bg-map-tablet@1x.png");
-      min-height: 395px;
-
-      @include retina-image("../img/bg-map-tablet@2x.png");
-    }
-
-    @include respond(desktop) {
-      background-image: url("../img/bg-map-desktop@1x.png");
-      min-height: 400px;
-      position: relative;
-
-      @include retina-image("../img/bg-map-desktop@2x.png");
-    }
+    @include retina-image("../img/bg-map-desktop@2x.png");
   }
 }

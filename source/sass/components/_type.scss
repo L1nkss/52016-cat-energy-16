@@ -29,178 +29,178 @@
     width: 46.72%;
     margin-bottom: 0;
   }
+}
 
-  &__icon {
-    width: 50px;
-    height: 50px;
-    background-color: $main-color-theme;
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    top: 24px;
-    left: 22px;
+.type__icon {
+  width: 50px;
+  height: 50px;
+  background-color: $main-color-theme;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 22px;
 
-    @include respond(tablet) {
+  @include respond(tablet) {
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: 62px;
+    top: 24.5%;
+  }
+
+  @include respond(desktop) {
+    top: 47px;
+    width: 100px;
+    height: 100px;
+    left: 52px;
+  }
+}
+
+.type__slim {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  top: -2px;
+
+  @include respond(tablet) {
+    width: 140px;
+    top: -16px;
+  }
+
+  @include respond(desktop) {
+    width: 70px;
+    top: -8px;
+  }
+}
+
+.type__pro {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  top: 0;
+
+  @include respond(tablet) {
+    width: 268px;
+    top: -2px;
+  }
+
+  @include respond(desktop) {
+    width: 134px;
+    top: 0;
+  }
+}
+
+.type__title {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  padding-left: 71px;
+
+  @include respond(tablet) {
+    text-align: left;
+    font-size: 36px;
+    line-height: 37px;
+    padding-left: 0;
+    margin-bottom: 25px;
+
+    &::before {
+      top: 52%;
+      left: 77%;
       width: 200px;
       height: 200px;
-      left: auto;
-      right: 62px;
-      top: 24.5%;
-    }
-
-    @include respond(desktop) {
-      top: 47px;
-      width: 100px;
-      height: 100px;
-      left: 52px;
+      transform: translate(-50%, -50%);
     }
   }
 
-  &__slim {
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    transform: translateX(-50%);
-    top: -2px;
+  @include respond(desktop) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+}
 
-    @include respond(tablet) {
-      width: 140px;
-      top: -16px;
-    }
+.type__info {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $second-font;
+  position: relative;
+  border-bottom: 1px solid $grey-color--darker;
+  padding-bottom: 22px;
+  color: $black-color--light;
 
-    @include respond(desktop) {
-      width: 70px;
-      top: -8px;
+  @include respond(tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+    width: 62.82%;
+    padding: 0;
+    border: 0;
+
+    &--pro {
+      width: 57%;
     }
   }
 
-  &__pro {
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    transform: translateX(-50%);
-    top: 0;
+  @include respond(desktop) {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+}
 
-    @include respond(tablet) {
-      width: 268px;
-      top: -2px;
-    }
+.type__link {
+  text-decoration: none;
+  text-align: left;
+  text-transform: uppercase;
+  color: $black-color;
+  display: inline-flex;
+  align-items: center;
 
-    @include respond(desktop) {
-      width: 134px;
-      top: 0;
+  &:hover {
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 30px;
     }
   }
 
-  &__title {
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 37px;
-    font-weight: 400;
-    padding-left: 71px;
-
-    @include respond(tablet) {
-      text-align: left;
-      font-size: 36px;
-      line-height: 37px;
-      padding-left: 0;
-      margin-bottom: 25px;
-
-      &::before {
-        top: 52%;
-        left: 77%;
-        width: 200px;
-        height: 200px;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    @include respond(desktop) {
-      padding-left: 162px;
-      margin-bottom: 73px;
-    }
-  }
-
-  &__info {
-    margin: 0;
-    margin-bottom: 15px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: $second-font;
-    position: relative;
-    border-bottom: 1px solid $grey-color--darker;
-    padding-bottom: 22px;
-    color: $black-color--light;
-
-    @include respond(tablet) {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 56px;
-      width: 62.82%;
-      padding: 0;
-      border: 0;
-
-      &--pro {
-        width: 57%;
-      }
-    }
-
-    @include respond(desktop) {
-      width: 100%;
-      margin-bottom: 31px;
-    }
-  }
-
-  &__link {
-    text-decoration: none;
-    text-align: left;
-    text-transform: uppercase;
-    color: $black-color;
-    display: inline-flex;
-    align-items: center;
-
-    &:hover {
-      &::after {
-        background-image: url("../img/icon-right-arrow-verylong.svg");
-        width: 30px;
-      }
-    }
-
-    &:active {
-      opacity: 0.4;
-
-      &::after {
-        background-image: url("../img/icon-right-arrow-verylong.svg");
-        width: 30px;
-      }
-    }
-
-    @include respond(tablet) {
-      border: 0;
-      font-size: 20px;
-      line-height: 20px;
-      position: relative;
-    }
+  &:active {
+    opacity: 0.4;
 
     &::after {
-      content: "";
-      background-image: url("../img/icon-right-arrow-long.svg");
-      background-size: 100%;
-      width: 23px;
-      height: 11px;
-      display: inline-block;
-      background-repeat: no-repeat;
-      margin-left: 12px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 30px;
+    }
+  }
 
-      @include respond(tablet) {
-        // position: absolute;
-        // right: -47px;
-        width: 24px;
-        margin-left: 24px;
-      }
+  @include respond(tablet) {
+    border: 0;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-size: 100%;
+    width: 23px;
+    height: 11px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+
+    @include respond(tablet) {
+      // position: absolute;
+      // right: -47px;
+      width: 24px;
+      margin-left: 24px;
     }
   }
 }

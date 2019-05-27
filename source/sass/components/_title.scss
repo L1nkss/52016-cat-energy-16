@@ -32,61 +32,61 @@
     max-width: 1300px;
     margin: 0 auto 80px;
   }
+}
 
-  &__header {
-    margin: 0;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 25px;
+.title__header {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 25px;
 
-    @include respond(tablet) {
-      font-size: 60px;
-      line-height: 60px;
-      text-align: left;
-      width: 505px;
-      padding-left: 87px;
-      margin-bottom: 45px;
-    }
-
-    @include respond(desktop) {
-      width: 52.42%;
-      padding-left: 90px;
-    }
+  @include respond(tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: 505px;
+    padding-left: 87px;
+    margin-bottom: 45px;
   }
 
-  &__text {
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 29px;
+  @include respond(desktop) {
+    width: 52.42%;
+    padding-left: 90px;
+  }
+}
 
-    @include respond(tablet) {
-      font-size: 20px;
-      margin-bottom: 23px;
-      padding-left: 87px;
-    }
+.title__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 
-    @include respond(desktop) {
-      padding-left: 90px;
-    }
+  @include respond(tablet) {
+    font-size: 20px;
+    margin-bottom: 23px;
+    padding-left: 87px;
   }
 
-  &__image {
-    display: block;
-    margin: 0 auto 3px;
+  @include respond(desktop) {
+    padding-left: 90px;
+  }
+}
 
-    @include respond(tablet) {
-      width: 708px;
-      z-index: -1;
-    }
+.title__image {
+  display: block;
+  margin: 0 auto 3px;
 
-    @include respond(desktop) {
-      margin-top: -282px;
-      margin-left: 460px;
-      width: 552px;
-    }
+  @include respond(tablet) {
+    width: 708px;
+    z-index: -1;
+  }
+
+  @include respond(desktop) {
+    margin-top: -282px;
+    margin-left: 460px;
+    width: 552px;
   }
 }

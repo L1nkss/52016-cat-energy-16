@@ -26,96 +26,96 @@
     border-right: none;
     justify-content: space-between;
   }
+}
 
-  &__wrap {
-    display: flex;
-    font-size: 14px;
-    font-family: $second-font;
-    line-height: 14px;
-    font-weight: 400;
-    margin-bottom: 14px;
+.extra-product__wrap {
+  display: flex;
+  font-size: 14px;
+  font-family: $second-font;
+  line-height: 14px;
+  font-weight: 400;
+  margin-bottom: 14px;
 
-    @include respond(tablet) {
-      margin-left: auto;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 23px;
-    }
-
-    @include respond(desktop) {
-      margin: 0;
-      width: 31.84%;
-      padding-top: 10px;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    line-height: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-bottom: 13px;
-
-    @include respond(tablet) {
-      font-size: 20px;
-      display: inline;
-    }
-
-    @include respond(desktop) {
-      margin: 0;
-      width: 31.84%;
-    }
-  }
-
-  &__cost {
+  @include respond(tablet) {
     margin-left: auto;
-
-    @include respond(tablet) {
-      width: 95px;
-      text-align: right;
-    }
-
-    @include respond(desktop) {
-      width: 14.03%;
-      text-align: left;
-    }
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 23px;
   }
 
-  &__amount {
-    margin-right: 52px;
+  @include respond(desktop) {
+    margin: 0;
+    width: 31.84%;
+    padding-top: 10px;
+  }
+}
 
-    @include respond(tablet) {
-      width: 192px;
-      text-align: right;
-      margin: 0;
-    }
+.extra-product__title {
+  margin: 0;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 13px;
 
-    @include respond(desktop) {
-      width: 85.96%;
-      text-align: left;
-    }
+  @include respond(tablet) {
+    font-size: 20px;
+    display: inline;
   }
 
-  &__order {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    background-color: $main-color-theme;
-    color: $white-color;
-    padding: 8px 0;
-    text-transform: uppercase;
+  @include respond(desktop) {
+    margin: 0;
+    width: 31.84%;
+  }
+}
 
-    @include respond(tablet) {
-      width: 100%;
-    }
+.extra-product__cost {
+  margin-left: auto;
 
-    @include respond(desktop) {
-      width: auto;
-      padding: 10px 92px;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 400;
-    }
+  @include respond(tablet) {
+    width: 95px;
+    text-align: right;
+  }
+
+  @include respond(desktop) {
+    width: 14.03%;
+    text-align: left;
+  }
+}
+
+.extra-product__amount {
+  margin-right: 52px;
+
+  @include respond(tablet) {
+    width: 192px;
+    text-align: right;
+    margin: 0;
+  }
+
+  @include respond(desktop) {
+    width: 85.96%;
+    text-align: left;
+  }
+}
+
+.extra-product__order {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: $main-color-theme;
+  color: $white-color;
+  padding: 8px 0;
+  text-transform: uppercase;
+
+  @include respond(tablet) {
+    width: 100%;
+  }
+
+  @include respond(desktop) {
+    width: auto;
+    padding: 10px 92px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
   }
 }

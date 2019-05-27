@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1db4f344-2d67-4477-88fb-bebcfad05d3" type="text/javascript"></script>
 </head>
@@ -25,10 +27,12 @@
             <img class="navigation__image" src="img/logo-mobile.svg" width="191" alt="Логотип компании Cat Energy">
           </picture>
         </a>
+        <!-- Класс burder__toggle--hide меняет состояние кнопки (по умолчанию у кнопки внешний вид "крест"-->
         <button class="burger" type="button">
           <span class="burger__toggle"></span>
         </button>
       </div>
+      <!-- Класс menu--hide скрывает меню -->
       <ul class="menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -171,6 +175,7 @@
                 <svg class="social__icon social__icon--vk" width="22" height="12">
                   <use xlink:href="img/new-sprite.svg#icon-vk"></use>
                 </svg>
+                <span class="visually-hidden">Мы в контакте</span>
               </a>
             </li>
             <li class="social__item">
@@ -178,6 +183,7 @@
                 <svg class="social__icon social__icon--inst" width="16" height="16">
                   <use xlink:href="img/new-sprite.svg#icon-insta"></use>
                 </svg>
+                <span class="visually-hidden">Мы в инстаграмме</span>
               </a>
             </li>
             <li class="social__item social__item--fb">
@@ -185,6 +191,7 @@
                 <svg class="social__icon social__icon--fb" width="10" height="19">
                   <use xlink:href="img/new-sprite.svg#icon-fb"></use>
                 </svg>
+                <span class="visually-hidden">Мы на фейсбуке</span>
               </a>
             </li>
           </ul>
