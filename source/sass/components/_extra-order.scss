@@ -4,7 +4,6 @@
   padding-bottom: 18px;
   position: relative;
   margin-bottom: 23px;
-  //overflow: hidden;
 
   @include content-paddings();
 
@@ -15,7 +14,7 @@
 
   @include respond(desktop) {
     max-width: 1300px;
-    margin: 0 auto 30px;
+    margin: 0 auto 29px;
   }
 }
 
@@ -66,7 +65,6 @@
 
 .extra-order__item {
   position: relative;
-  //margin-bottom: 17px;
   padding-left: 45px;
   min-height: 30px;
   display: flex;

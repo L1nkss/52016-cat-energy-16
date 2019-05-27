@@ -16,7 +16,6 @@
   line-height: 24px;
   margin-bottom: 36px;
   margin-top: 0;
-  //width: 72.28%;
   display: inline-block;
   padding: 0;
   padding-left: 0;
@@ -28,11 +27,9 @@
     @include respond(tablet) {
       content: "";
       position: absolute;
-      //width: 30px;
       width: 100vw;
       height: 3px;
       background-color: #67b737;
-      //left: 0;
       right: 0;
       top: 22px;
       z-index: -1;
@@ -42,14 +39,11 @@
   &::after {
     content: "";
     position: absolute;
-    //width: 100%;
     width: 100vw;
     height: 3px;
     background-color: #67b737;
-    //right: 0;
     top: 14px;
     z-index: -1;
-    //left: 20px;
 
     @include respond(tablet) {
       top: 22px;
@@ -92,7 +86,6 @@
   margin-bottom: 28px;
 
   @include respond(tablet) {
-    //@include content-paddings();
     padding-left: 41px;
     padding-right: 37px;
     margin-bottom: 75px;
@@ -100,7 +93,6 @@
 
   @include respond(desktop) {
     display: flex;
-    //padding: 0 110px;
     max-width: 1300px;
     margin: 0 auto 69px;
   }

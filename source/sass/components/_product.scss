@@ -8,7 +8,7 @@
     background-color: $grey-color;
     border: 0;
     padding: 0;
-    padding-bottom: 41px;
+    padding-bottom: 40px;
     position: relative;
     margin: 140px 0 0 0;
     margin-right: 60px;
@@ -23,7 +23,7 @@
 }
 
 .product__information {
-  padding-top: 20px;
+  padding-top: 22px;
   width: 50%;
 
   @include respond(tablet) {
@@ -38,13 +38,11 @@
 
 .product__wrap {
   display: flex;
-  //min-height: 144px;
 
   @include respond(tablet) {
     flex-direction: column;
     min-height: 345px;
-    margin-bottom: 5px;
-    //padding-top: 162px;
+    margin-bottom: 6px;
   }
 }
 
@@ -79,8 +77,8 @@
   @include respond(tablet) {
     border-bottom: 1px solid $grey-color--dark;
     padding-top: 5px;
-    margin-bottom: 3px;
-    padding-bottom: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 6px;
   }
 }
 
@@ -97,7 +95,7 @@
 
 .product__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-right: 40px;
   text-transform: uppercase;
   line-height: 20px;

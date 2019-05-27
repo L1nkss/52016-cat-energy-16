@@ -55,6 +55,7 @@
 
   @include respond(desktop) {
     width: 83.41%;
+    margin-bottom: 24px;
   }
 
   &::before {

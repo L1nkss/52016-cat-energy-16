@@ -3,7 +3,6 @@
   border: 0;
   position: relative;
   margin-bottom: 6px;
-  //overflow: hidden;
 
   @include content-paddings();
 
@@ -15,7 +14,7 @@
 
   @include respond(desktop) {
     max-width: 1300px;
-    margin: 0 auto 22px;
+    margin: 0 auto 24px;
   }
 }
 

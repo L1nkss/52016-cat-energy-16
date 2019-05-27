@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   text-align: center;
 
   @include respond(tablet) {
@@ -9,7 +9,7 @@
 
   @include respond(desktop) {
     position: absolute;
-    top: -49px;
+    top: -51px;
     left: -80px;
   }
 }
@@ -24,33 +24,11 @@
     height: 513px;
     position: relative;
     max-width: inherit;
-  }
-}
-
-.slider__images {
-  width: 320px;
-  margin: 0 auto;
-
-  @include respond(tablet) {
-    width: 690px;
-    position: absolute;
-    left: 5%;
+    margin-left: 13px;
   }
 
   @include respond(desktop) {
-    left: -19%;
-  }
-
-  &--before {
-    clip: rect(auto, 340px, auto, auto);
-  }
-
-  &--after {
-    display: none;
-
-    @include respond(tablet) {
-      clip: rect(auto, auto, auto, 340px);
-    }
+    margin-left: 0;
   }
 }
 
@@ -77,6 +55,10 @@
     @include respond(tablet) {
       clip: rect(auto, 345px, auto, auto);
     }
+
+    @include respond(desktop) {
+      clip: rect(auto, 365px, auto, auto);
+    }
   }
 
   &--after {
@@ -85,6 +67,10 @@
     @include respond(tablet) {
       display: block;
       clip: rect(auto, auto, auto, 345px);
+    }
+
+    @include respond(desktop) {
+      clip: rect(auto, auto, auto, 365px);
     }
   }
 }

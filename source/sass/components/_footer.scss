@@ -18,6 +18,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding-bottom: 30px;
+    padding-top: 37px;
   }
 }
 
@@ -51,8 +52,6 @@
 }
 
 .footer__image {
-  //display: block;
-
   @include respond(tablet) {
     width: 129px;
   }

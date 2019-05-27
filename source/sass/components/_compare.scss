@@ -1,12 +1,14 @@
 .compare {
   display: flex;
-  width: 197px;
+  width: 201px;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
+  padding-left: 4px;
 
   @include respond(tablet) {
     width: 570px;
+    padding-left: 0;
   }
 }
 
@@ -20,7 +22,7 @@
   height: 6px;
   border-radius: 15px;
   top: 50%;
-  left: 9px;
+  left: 6px;
 
   @include respond(tablet) {
     left: 50.5%;

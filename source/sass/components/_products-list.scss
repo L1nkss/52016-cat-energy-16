@@ -4,7 +4,7 @@
   @include respond(tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 57px;
+    margin-bottom: 58px;
     justify-content: center;
 
     @include content-paddings();

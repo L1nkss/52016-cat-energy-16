@@ -52,6 +52,7 @@ img {
   text-align: center;
   border: 0;
 
+  // Зелёная кнопка
   &--green {
     background-color: $main-color-theme;
     color: $white-color;
@@ -66,6 +67,7 @@ img {
     }
   }
 
+  // Серая кнопка
   &--grey {
     background-color: $grey-color;
     color: $black-color--light;
@@ -80,6 +82,7 @@ img {
     }
   }
 
+  // Кнопка "показать всё" (кнопка на странице с каталогом)
   &--show-all {
     font-size: 16px;
     line-height: 20px;
@@ -87,6 +90,7 @@ img {
     padding-bottom: 10px;
   }
 
+  // Кнопка "подобрать программу" (кнопка на главной странице)
   &--title {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -107,6 +111,7 @@ img {
     }
   }
 
+  // Кнопка "отправить заявку" (кнопка на странице с формой)
   &--form-submit {
     font-family: $primary-font;
     margin-bottom: 21px;
@@ -126,9 +131,11 @@ img {
     @include respond(desktop) {
       width: 570px;
       margin-right: 81px;
+      padding: 16px 62px 18px 64px;
     }
   }
 
+  // Кнопка "заказать" (кнопка на странице каталога)
   &--product-order {
     line-height: 20px;
     font-size: 16px;
@@ -145,6 +152,7 @@ img {
     }
   }
 
+  // Кнопка "заказать" (кнопка на странице каталога(дополнительный товар))
   &--extra-order {
     font-size: 16px;
     line-height: 20px;

@@ -6,7 +6,7 @@
   }
 
   @include respond(desktop) {
-    background-image: linear-gradient(to bottom, $white-color 22.9%, $grey-color 22.9%);
+    background-image: linear-gradient(to bottom, $white-color 22.5%, $grey-color 22.5%);
   }
 }
 
@@ -22,7 +22,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding-top: 0;
-    padding-bottom: 69px;
+    padding-bottom: 67px;
     justify-content: space-between;
   }
 }
@@ -57,7 +57,7 @@
   margin: 0;
   font-size: 36px;
   font-weight: 400;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   @include respond(tablet) {
     font-size: 60px;
@@ -66,7 +66,7 @@
   }
 
   @include respond(desktop) {
-    margin-bottom: 147px;
+    margin-bottom: 146px;
   }
 }
 
@@ -77,7 +77,7 @@
   padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @include respond(tablet) {
     justify-content: flex-start;
@@ -98,7 +98,7 @@
   margin: 0;
   font-family: $second-font;
   text-align: left;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   width: 95.35%;
   color: $black-color--light;
 
@@ -136,7 +136,7 @@
 
   @include respond(desktop) {
     margin-left: 0;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 }
 
@@ -157,7 +157,7 @@
   position: relative;
   border: 1px solid $grey-color--dark;
   border-radius: 3px;
-  width: 44%;
+  width: 44.4%;
   padding-top: 7px;
   padding-bottom: 11px;
 
@@ -166,15 +166,15 @@
     padding: 15px 15px 18px;
 
     &:first-child {
-      margin-right: 10.67%;
+      margin-right: 11%;
     }
   }
 
   @include respond(desktop) {
-    width: 28.07%;
+    width: 28.4%;
 
     &:first-child {
-      margin-right: 7.67%;
+      margin-right: 7.4%;
     }
   }
 }
@@ -203,6 +203,7 @@
   bottom: -16px;
   transform: translateX(-50%);
   padding: 0 15px;
+  padding-left: 13px;
   color: $black-color--light;
 
   @include respond(tablet) {

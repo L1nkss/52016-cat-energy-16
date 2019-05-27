@@ -50,9 +50,6 @@
   }
 
   &--vk {
-    // width: 31px;
-    // height: 19px;
-
     @include respond(tablet) {
       width: 30px;
       height: 16px;
@@ -60,9 +57,6 @@
   }
 
   &--inst {
-    // width: 31px;
-    // height: 19px;
-
     @include respond(tablet) {
       width: 23px;
       height: 23px;
@@ -70,9 +64,6 @@
   }
 
   &--fb {
-    // width: 31px;
-    // height: 19px;
-
     @include respond(tablet) {
       width: 14px;
       height: 28px;
