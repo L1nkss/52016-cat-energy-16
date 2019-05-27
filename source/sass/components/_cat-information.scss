@@ -20,89 +20,82 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
+}
 
-  // блоки
-  &__field {
-    display: flex;
-    align-items: center;
-    margin-bottom: 14px;
-    margin-top: 0;
+.cat-information__field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  margin-top: 0;
 
-    @include respond(tablet) {
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 20px;
-    }
-
-    @include respond(desktop) {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+  @include respond(tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 
-  // Инпуты
-  &__input {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
+  @include respond(desktop) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cat-information__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black-color--light;
+  border: 1px solid $black-color--lighter;
+  outline: none;
+  flex-grow: 1;
+  font-family: $primary-font;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 30px;
+  transition: 0.6s;
+
+  &::placeholder {
     color: $black-color--light;
-    border: 1px solid $black-color--lighter;
-    outline: none;
-    flex-grow: 1;
-    font-family: $primary-font;
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 13px;
-    padding-left: 15px;
-    padding-right: 30px;
-    transition: 0.6s;
+  }
 
-    &::placeholder {
-      color: $black-color--light;
-    }
+  &:hover {
+    border-color: $border-hover-color;
+  }
 
-    &:hover {
-      border-color: $border-hover-color;
-    }
-
-    &:focus {
-      border-color: $black-color;
-
-      &:invalid {
-        border-color: $error-color;
-      }
-    }
+  &:focus {
+    border-color: $black-color;
 
     &:invalid {
-      //border-color: $error-color;
-    }
-
-    @include respond(tablet) {
-      padding-top: 9px;
-      padding-bottom: 11px;
-      padding-left: 18px;
-      font-size: 20px;
-      line-height: 20px;
+      border-color: $error-color;
     }
   }
 
-  // Лабел
-  &__label {
-    margin-right: 4.8%;
-    flex-shrink: 0;
+  @include respond(tablet) {
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.cat-information__label {
+  margin-right: 4.8%;
+  flex-shrink: 0;
+
+  @include respond(tablet) {
+    margin-right: 2.7%;
+  }
+
+  // Margin для 2ого блока
+  &--margin-field {
+    margin-right: 6%;
 
     @include respond(tablet) {
-      margin-right: 2.7%;
-    }
-
-    // Margin для 2ого блока
-    &--margin-field {
-      margin-right: 6%;
-
-      @include respond(tablet) {
-        margin-right: 3.3%;
-      }
+      margin-right: 3.3%;
     }
   }
 }

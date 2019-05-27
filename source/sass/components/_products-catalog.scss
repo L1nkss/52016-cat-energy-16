@@ -14,15 +14,15 @@
     margin: 0 auto 21px;
     max-width: 1300px;
   }
+}
 
-  &__title {
-    font-size: 36px;
-    margin: 0;
-    line-height: 60px;
-    font-weight: 400;
+.products-catalog__title {
+  font-size: 36px;
+  margin: 0;
+  line-height: 60px;
+  font-weight: 400;
 
-    @include respond(tablet) {
-      font-size: 60px;
-    }
+  @include respond(tablet) {
+    font-size: 60px;
   }
 }

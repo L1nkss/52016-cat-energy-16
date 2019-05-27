@@ -8,226 +8,230 @@
   @include respond(desktop) {
     background-image: linear-gradient(to bottom, $white-color 22.9%, $grey-color 22.9%);
   }
+}
 
-  &__container {
-    @include content-paddings(20px, 36px);
+.example__container {
+  @include content-paddings(20px, 36px);
 
-    @include respond(tablet) {
-      padding-bottom: 0;
-    }
-
-    @include respond(desktop) {
-      display: flex;
-      max-width: 1300px;
-      margin: 0 auto;
-      padding-top: 0;
-      padding-bottom: 75px;
-      justify-content: space-between;
-    }
+  @include respond(tablet) {
+    padding-bottom: 0;
   }
 
-  &__information {
-    @include respond(tablet) {
-      margin-bottom: 90px;
-    }
-
-    @include respond(desktop) {
-      width: 46.72%;
-      margin-bottom: 0;
-    }
-  }
-
-  &__slider {
-    @include respond(tablet) {
-      padding-bottom: 73px;
-    }
-
-    @include respond(desktop) {
-      width: 46.72%;
-      padding-bottom: 0;
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column;
-      position: relative;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 28px;
-
-    @include respond(tablet) {
-      font-size: 60px;
-      line-height: 60px;
-      margin-bottom: 64px;
-    }
-
-    @include respond(desktop) {
-      margin-bottom: 147px;
-    }
-  }
-
-  &__improvement {
+  @include respond(desktop) {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 69px;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 33px;
+  }
+}
 
-    @include respond(tablet) {
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 0;
-      width: 54.23%;
-    }
-
-    @include respond(desktop) {
-      margin-bottom: 61px;
-      width: 100%;
-    }
+.example__information {
+  @include respond(tablet) {
+    margin-bottom: 90px;
   }
 
-  &__text {
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0;
-    font-family: $second-font;
-    text-align: left;
-    margin-bottom: 23px;
-    width: 95.35%;
-    color: $black-color--light;
+  @include respond(desktop) {
+    width: 46.72%;
+    margin-bottom: 0;
+  }
+}
 
-    @include respond(tablet) {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 53px;
-      width: 95.75%;
-    }
-
-    @include respond(desktop) {
-      width: 76.49%;
-      margin-bottom: 68px;
-    }
+.example__slider {
+  @include respond(tablet) {
+    padding-bottom: 67px;
   }
 
-  &__cost {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
-    margin-right: auto;
+  @include respond(desktop) {
+    width: 46.72%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.example__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 28px;
+
+  @include respond(tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 64px;
+  }
+
+  @include respond(desktop) {
+    margin-bottom: 147px;
+  }
+}
+
+.example__improvement {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 33px;
+
+  @include respond(tablet) {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0;
+    width: 54.23%;
+  }
+
+  @include respond(desktop) {
+    margin-bottom: 61px;
+    width: 100%;
+  }
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  font-family: $second-font;
+  text-align: left;
+  margin-bottom: 24px;
+  width: 95.35%;
+  color: $black-color--light;
+
+  @include respond(tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+    width: 95.75%;
+  }
+
+  @include respond(desktop) {
+    width: 76.49%;
+    margin-bottom: 68px;
+  }
+}
+
+.example__cost {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include respond(tablet) {
+    font-size: 20px;
     margin-left: auto;
+    text-align: right;
+    margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
+  }
 
-    @include respond(tablet) {
-      font-size: 20px;
-      margin-left: auto;
-      text-align: right;
-      margin-right: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+  @include respond(desktop) {
+    margin-left: 0;
+    padding-bottom: 8px;
+  }
+}
 
-    @include respond(desktop) {
-      margin-left: 0;
+.example__cost-number {
+  @include respond(tablet) {
+    display: block;
+    margin-top: 10px;
+  }
+
+  @include respond(desktop) {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 59px;
+  }
+}
+
+.example__item {
+  position: relative;
+  border: 1px solid $grey-color--dark;
+  border-radius: 3px;
+  width: 44%;
+  padding-top: 7px;
+  padding-bottom: 11px;
+
+  @include respond(tablet) {
+    width: 42.18%;
+    padding: 15px 15px 18px;
+
+    &:first-child {
+      margin-right: 10.67%;
     }
   }
 
-  &__cost-number {
-    @include respond(tablet) {
-      display: block;
-      margin-top: 10px;
-    }
+  @include respond(desktop) {
+    width: 28.07%;
 
-    @include respond(desktop) {
-      display: inline-block;
-      margin-top: 0;
-      margin-left: 59px;
+    &:first-child {
+      margin-right: 7.67%;
     }
   }
+}
 
-  &__item {
-    position: relative;
-    border: 1px solid $grey-color--dark;
-    border-radius: 3px;
-    width: 44%;
-    padding: 10px 0 10px;
+.example__result {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
 
-    @include respond(tablet) {
-      width: 42.18%;
-      padding: 15px 15px 18px;
+  @include respond(tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 
-      &:first-child {
-        margin-right: 10.67%;
-      }
-    }
+.example__result-text {
+  margin: 0;
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $second-font;
+  text-align: center;
+  background-color: $grey-color;
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+  padding: 0 15px;
+  color: $black-color--light;
 
-    @include respond(desktop) {
-      width: 28.07%;
-
-      &:first-child {
-        margin-right: 7.67%;
-      }
-    }
+  @include respond(tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white-color;
+    padding: 0;
+    width: 80%;
+    bottom: -6px;
   }
 
-  &__result {
-    margin: 0;
-    font-size: 24px;
-    text-align: center;
-    text-transform: uppercase;
-
-    @include respond(tablet) {
-      font-size: 30px;
-      line-height: 37px;
-    }
-  }
-
-  &__result-text {
-    margin: 0;
-    position: absolute;
-    font-size: 12px;
-    line-height: 12px;
-    font-family: $second-font;
-    text-align: center;
+  @include respond(desktop) {
     background-color: $grey-color;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0 15px;
-    color: $black-color--light;
+    bottom: -7px;
+  }
+}
 
-    @include respond(tablet) {
-      font-size: 14px;
-      line-height: 14px;
-      background-color: $white-color;
-      padding: 0;
-      width: 80%;
-      bottom: -5px;
-    }
+.example__wrapper {
+  margin-bottom: 34px;
 
-    @include respond(desktop) {
-      background-color: $grey-color;
-    }
+  @include respond(tablet) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
   }
 
-  &__wrapper {
-    margin-bottom: 34px;
-
-    @include respond(tablet) {
-      display: flex;
-      align-items: center;
-      margin-bottom: 0;
-    }
-
-    @include respond(desktop) {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 0;
-    }
+  @include respond(desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
 }

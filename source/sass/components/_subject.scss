@@ -4,28 +4,28 @@
   @include respond(tablet) {
     padding: 0;
   }
+}
 
-  &__title {
-    margin: 0;
-    font-size: 20px;
-    text-transform: uppercase;
+.subject__title {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.subject__image {
+  display: block;
+
+  @include respond(tablet) {
+    width: 176px;
   }
 
-  &__image {
+  @include respond(desktop) {
+    width: 202px;
+  }
+}
+
+.subject__logo {
+  @include respond(tablet) {
     display: block;
-
-    @include respond(tablet) {
-      width: 176px;
-    }
-
-    @include respond(desktop) {
-      width: 202px;
-    }
-  }
-
-  &__logo {
-    @include respond(tablet) {
-      display: block;
-    }
   }
 }
